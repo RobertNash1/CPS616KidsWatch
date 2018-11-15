@@ -59,28 +59,28 @@ Partial Class WatchForm
         Me.MusicRight = New System.Windows.Forms.Button()
         Me.MusicLabel = New System.Windows.Forms.Label()
         Me.ContactPanel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.ContactUp1 = New System.Windows.Forms.Button()
+        Me.ContactDown1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PaymentPanel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PaymentUp1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PaymentDown1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PaymentPanel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.PaymentUp2 = New System.Windows.Forms.Button()
         Me.SchedulePanel1 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ScheduleUp = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GamesPanel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.GamesUp1 = New System.Windows.Forms.Button()
         Me.ContactPanel2 = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.ContactUp2 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
@@ -448,22 +448,40 @@ Partial Class WatchForm
         'ContactPanel1
         '
         Me.ContactPanel1.Controls.Add(Me.Button6)
-        Me.ContactPanel1.Controls.Add(Me.Button5)
-        Me.ContactPanel1.Controls.Add(Me.Button1)
+        Me.ContactPanel1.Controls.Add(Me.ContactUp1)
+        Me.ContactPanel1.Controls.Add(Me.ContactDown1)
         Me.ContactPanel1.Controls.Add(Me.Label1)
         Me.ContactPanel1.Location = New System.Drawing.Point(203, 178)
         Me.ContactPanel1.Name = "ContactPanel1"
         Me.ContactPanel1.Size = New System.Drawing.Size(185, 163)
         Me.ContactPanel1.TabIndex = 8
         '
-        'Button1
+        'Button6
         '
-        Me.Button1.Location = New System.Drawing.Point(78, 137)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(27, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "\/"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button6.Location = New System.Drawing.Point(141, 66)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(41, 23)
+        Me.Button6.TabIndex = 9
+        Me.Button6.Text = "Call >"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'ContactUp1
+        '
+        Me.ContactUp1.Location = New System.Drawing.Point(78, 6)
+        Me.ContactUp1.Name = "ContactUp1"
+        Me.ContactUp1.Size = New System.Drawing.Size(27, 23)
+        Me.ContactUp1.TabIndex = 8
+        Me.ContactUp1.Text = "^"
+        Me.ContactUp1.UseVisualStyleBackColor = True
+        '
+        'ContactDown1
+        '
+        Me.ContactDown1.Location = New System.Drawing.Point(78, 137)
+        Me.ContactDown1.Name = "ContactDown1"
+        Me.ContactDown1.Size = New System.Drawing.Size(27, 23)
+        Me.ContactDown1.TabIndex = 5
+        Me.ContactDown1.Text = "\/"
+        Me.ContactDown1.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -477,33 +495,23 @@ Partial Class WatchForm
         '
         'PaymentPanel1
         '
-        Me.PaymentPanel1.Controls.Add(Me.Button4)
+        Me.PaymentPanel1.Controls.Add(Me.PaymentUp1)
         Me.PaymentPanel1.Controls.Add(Me.Label3)
-        Me.PaymentPanel1.Controls.Add(Me.Button2)
+        Me.PaymentPanel1.Controls.Add(Me.PaymentDown1)
         Me.PaymentPanel1.Controls.Add(Me.Label2)
         Me.PaymentPanel1.Location = New System.Drawing.Point(394, 181)
         Me.PaymentPanel1.Name = "PaymentPanel1"
         Me.PaymentPanel1.Size = New System.Drawing.Size(185, 163)
         Me.PaymentPanel1.TabIndex = 9
         '
-        'Button2
+        'PaymentUp1
         '
-        Me.Button2.Location = New System.Drawing.Point(78, 137)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(27, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "\/"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(47, 47)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 20)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Balance:"
+        Me.PaymentUp1.Location = New System.Drawing.Point(78, 3)
+        Me.PaymentUp1.Name = "PaymentUp1"
+        Me.PaymentUp1.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentUp1.TabIndex = 7
+        Me.PaymentUp1.Text = "^"
+        Me.PaymentUp1.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -515,10 +523,29 @@ Partial Class WatchForm
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "$00.00"
         '
+        'PaymentDown1
+        '
+        Me.PaymentDown1.Location = New System.Drawing.Point(78, 137)
+        Me.PaymentDown1.Name = "PaymentDown1"
+        Me.PaymentDown1.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentDown1.TabIndex = 5
+        Me.PaymentDown1.Text = "\/"
+        Me.PaymentDown1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(47, 47)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Balance:"
+        '
         'PaymentPanel2
         '
         Me.PaymentPanel2.Controls.Add(Me.Label4)
-        Me.PaymentPanel2.Controls.Add(Me.Button3)
+        Me.PaymentPanel2.Controls.Add(Me.PaymentUp2)
         Me.PaymentPanel2.Location = New System.Drawing.Point(394, 350)
         Me.PaymentPanel2.Name = "PaymentPanel2"
         Me.PaymentPanel2.Size = New System.Drawing.Size(185, 163)
@@ -534,70 +561,24 @@ Partial Class WatchForm
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Pay Now"
         '
-        'Button3
+        'PaymentUp2
         '
-        Me.Button3.Location = New System.Drawing.Point(78, 15)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 23)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "^"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(78, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(27, 23)
-        Me.Button4.TabIndex = 7
-        Me.Button4.Text = "^"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(78, 6)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(27, 23)
-        Me.Button5.TabIndex = 8
-        Me.Button5.Text = "^"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(141, 66)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(41, 23)
-        Me.Button6.TabIndex = 9
-        Me.Button6.Text = "Call >"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.PaymentUp2.Location = New System.Drawing.Point(78, 15)
+        Me.PaymentUp2.Name = "PaymentUp2"
+        Me.PaymentUp2.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentUp2.TabIndex = 5
+        Me.PaymentUp2.Text = "^"
+        Me.PaymentUp2.UseVisualStyleBackColor = True
         '
         'SchedulePanel1
         '
         Me.SchedulePanel1.Controls.Add(Me.Label6)
-        Me.SchedulePanel1.Controls.Add(Me.Button8)
+        Me.SchedulePanel1.Controls.Add(Me.ScheduleUp)
         Me.SchedulePanel1.Controls.Add(Me.Label5)
         Me.SchedulePanel1.Location = New System.Drawing.Point(585, 181)
         Me.SchedulePanel1.Name = "SchedulePanel1"
         Me.SchedulePanel1.Size = New System.Drawing.Size(185, 163)
         Me.SchedulePanel1.TabIndex = 11
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, 27)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 20)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Today:"
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(79, 3)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(27, 23)
-        Me.Button8.TabIndex = 8
-        Me.Button8.Text = "^"
-        Me.Button8.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -609,10 +590,29 @@ Partial Class WatchForm
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "No Plans."
         '
+        'ScheduleUp
+        '
+        Me.ScheduleUp.Location = New System.Drawing.Point(79, 3)
+        Me.ScheduleUp.Name = "ScheduleUp"
+        Me.ScheduleUp.Size = New System.Drawing.Size(27, 23)
+        Me.ScheduleUp.TabIndex = 8
+        Me.ScheduleUp.Text = "^"
+        Me.ScheduleUp.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, 27)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(56, 20)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Today:"
+        '
         'GamesPanel1
         '
         Me.GamesPanel1.Controls.Add(Me.Label7)
-        Me.GamesPanel1.Controls.Add(Me.Button7)
+        Me.GamesPanel1.Controls.Add(Me.GamesUp1)
         Me.GamesPanel1.Location = New System.Drawing.Point(774, 184)
         Me.GamesPanel1.Name = "GamesPanel1"
         Me.GamesPanel1.Size = New System.Drawing.Size(185, 163)
@@ -628,19 +628,19 @@ Partial Class WatchForm
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Tic-Tac-Toe"
         '
-        'Button7
+        'GamesUp1
         '
-        Me.Button7.Location = New System.Drawing.Point(79, 3)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(27, 23)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "^"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.GamesUp1.Location = New System.Drawing.Point(79, 3)
+        Me.GamesUp1.Name = "GamesUp1"
+        Me.GamesUp1.Size = New System.Drawing.Size(27, 23)
+        Me.GamesUp1.TabIndex = 8
+        Me.GamesUp1.Text = "^"
+        Me.GamesUp1.UseVisualStyleBackColor = True
         '
         'ContactPanel2
         '
         Me.ContactPanel2.Controls.Add(Me.Button9)
-        Me.ContactPanel2.Controls.Add(Me.Button10)
+        Me.ContactPanel2.Controls.Add(Me.ContactUp2)
         Me.ContactPanel2.Controls.Add(Me.Label8)
         Me.ContactPanel2.Location = New System.Drawing.Point(203, 350)
         Me.ContactPanel2.Name = "ContactPanel2"
@@ -656,14 +656,14 @@ Partial Class WatchForm
         Me.Button9.Text = "Call >"
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'ContactUp2
         '
-        Me.Button10.Location = New System.Drawing.Point(78, 6)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(27, 23)
-        Me.Button10.TabIndex = 8
-        Me.Button10.Text = "^"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.ContactUp2.Location = New System.Drawing.Point(78, 6)
+        Me.ContactUp2.Name = "ContactUp2"
+        Me.ContactUp2.Size = New System.Drawing.Size(27, 23)
+        Me.ContactUp2.TabIndex = 8
+        Me.ContactUp2.Text = "^"
+        Me.ContactUp2.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -763,27 +763,27 @@ Partial Class WatchForm
     Friend WithEvents MusicRight As Button
     Friend WithEvents MusicLabel As Label
     Friend WithEvents ContactPanel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ContactDown1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PaymentPanel1 As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents PaymentDown1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents PaymentPanel2 As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button3 As Button
+    Friend WithEvents PaymentUp2 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents ContactUp1 As Button
+    Friend WithEvents PaymentUp1 As Button
     Friend WithEvents SchedulePanel1 As Panel
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button8 As Button
+    Friend WithEvents ScheduleUp As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents GamesPanel1 As Panel
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button7 As Button
+    Friend WithEvents GamesUp1 As Button
     Friend WithEvents ContactPanel2 As Panel
     Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents ContactUp2 As Button
     Friend WithEvents Label8 As Label
 End Class
