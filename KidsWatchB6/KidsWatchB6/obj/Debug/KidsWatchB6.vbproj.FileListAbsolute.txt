@@ -1,0 +1,12 @@
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.exe.config
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.exe
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.pdb
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.xml
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbprojAssemblyReference.cache
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.Form1.resources
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.Resources.resources
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbproj.GenerateResource.cache
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbproj.CoreCompileInputs.cache
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.exe
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.xml
+C:\Users\JSit\Source\Repos\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.pdb
