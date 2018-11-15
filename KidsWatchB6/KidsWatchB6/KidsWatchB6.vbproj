@@ -88,6 +88,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhoneApp.Designer.vb">
+      <DependentUpon>PhoneApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WatchForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PhoneApp.resx">
+      <DependentUpon>PhoneApp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WatchForm.resx">
       <DependentUpon>WatchForm.vb</DependentUpon>
     </EmbeddedResource>
