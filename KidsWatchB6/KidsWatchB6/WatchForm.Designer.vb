@@ -75,6 +75,13 @@ Partial Class WatchForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,6 +97,8 @@ Partial Class WatchForm
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -600,11 +609,79 @@ Partial Class WatchForm
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "No Plans."
         '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label7)
+        Me.Panel5.Controls.Add(Me.Button7)
+        Me.Panel5.Location = New System.Drawing.Point(774, 184)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(185, 163)
+        Me.Panel5.TabIndex = 12
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(52, 131)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(92, 20)
+        Me.Label7.TabIndex = 9
+        Me.Label7.Text = "Tic-Tac-Toe"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(79, 3)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(27, 23)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "^"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Button9)
+        Me.Panel6.Controls.Add(Me.Button10)
+        Me.Panel6.Controls.Add(Me.Label8)
+        Me.Panel6.Location = New System.Drawing.Point(203, 350)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(185, 163)
+        Me.Panel6.TabIndex = 13
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(141, 66)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(41, 23)
+        Me.Button9.TabIndex = 9
+        Me.Button9.Text = "Call >"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(78, 6)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(27, 23)
+        Me.Button10.TabIndex = 8
+        Me.Button10.Text = "^"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(61, 97)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 20)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "Dad"
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1186, 599)
+        Me.ClientSize = New System.Drawing.Size(1177, 599)
+        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -642,6 +719,10 @@ Partial Class WatchForm
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -698,4 +779,11 @@ Partial Class WatchForm
     Friend WithEvents Label6 As Label
     Friend WithEvents Button8 As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Label8 As Label
 End Class
