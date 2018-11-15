@@ -5,9 +5,15 @@
         PhoneApp.Show()
         'Make all other panels not visible
         ContactPanel.Visible = False
+        ContactPanel1.Visible = False
+        ContactPanel2.Visible = False
         PaymentPanel.Visible = False
+        PaymentPanel1.Visible = False
+        PaymentPanel2.Visible = False
         SchedulePanel.Visible = False
+        SchedulePanel1.Visible = False
         GamesPanel.Visible = False
+        GamesPanel1.Visible = False
         MusicPanel.Visible = False
     End Sub
 
@@ -59,5 +65,35 @@
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
+    End Sub
+
+    Private Sub ContactDown_Click(sender As Object, e As EventArgs) Handles ContactDown.Click
+        ContactPanel.Visible = False
+        ContactPanel1.Visible = True
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ContactPanel.Visible = True
+        ContactPanel1.Visible = False
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ContactPanel1.Visible = False
+        ContactPanel2.Visible = True
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        ContactPanel2.Visible = False
+        ContactPanel1.Visible = True
+    End Sub
+
+    Private Sub PaymentDown_Click(sender As Object, e As EventArgs) Handles PaymentDown.Click
+        PaymentPanel.Visible = False
+        PaymentPanel1.Visible = True
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        PaymentPanel.Visible = True
+        PaymentPanel1.Visible = False
     End Sub
 End Class

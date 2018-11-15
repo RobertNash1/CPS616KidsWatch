@@ -58,27 +58,27 @@ Partial Class WatchForm
         Me.MusicLeft = New System.Windows.Forms.Button()
         Me.MusicRight = New System.Windows.Forms.Button()
         Me.MusicLabel = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ContactPanel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PaymentPanel1 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PaymentPanel2 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.SchedulePanel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.GamesPanel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.ContactPanel2 = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -93,12 +93,12 @@ Partial Class WatchForm
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MusicPanel.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.ContactPanel1.SuspendLayout()
+        Me.PaymentPanel1.SuspendLayout()
+        Me.PaymentPanel2.SuspendLayout()
+        Me.SchedulePanel1.SuspendLayout()
+        Me.GamesPanel1.SuspendLayout()
+        Me.ContactPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -445,16 +445,16 @@ Partial Class WatchForm
         Me.MusicLabel.TabIndex = 0
         Me.MusicLabel.Text = "Music"
         '
-        'Panel1
+        'ContactPanel1
         '
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(203, 178)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(185, 163)
-        Me.Panel1.TabIndex = 8
+        Me.ContactPanel1.Controls.Add(Me.Button6)
+        Me.ContactPanel1.Controls.Add(Me.Button5)
+        Me.ContactPanel1.Controls.Add(Me.Button1)
+        Me.ContactPanel1.Controls.Add(Me.Label1)
+        Me.ContactPanel1.Location = New System.Drawing.Point(203, 178)
+        Me.ContactPanel1.Name = "ContactPanel1"
+        Me.ContactPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.ContactPanel1.TabIndex = 8
         '
         'Button1
         '
@@ -469,22 +469,22 @@ Partial Class WatchForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(61, 97)
+        Me.Label1.Location = New System.Drawing.Point(61, 103)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mom"
         '
-        'Panel2
+        'PaymentPanel1
         '
-        Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(394, 181)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(185, 163)
-        Me.Panel2.TabIndex = 9
+        Me.PaymentPanel1.Controls.Add(Me.Button4)
+        Me.PaymentPanel1.Controls.Add(Me.Label3)
+        Me.PaymentPanel1.Controls.Add(Me.Button2)
+        Me.PaymentPanel1.Controls.Add(Me.Label2)
+        Me.PaymentPanel1.Location = New System.Drawing.Point(394, 181)
+        Me.PaymentPanel1.Name = "PaymentPanel1"
+        Me.PaymentPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.PaymentPanel1.TabIndex = 9
         '
         'Button2
         '
@@ -515,14 +515,14 @@ Partial Class WatchForm
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "$00.00"
         '
-        'Panel3
+        'PaymentPanel2
         '
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.Button3)
-        Me.Panel3.Location = New System.Drawing.Point(394, 350)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(185, 163)
-        Me.Panel3.TabIndex = 10
+        Me.PaymentPanel2.Controls.Add(Me.Label4)
+        Me.PaymentPanel2.Controls.Add(Me.Button3)
+        Me.PaymentPanel2.Location = New System.Drawing.Point(394, 350)
+        Me.PaymentPanel2.Name = "PaymentPanel2"
+        Me.PaymentPanel2.Size = New System.Drawing.Size(185, 163)
+        Me.PaymentPanel2.TabIndex = 10
         '
         'Label4
         '
@@ -570,15 +570,15 @@ Partial Class WatchForm
         Me.Button6.Text = "Call >"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Panel4
+        'SchedulePanel1
         '
-        Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.Button8)
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Location = New System.Drawing.Point(585, 181)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(185, 163)
-        Me.Panel4.TabIndex = 11
+        Me.SchedulePanel1.Controls.Add(Me.Label6)
+        Me.SchedulePanel1.Controls.Add(Me.Button8)
+        Me.SchedulePanel1.Controls.Add(Me.Label5)
+        Me.SchedulePanel1.Location = New System.Drawing.Point(585, 181)
+        Me.SchedulePanel1.Name = "SchedulePanel1"
+        Me.SchedulePanel1.Size = New System.Drawing.Size(185, 163)
+        Me.SchedulePanel1.TabIndex = 11
         '
         'Label5
         '
@@ -609,14 +609,14 @@ Partial Class WatchForm
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "No Plans."
         '
-        'Panel5
+        'GamesPanel1
         '
-        Me.Panel5.Controls.Add(Me.Label7)
-        Me.Panel5.Controls.Add(Me.Button7)
-        Me.Panel5.Location = New System.Drawing.Point(774, 184)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(185, 163)
-        Me.Panel5.TabIndex = 12
+        Me.GamesPanel1.Controls.Add(Me.Label7)
+        Me.GamesPanel1.Controls.Add(Me.Button7)
+        Me.GamesPanel1.Location = New System.Drawing.Point(774, 184)
+        Me.GamesPanel1.Name = "GamesPanel1"
+        Me.GamesPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.GamesPanel1.TabIndex = 12
         '
         'Label7
         '
@@ -637,15 +637,15 @@ Partial Class WatchForm
         Me.Button7.Text = "^"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Panel6
+        'ContactPanel2
         '
-        Me.Panel6.Controls.Add(Me.Button9)
-        Me.Panel6.Controls.Add(Me.Button10)
-        Me.Panel6.Controls.Add(Me.Label8)
-        Me.Panel6.Location = New System.Drawing.Point(203, 350)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(185, 163)
-        Me.Panel6.TabIndex = 13
+        Me.ContactPanel2.Controls.Add(Me.Button9)
+        Me.ContactPanel2.Controls.Add(Me.Button10)
+        Me.ContactPanel2.Controls.Add(Me.Label8)
+        Me.ContactPanel2.Location = New System.Drawing.Point(203, 350)
+        Me.ContactPanel2.Name = "ContactPanel2"
+        Me.ContactPanel2.Size = New System.Drawing.Size(185, 163)
+        Me.ContactPanel2.TabIndex = 13
         '
         'Button9
         '
@@ -669,7 +669,7 @@ Partial Class WatchForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(61, 97)
+        Me.Label8.Location = New System.Drawing.Point(61, 106)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 20)
         Me.Label8.TabIndex = 0
@@ -680,12 +680,12 @@ Partial Class WatchForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1177, 599)
-        Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.ContactPanel2)
+        Me.Controls.Add(Me.GamesPanel1)
+        Me.Controls.Add(Me.SchedulePanel1)
+        Me.Controls.Add(Me.PaymentPanel2)
+        Me.Controls.Add(Me.PaymentPanel1)
+        Me.Controls.Add(Me.ContactPanel1)
         Me.Controls.Add(Me.MusicPanel)
         Me.Controls.Add(Me.GamesPanel)
         Me.Controls.Add(Me.SchedulePanel)
@@ -711,18 +711,18 @@ Partial Class WatchForm
         Me.MusicPanel.ResumeLayout(False)
         Me.MusicPanel.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
+        Me.ContactPanel1.ResumeLayout(False)
+        Me.ContactPanel1.PerformLayout()
+        Me.PaymentPanel1.ResumeLayout(False)
+        Me.PaymentPanel1.PerformLayout()
+        Me.PaymentPanel2.ResumeLayout(False)
+        Me.PaymentPanel2.PerformLayout()
+        Me.SchedulePanel1.ResumeLayout(False)
+        Me.SchedulePanel1.PerformLayout()
+        Me.GamesPanel1.ResumeLayout(False)
+        Me.GamesPanel1.PerformLayout()
+        Me.ContactPanel2.ResumeLayout(False)
+        Me.ContactPanel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -762,27 +762,27 @@ Partial Class WatchForm
     Friend WithEvents MusicLeft As Button
     Friend WithEvents MusicRight As Button
     Friend WithEvents MusicLabel As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents ContactPanel1 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PaymentPanel1 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents PaymentPanel2 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents SchedulePanel1 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents Button8 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Panel5 As Panel
+    Friend WithEvents GamesPanel1 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Button7 As Button
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents ContactPanel2 As Panel
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Label8 As Label
