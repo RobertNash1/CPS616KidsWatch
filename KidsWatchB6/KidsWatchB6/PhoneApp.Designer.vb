@@ -23,8 +23,6 @@ Partial Class PhoneApp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ClockPanel = New System.Windows.Forms.Panel()
-        Me.LeftButton = New System.Windows.Forms.Button()
-        Me.RightButton = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
@@ -32,8 +30,6 @@ Partial Class PhoneApp
         '
         'ClockPanel
         '
-        Me.ClockPanel.Controls.Add(Me.LeftButton)
-        Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
         Me.ClockPanel.Controls.Add(Me.TimeLabel)
         Me.ClockPanel.Location = New System.Drawing.Point(13, 13)
@@ -41,26 +37,6 @@ Partial Class PhoneApp
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(318, 424)
         Me.ClockPanel.TabIndex = 1
-        '
-        'LeftButton
-        '
-        Me.LeftButton.Location = New System.Drawing.Point(4, 90)
-        Me.LeftButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.LeftButton.Name = "LeftButton"
-        Me.LeftButton.Size = New System.Drawing.Size(32, 28)
-        Me.LeftButton.TabIndex = 3
-        Me.LeftButton.Text = "<"
-        Me.LeftButton.UseVisualStyleBackColor = True
-        '
-        'RightButton
-        '
-        Me.RightButton.Location = New System.Drawing.Point(283, 90)
-        Me.RightButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.RightButton.Name = "RightButton"
-        Me.RightButton.Size = New System.Drawing.Size(32, 28)
-        Me.RightButton.TabIndex = 2
-        Me.RightButton.Text = ">"
-        Me.RightButton.UseVisualStyleBackColor = True
         '
         'DateLabel
         '
@@ -97,8 +73,6 @@ Partial Class PhoneApp
     End Sub
 
     Friend WithEvents ClockPanel As Panel
-    Friend WithEvents LeftButton As Button
-    Friend WithEvents RightButton As Button
     Friend WithEvents DateLabel As Label
     Friend WithEvents TimeLabel As Label
 End Class

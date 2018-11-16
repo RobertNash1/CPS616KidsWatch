@@ -1,7 +1,7 @@
 ﻿Public Class WatchForm
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
-        DateLabel.Text = TimeOfDay.ToString("D")
+        DateLabel.Text = Date.Now().ToString("D")
         PhoneApp.Show()
         'Make all other panels not visible
         ContactPanel.Visible = False
