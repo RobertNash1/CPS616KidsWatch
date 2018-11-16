@@ -107,7 +107,7 @@ Partial Class WatchForm
         Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
         Me.ClockPanel.Controls.Add(Me.TimeLabel)
-        Me.ClockPanel.Location = New System.Drawing.Point(13, 219)
+        Me.ClockPanel.Location = New System.Drawing.Point(13, 15)
         Me.ClockPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(247, 201)
@@ -736,7 +736,7 @@ Partial Class WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1541, 648)
+        Me.ClientSize = New System.Drawing.Size(269, 225)
         Me.Controls.Add(Me.ContactPanel2)
         Me.Controls.Add(Me.GamesPanel1)
         Me.Controls.Add(Me.SchedulePanel1)
