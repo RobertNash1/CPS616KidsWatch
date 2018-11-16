@@ -1,4 +1,6 @@
 ﻿Public Class WatchForm
+
+    Private Balance As Decimal
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = TimeOfDay.ToString("D")
@@ -15,6 +17,9 @@
         GamesPanel.Visible = False
         GamesPanel1.Visible = False
         MusicPanel.Visible = False
+
+        Balance = 0.0
+        lblBalance.Text = FormatCurrency(Balance)
 
         'Centers the panels in the form
         For Each Panel As Panel In Controls
