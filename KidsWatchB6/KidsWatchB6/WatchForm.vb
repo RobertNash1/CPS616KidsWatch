@@ -74,9 +74,6 @@
         MusicPanel.Visible = False
     End Sub
 
-
-
-
     Private Sub ContactDown_Click(sender As Object, e As EventArgs) Handles ContactDown.Click
         ContactPanel.Visible = False
         ContactPanel1.Visible = True
@@ -132,5 +129,8 @@
         PaymentPanel2.Visible = True
     End Sub
 
-
+    Private Sub PaymentUp2_Click(sender As Object, e As EventArgs) Handles PaymentUp2.Click
+        PaymentPanel2.Visible = False
+        PaymentPanel1.Visible = True
+    End Sub
 End Class
