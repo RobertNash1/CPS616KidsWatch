@@ -1,8 +1,41 @@
 ﻿Public Class WatchForm
+    Dim myPanels As List(Of Panel) = New List(Of Panel)
+    Dim Panelocation As Point
+    Public Sub DrawPanels()
+        Panelocation.X = 15
+        Panelocation.Y = 15
+        myPanels.Add(ClockPanel)
+        myPanels.Add(ContactPanel)
+        myPanels.Add(ContactPanel1)
+        myPanels.Add(ContactPanel2)
+        myPanels.Add(PaymentPanel)
+        myPanels.Add(PaymentPanel1)
+        myPanels.Add(PaymentPanel2)
+        myPanels.Add(SchedulePanel)
+        myPanels.Add(SchedulePanel1)
+        myPanels.Add(GamesPanel)
+        myPanels.Add(GamesPanel1)
+        myPanels.Add(MusicPanel)
+        myPanels(0).Location = Panelocation
+        myPanels(1).Location = Panelocation
+        myPanels(2).Location = Panelocation
+        myPanels(3).Location = Panelocation
+        myPanels(4).Location = Panelocation
+        myPanels(5).Location = Panelocation
+        myPanels(6).Location = Panelocation
+        myPanels(7).Location = Panelocation
+        myPanels(8).Location = Panelocation
+        myPanels(9).Location = Panelocation
+        myPanels(10).Location = Panelocation
+        myPanels(11).Location = Panelocation
+
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
         PhoneApp.Show()
+        DrawPanels()
         'Make all other panels not visible
         ContactPanel.Visible = False
         ContactPanel1.Visible = False
@@ -79,17 +112,17 @@
         ContactPanel1.Visible = True
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles ContactUp1.Click
+    Private Sub ContactUp1_Click(sender As Object, e As EventArgs) Handles ContactUp1.Click
         ContactPanel.Visible = True
         ContactPanel1.Visible = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ContactDown1.Click
+    Private Sub ContactDown1_Click(sender As Object, e As EventArgs) Handles ContactDown1.Click
         ContactPanel1.Visible = False
         ContactPanel2.Visible = True
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles ContactUp2.Click
+    Private Sub ContactUp2_Click(sender As Object, e As EventArgs) Handles ContactUp2.Click
         ContactPanel2.Visible = False
         ContactPanel1.Visible = True
     End Sub
@@ -99,7 +132,7 @@
         PaymentPanel1.Visible = True
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles PaymentUp1.Click
+    Private Sub PaymentUp1_Click(sender As Object, e As EventArgs) Handles PaymentUp1.Click
         PaymentPanel.Visible = True
         PaymentPanel1.Visible = False
     End Sub

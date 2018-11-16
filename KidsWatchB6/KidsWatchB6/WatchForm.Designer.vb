@@ -107,8 +107,8 @@ Partial Class WatchForm
         Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
         Me.ClockPanel.Controls.Add(Me.TimeLabel)
-        Me.ClockPanel.Location = New System.Drawing.Point(16, 15)
-        Me.ClockPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ClockPanel.Location = New System.Drawing.Point(13, 219)
+        Me.ClockPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(247, 201)
         Me.ClockPanel.TabIndex = 0
@@ -116,7 +116,7 @@ Partial Class WatchForm
         'LeftButton
         '
         Me.LeftButton.Location = New System.Drawing.Point(4, 90)
-        Me.LeftButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LeftButton.Margin = New System.Windows.Forms.Padding(4)
         Me.LeftButton.Name = "LeftButton"
         Me.LeftButton.Size = New System.Drawing.Size(32, 28)
         Me.LeftButton.TabIndex = 3
@@ -126,7 +126,7 @@ Partial Class WatchForm
         'RightButton
         '
         Me.RightButton.Location = New System.Drawing.Point(211, 90)
-        Me.RightButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RightButton.Margin = New System.Windows.Forms.Padding(4)
         Me.RightButton.Name = "RightButton"
         Me.RightButton.Size = New System.Drawing.Size(32, 28)
         Me.RightButton.TabIndex = 2
@@ -161,7 +161,7 @@ Partial Class WatchForm
         Me.ContactPanel.Controls.Add(Me.ContactRight)
         Me.ContactPanel.Controls.Add(Me.ContactLabel)
         Me.ContactPanel.Location = New System.Drawing.Point(271, 15)
-        Me.ContactPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactPanel.Name = "ContactPanel"
         Me.ContactPanel.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel.TabIndex = 1
@@ -169,7 +169,7 @@ Partial Class WatchForm
         'ContactDown
         '
         Me.ContactDown.Location = New System.Drawing.Point(104, 169)
-        Me.ContactDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactDown.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactDown.Name = "ContactDown"
         Me.ContactDown.Size = New System.Drawing.Size(36, 28)
         Me.ContactDown.TabIndex = 5
@@ -180,7 +180,7 @@ Partial Class WatchForm
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(44, 11)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -190,7 +190,7 @@ Partial Class WatchForm
         'ContactLeft
         '
         Me.ContactLeft.Location = New System.Drawing.Point(4, 90)
-        Me.ContactLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactLeft.Name = "ContactLeft"
         Me.ContactLeft.Size = New System.Drawing.Size(32, 28)
         Me.ContactLeft.TabIndex = 3
@@ -200,7 +200,7 @@ Partial Class WatchForm
         'ContactRight
         '
         Me.ContactRight.Location = New System.Drawing.Point(211, 90)
-        Me.ContactRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactRight.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactRight.Name = "ContactRight"
         Me.ContactRight.Size = New System.Drawing.Size(32, 28)
         Me.ContactRight.TabIndex = 2
@@ -226,7 +226,7 @@ Partial Class WatchForm
         Me.PaymentPanel.Controls.Add(Me.PaymentRight)
         Me.PaymentPanel.Controls.Add(Me.PaymentLabel)
         Me.PaymentPanel.Location = New System.Drawing.Point(525, 15)
-        Me.PaymentPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentPanel.Name = "PaymentPanel"
         Me.PaymentPanel.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel.TabIndex = 2
@@ -234,7 +234,7 @@ Partial Class WatchForm
         'PaymentDown
         '
         Me.PaymentDown.Location = New System.Drawing.Point(104, 169)
-        Me.PaymentDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentDown.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentDown.Name = "PaymentDown"
         Me.PaymentDown.Size = New System.Drawing.Size(36, 28)
         Me.PaymentDown.TabIndex = 5
@@ -245,7 +245,7 @@ Partial Class WatchForm
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(44, 11)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -255,7 +255,7 @@ Partial Class WatchForm
         'PaymentLeft
         '
         Me.PaymentLeft.Location = New System.Drawing.Point(4, 90)
-        Me.PaymentLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentLeft.Name = "PaymentLeft"
         Me.PaymentLeft.Size = New System.Drawing.Size(32, 28)
         Me.PaymentLeft.TabIndex = 3
@@ -265,7 +265,7 @@ Partial Class WatchForm
         'PaymentRight
         '
         Me.PaymentRight.Location = New System.Drawing.Point(211, 90)
-        Me.PaymentRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentRight.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentRight.Name = "PaymentRight"
         Me.PaymentRight.Size = New System.Drawing.Size(32, 28)
         Me.PaymentRight.TabIndex = 2
@@ -291,7 +291,7 @@ Partial Class WatchForm
         Me.SchedulePanel.Controls.Add(Me.ScheduleRight)
         Me.SchedulePanel.Controls.Add(Me.ScheduleLabel)
         Me.SchedulePanel.Location = New System.Drawing.Point(781, 15)
-        Me.SchedulePanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SchedulePanel.Margin = New System.Windows.Forms.Padding(4)
         Me.SchedulePanel.Name = "SchedulePanel"
         Me.SchedulePanel.Size = New System.Drawing.Size(247, 201)
         Me.SchedulePanel.TabIndex = 3
@@ -299,7 +299,7 @@ Partial Class WatchForm
         'ScheduleDown
         '
         Me.ScheduleDown.Location = New System.Drawing.Point(104, 169)
-        Me.ScheduleDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScheduleDown.Margin = New System.Windows.Forms.Padding(4)
         Me.ScheduleDown.Name = "ScheduleDown"
         Me.ScheduleDown.Size = New System.Drawing.Size(36, 28)
         Me.ScheduleDown.TabIndex = 5
@@ -310,7 +310,7 @@ Partial Class WatchForm
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(44, 11)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -320,7 +320,7 @@ Partial Class WatchForm
         'ScheduleLeft
         '
         Me.ScheduleLeft.Location = New System.Drawing.Point(4, 90)
-        Me.ScheduleLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScheduleLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.ScheduleLeft.Name = "ScheduleLeft"
         Me.ScheduleLeft.Size = New System.Drawing.Size(32, 28)
         Me.ScheduleLeft.TabIndex = 3
@@ -330,7 +330,7 @@ Partial Class WatchForm
         'ScheduleRight
         '
         Me.ScheduleRight.Location = New System.Drawing.Point(211, 90)
-        Me.ScheduleRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScheduleRight.Margin = New System.Windows.Forms.Padding(4)
         Me.ScheduleRight.Name = "ScheduleRight"
         Me.ScheduleRight.Size = New System.Drawing.Size(32, 28)
         Me.ScheduleRight.TabIndex = 2
@@ -356,7 +356,7 @@ Partial Class WatchForm
         Me.GamesPanel.Controls.Add(Me.GamesRight)
         Me.GamesPanel.Controls.Add(Me.GamesLabel)
         Me.GamesPanel.Location = New System.Drawing.Point(1036, 15)
-        Me.GamesPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesPanel.Name = "GamesPanel"
         Me.GamesPanel.Size = New System.Drawing.Size(247, 201)
         Me.GamesPanel.TabIndex = 6
@@ -364,7 +364,7 @@ Partial Class WatchForm
         'GamesDown
         '
         Me.GamesDown.Location = New System.Drawing.Point(104, 169)
-        Me.GamesDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesDown.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesDown.Name = "GamesDown"
         Me.GamesDown.Size = New System.Drawing.Size(36, 28)
         Me.GamesDown.TabIndex = 5
@@ -375,7 +375,7 @@ Partial Class WatchForm
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(44, 11)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -385,7 +385,7 @@ Partial Class WatchForm
         'GamesLeft
         '
         Me.GamesLeft.Location = New System.Drawing.Point(4, 90)
-        Me.GamesLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesLeft.Name = "GamesLeft"
         Me.GamesLeft.Size = New System.Drawing.Size(32, 28)
         Me.GamesLeft.TabIndex = 3
@@ -395,7 +395,7 @@ Partial Class WatchForm
         'GamesRight
         '
         Me.GamesRight.Location = New System.Drawing.Point(211, 90)
-        Me.GamesRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesRight.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesRight.Name = "GamesRight"
         Me.GamesRight.Size = New System.Drawing.Size(32, 28)
         Me.GamesRight.TabIndex = 2
@@ -421,7 +421,7 @@ Partial Class WatchForm
         Me.MusicPanel.Controls.Add(Me.MusicRight)
         Me.MusicPanel.Controls.Add(Me.MusicLabel)
         Me.MusicPanel.Location = New System.Drawing.Point(1291, 15)
-        Me.MusicPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MusicPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.MusicPanel.Name = "MusicPanel"
         Me.MusicPanel.Size = New System.Drawing.Size(247, 201)
         Me.MusicPanel.TabIndex = 7
@@ -429,7 +429,7 @@ Partial Class WatchForm
         'MusicDown
         '
         Me.MusicDown.Location = New System.Drawing.Point(104, 169)
-        Me.MusicDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MusicDown.Margin = New System.Windows.Forms.Padding(4)
         Me.MusicDown.Name = "MusicDown"
         Me.MusicDown.Size = New System.Drawing.Size(36, 28)
         Me.MusicDown.TabIndex = 5
@@ -440,7 +440,7 @@ Partial Class WatchForm
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(44, 11)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -450,7 +450,7 @@ Partial Class WatchForm
         'MusicLeft
         '
         Me.MusicLeft.Location = New System.Drawing.Point(4, 90)
-        Me.MusicLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MusicLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.MusicLeft.Name = "MusicLeft"
         Me.MusicLeft.Size = New System.Drawing.Size(32, 28)
         Me.MusicLeft.TabIndex = 3
@@ -460,7 +460,7 @@ Partial Class WatchForm
         'MusicRight
         '
         Me.MusicRight.Location = New System.Drawing.Point(211, 90)
-        Me.MusicRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MusicRight.Margin = New System.Windows.Forms.Padding(4)
         Me.MusicRight.Name = "MusicRight"
         Me.MusicRight.Size = New System.Drawing.Size(32, 28)
         Me.MusicRight.TabIndex = 2
@@ -485,7 +485,7 @@ Partial Class WatchForm
         Me.ContactPanel1.Controls.Add(Me.ContactDown1)
         Me.ContactPanel1.Controls.Add(Me.Label1)
         Me.ContactPanel1.Location = New System.Drawing.Point(271, 219)
-        Me.ContactPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactPanel1.Name = "ContactPanel1"
         Me.ContactPanel1.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel1.TabIndex = 8
@@ -493,7 +493,7 @@ Partial Class WatchForm
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(188, 81)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(55, 28)
         Me.Button6.TabIndex = 9
@@ -503,7 +503,7 @@ Partial Class WatchForm
         'ContactUp1
         '
         Me.ContactUp1.Location = New System.Drawing.Point(104, 7)
-        Me.ContactUp1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactUp1.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactUp1.Name = "ContactUp1"
         Me.ContactUp1.Size = New System.Drawing.Size(36, 28)
         Me.ContactUp1.TabIndex = 8
@@ -513,7 +513,7 @@ Partial Class WatchForm
         'ContactDown1
         '
         Me.ContactDown1.Location = New System.Drawing.Point(104, 169)
-        Me.ContactDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactDown1.Name = "ContactDown1"
         Me.ContactDown1.Size = New System.Drawing.Size(36, 28)
         Me.ContactDown1.TabIndex = 5
@@ -538,7 +538,7 @@ Partial Class WatchForm
         Me.PaymentPanel1.Controls.Add(Me.PaymentDown1)
         Me.PaymentPanel1.Controls.Add(Me.Label2)
         Me.PaymentPanel1.Location = New System.Drawing.Point(525, 223)
-        Me.PaymentPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentPanel1.Name = "PaymentPanel1"
         Me.PaymentPanel1.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel1.TabIndex = 9
@@ -546,7 +546,7 @@ Partial Class WatchForm
         'PaymentUp1
         '
         Me.PaymentUp1.Location = New System.Drawing.Point(104, 4)
-        Me.PaymentUp1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentUp1.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentUp1.Name = "PaymentUp1"
         Me.PaymentUp1.Size = New System.Drawing.Size(36, 28)
         Me.PaymentUp1.TabIndex = 7
@@ -567,7 +567,7 @@ Partial Class WatchForm
         'PaymentDown1
         '
         Me.PaymentDown1.Location = New System.Drawing.Point(104, 169)
-        Me.PaymentDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentDown1.Name = "PaymentDown1"
         Me.PaymentDown1.Size = New System.Drawing.Size(36, 28)
         Me.PaymentDown1.TabIndex = 5
@@ -590,7 +590,7 @@ Partial Class WatchForm
         Me.PaymentPanel2.Controls.Add(Me.Label4)
         Me.PaymentPanel2.Controls.Add(Me.PaymentUp2)
         Me.PaymentPanel2.Location = New System.Drawing.Point(525, 431)
-        Me.PaymentPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentPanel2.Name = "PaymentPanel2"
         Me.PaymentPanel2.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel2.TabIndex = 10
@@ -609,7 +609,7 @@ Partial Class WatchForm
         'PaymentUp2
         '
         Me.PaymentUp2.Location = New System.Drawing.Point(104, 18)
-        Me.PaymentUp2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PaymentUp2.Margin = New System.Windows.Forms.Padding(4)
         Me.PaymentUp2.Name = "PaymentUp2"
         Me.PaymentUp2.Size = New System.Drawing.Size(36, 28)
         Me.PaymentUp2.TabIndex = 5
@@ -622,7 +622,7 @@ Partial Class WatchForm
         Me.SchedulePanel1.Controls.Add(Me.ScheduleUp)
         Me.SchedulePanel1.Controls.Add(Me.Label5)
         Me.SchedulePanel1.Location = New System.Drawing.Point(780, 223)
-        Me.SchedulePanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SchedulePanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.SchedulePanel1.Name = "SchedulePanel1"
         Me.SchedulePanel1.Size = New System.Drawing.Size(247, 201)
         Me.SchedulePanel1.TabIndex = 11
@@ -641,7 +641,7 @@ Partial Class WatchForm
         'ScheduleUp
         '
         Me.ScheduleUp.Location = New System.Drawing.Point(105, 4)
-        Me.ScheduleUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScheduleUp.Margin = New System.Windows.Forms.Padding(4)
         Me.ScheduleUp.Name = "ScheduleUp"
         Me.ScheduleUp.Size = New System.Drawing.Size(36, 28)
         Me.ScheduleUp.TabIndex = 8
@@ -664,7 +664,7 @@ Partial Class WatchForm
         Me.GamesPanel1.Controls.Add(Me.Label7)
         Me.GamesPanel1.Controls.Add(Me.GamesUp1)
         Me.GamesPanel1.Location = New System.Drawing.Point(1032, 226)
-        Me.GamesPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesPanel1.Name = "GamesPanel1"
         Me.GamesPanel1.Size = New System.Drawing.Size(247, 201)
         Me.GamesPanel1.TabIndex = 12
@@ -683,7 +683,7 @@ Partial Class WatchForm
         'GamesUp1
         '
         Me.GamesUp1.Location = New System.Drawing.Point(105, 4)
-        Me.GamesUp1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GamesUp1.Margin = New System.Windows.Forms.Padding(4)
         Me.GamesUp1.Name = "GamesUp1"
         Me.GamesUp1.Size = New System.Drawing.Size(36, 28)
         Me.GamesUp1.TabIndex = 8
@@ -696,7 +696,7 @@ Partial Class WatchForm
         Me.ContactPanel2.Controls.Add(Me.ContactUp2)
         Me.ContactPanel2.Controls.Add(Me.Label8)
         Me.ContactPanel2.Location = New System.Drawing.Point(271, 431)
-        Me.ContactPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactPanel2.Name = "ContactPanel2"
         Me.ContactPanel2.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel2.TabIndex = 13
@@ -704,7 +704,7 @@ Partial Class WatchForm
         'Button9
         '
         Me.Button9.Location = New System.Drawing.Point(188, 81)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(55, 28)
         Me.Button9.TabIndex = 9
@@ -714,7 +714,7 @@ Partial Class WatchForm
         'ContactUp2
         '
         Me.ContactUp2.Location = New System.Drawing.Point(104, 7)
-        Me.ContactUp2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ContactUp2.Margin = New System.Windows.Forms.Padding(4)
         Me.ContactUp2.Name = "ContactUp2"
         Me.ContactUp2.Size = New System.Drawing.Size(36, 28)
         Me.ContactUp2.TabIndex = 8
@@ -736,7 +736,7 @@ Partial Class WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1569, 737)
+        Me.ClientSize = New System.Drawing.Size(1541, 648)
         Me.Controls.Add(Me.ContactPanel2)
         Me.Controls.Add(Me.GamesPanel1)
         Me.Controls.Add(Me.SchedulePanel1)
@@ -749,7 +749,7 @@ Partial Class WatchForm
         Me.Controls.Add(Me.PaymentPanel)
         Me.Controls.Add(Me.ContactPanel)
         Me.Controls.Add(Me.ClockPanel)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "WatchForm"
         Me.Text = "Form1"
         Me.ClockPanel.ResumeLayout(False)
