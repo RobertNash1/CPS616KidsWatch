@@ -143,4 +143,9 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub PaymentUp2_Click(sender As Object, e As EventArgs) Handles PaymentUp2.Click
+        PaymentPanel1.Visible = True
+        PaymentPanel2.Visible = False
+    End Sub
 End Class
