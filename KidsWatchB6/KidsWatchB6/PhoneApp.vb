@@ -7,17 +7,21 @@
         Panelocation.Y = 15
 
         myPanels.Add(ClockPanel)
+        myPanels.Add(AddMoneyPanel)
         myPanels.Add(HomePanel)
         myPanels.Add(AppPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(SchedulePanel)
         myPanels.Add(SchedulePanel1)
-        myPanels(0).Location = Panelocation
-        myPanels(1).Location = Panelocation
-        myPanels(2).Location = Panelocation
-        myPanels(3).Location = Panelocation
-        myPanels(4).Location = Panelocation
-        myPanels(5).Location = Panelocation
+        For index As Integer = 0 To 6
+            myPanels(index).Location = Panelocation
+        Next
+
+        'myPanels(1).Location = Panelocation
+        'myPanels(2).Location = Panelocation
+        'myPanels(3).Location = Panelocation
+        'myPanels(4).Location = Panelocation
+        'myPanels(5).Location = Panelocation
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
@@ -30,6 +34,7 @@
         SchedulePanel.Visible = False
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = False
+        AddMoneyPanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -85,8 +90,13 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
-        Label23.Text = TimeOfDay.ToString("hh:mm tt")
-        Label17.Text = TimeOfDay.ToString("hh:mm tt")
-        Label19.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
+
+    Private Sub KidMoney_Click(sender As Object, e As EventArgs) Handles KidMoney.Click
+        AddMoneyPanel.Visible = True
+        AppPanel.Visible = False
     End Sub
 End Class

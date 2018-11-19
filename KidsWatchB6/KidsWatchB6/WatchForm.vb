@@ -1,6 +1,7 @@
 ﻿Public Class WatchForm
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
+    Dim Balance As Integer
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -18,25 +19,15 @@
         myPanels.Add(MusicPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
-        myPanels(0).Location = Panelocation
-        myPanels(1).Location = Panelocation
-        myPanels(2).Location = Panelocation
-        myPanels(3).Location = Panelocation
-        myPanels(4).Location = Panelocation
-        myPanels(5).Location = Panelocation
-        myPanels(6).Location = Panelocation
-        myPanels(7).Location = Panelocation
-        myPanels(8).Location = Panelocation
-        myPanels(9).Location = Panelocation
-        myPanels(10).Location = Panelocation
-        myPanels(11).Location = Panelocation
-        myPanels(12).Location = Panelocation
-        myPanels(13).Location = Panelocation
+        For index As Integer = 0 To 13
+            myPanels(index).Location = Panelocation
+        Next
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
+        Balance = 5
         PhoneApp.Show()
         DrawPanels()
         'Make all other panels not visible
@@ -149,6 +140,7 @@
     Private Sub PaymentDown_Click(sender As Object, e As EventArgs) Handles PaymentDown.Click
         PaymentPanel.Visible = False
         PaymentPanel1.Visible = True
+        BalanceLabel.Text = Balance
     End Sub
 
     Private Sub PaymentUp1_Click(sender As Object, e As EventArgs) Handles PaymentUp1.Click
@@ -167,16 +159,6 @@
     Private Sub ScheduleUp_Click(sender As Object, e As EventArgs) Handles ScheduleUp.Click
         SchedulePanel.Visible = True
         SchedulePanel1.Visible = False
-    End Sub
-
-    Private Sub GamesDown_Click(sender As Object, e As EventArgs) Handles GamesDown.Click
-        GamesPanel.Visible = False
-        GamesPanel1.Visible = True
-    End Sub
-
-    Private Sub GamesUp1_Click(sender As Object, e As EventArgs) Handles GamesUp1.Click
-        GamesPanel.Visible = True
-        GamesPanel1.Visible = False
     End Sub
 
     Private Sub PaymentDown1_Click(sender As Object, e As EventArgs) Handles PaymentDown1.Click
@@ -206,4 +188,6 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
+
+
 End Class
