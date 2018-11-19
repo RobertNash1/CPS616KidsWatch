@@ -17,11 +17,6 @@
             myPanels(index).Location = Panelocation
         Next
 
-        'myPanels(1).Location = Panelocation
-        'myPanels(2).Location = Panelocation
-        'myPanels(3).Location = Panelocation
-        'myPanels(4).Location = Panelocation
-        'myPanels(5).Location = Panelocation
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")

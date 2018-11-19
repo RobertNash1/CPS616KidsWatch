@@ -1,7 +1,7 @@
 ﻿Public Class WatchForm
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
-    Dim Balance As Integer
+    Dim Balance As Double
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -15,11 +15,10 @@
         myPanels.Add(SchedulePanel)
         myPanels.Add(SchedulePanel1)
         myPanels.Add(GamesPanel)
-        myPanels.Add(GamesPanel1)
         myPanels.Add(MusicPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
-        For index As Integer = 0 To 13
+        For index As Integer = 0 To 12
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -40,7 +39,6 @@
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = False
         GamesPanel.Visible = False
-        GamesPanel1.Visible = False
         MusicPanel.Visible = False
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
