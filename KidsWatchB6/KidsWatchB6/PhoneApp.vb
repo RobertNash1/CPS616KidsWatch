@@ -10,20 +10,26 @@
         myPanels.Add(HomePanel)
         myPanels.Add(AppPanel)
         myPanels.Add(MessagePanel)
-
+        myPanels.Add(SchedulePanel)
+        myPanels.Add(SchedulePanel1)
         myPanels(0).Location = Panelocation
         myPanels(1).Location = Panelocation
         myPanels(2).Location = Panelocation
         myPanels(3).Location = Panelocation
-
+        myPanels(4).Location = Panelocation
+        myPanels(5).Location = Panelocation
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
+        'Make all other panels not visible
         DrawPanels()
         HomePanel.Visible = False
         AppPanel.Visible = False
         MessagePanel.Visible = False
+        SchedulePanel.Visible = False
+        SchedulePanel.Visible = False
+        SchedulePanel1.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -60,8 +66,43 @@
         AppPanel.Visible = True
     End Sub
 
-    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+
+
+    Private Sub MessagePanel_Paint(sender As Object, e As PaintEventArgs) Handles MessagePanel.Paint
+        Label23.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
+
+    Private Sub KidMessage_Click(sender As Object, e As EventArgs) Handles KidMessage.Click
         MessagePanel.Visible = True
         AppPanel.Visible = False
+    End Sub
+
+    Private Sub KidSchedule_Click(sender As Object, e As EventArgs) Handles KidSchedule.Click
+        SchedulePanel.Visible = True
+        AppPanel.Visible = False
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        SchedulePanel.Visible = False
+        SchedulePanel1.Visible = True
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        SchedulePanel.Visible = True
+        SchedulePanel1.Visible = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SchedulePanel.Visible = False
+        AppPanel.Visible = True
+    End Sub
+
+    Private Sub SchedulePanel_Paint(sender As Object, e As PaintEventArgs) Handles SchedulePanel.Paint
+        Label17.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
+
+    Private Sub SchedulePanel1_Paint(sender As Object, e As PaintEventArgs) Handles SchedulePanel1.Paint
+        Label19.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 End Class

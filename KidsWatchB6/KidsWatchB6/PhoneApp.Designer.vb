@@ -42,7 +42,6 @@ Partial Class PhoneApp
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel2 = New System.Windows.Forms.Label()
         Me.AppPanel = New System.Windows.Forms.Panel()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -52,18 +51,37 @@ Partial Class PhoneApp
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
         Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.KidMessage = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.SchedulePanel = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.KidMoney = New System.Windows.Forms.PictureBox()
+        Me.KidPhone = New System.Windows.Forms.PictureBox()
+        Me.KidSchedule = New System.Windows.Forms.PictureBox()
+        Me.SchedulePanel1 = New System.Windows.Forms.Panel()
+        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.RichTextBox5 = New System.Windows.Forms.RichTextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,14 +91,16 @@ Partial Class PhoneApp
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AppPanel.SuspendLayout()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel.SuspendLayout()
+        CType(Me.KidMessage, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SchedulePanel.SuspendLayout()
+        CType(Me.KidMoney, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KidPhone, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KidSchedule, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SchedulePanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -257,7 +277,10 @@ Partial Class PhoneApp
         '
         'AppPanel
         '
-        Me.AppPanel.Controls.Add(Me.PictureBox11)
+        Me.AppPanel.Controls.Add(Me.KidSchedule)
+        Me.AppPanel.Controls.Add(Me.KidMessage)
+        Me.AppPanel.Controls.Add(Me.KidMoney)
+        Me.AppPanel.Controls.Add(Me.KidPhone)
         Me.AppPanel.Controls.Add(Me.Label12)
         Me.AppPanel.Controls.Add(Me.PictureBox12)
         Me.AppPanel.Controls.Add(Me.Label13)
@@ -267,25 +290,14 @@ Partial Class PhoneApp
         Me.AppPanel.Controls.Add(Me.Label10)
         Me.AppPanel.Controls.Add(Me.PictureBox10)
         Me.AppPanel.Controls.Add(Me.Button1)
-        Me.AppPanel.Controls.Add(Me.PictureBox7)
         Me.AppPanel.Controls.Add(Me.Label7)
-        Me.AppPanel.Controls.Add(Me.PictureBox8)
         Me.AppPanel.Controls.Add(Me.Label8)
-        Me.AppPanel.Controls.Add(Me.PictureBox9)
         Me.AppPanel.Controls.Add(Me.Label9)
         Me.AppPanel.Controls.Add(Me.TimeLabel3)
         Me.AppPanel.Location = New System.Drawing.Point(498, 12)
         Me.AppPanel.Name = "AppPanel"
         Me.AppPanel.Size = New System.Drawing.Size(238, 344)
         Me.AppPanel.TabIndex = 3
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Location = New System.Drawing.Point(18, 268)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(60, 52)
-        Me.PictureBox11.TabIndex = 29
-        Me.PictureBox11.TabStop = False
         '
         'Label12
         '
@@ -367,14 +379,6 @@ Partial Class PhoneApp
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Location = New System.Drawing.Point(18, 187)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(60, 52)
-        Me.PictureBox7.TabIndex = 19
-        Me.PictureBox7.TabStop = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -384,14 +388,6 @@ Partial Class PhoneApp
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Message"
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.Location = New System.Drawing.Point(168, 187)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(60, 52)
-        Me.PictureBox8.TabIndex = 17
-        Me.PictureBox8.TabStop = False
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -400,14 +396,6 @@ Partial Class PhoneApp
         Me.Label8.Size = New System.Drawing.Size(39, 13)
         Me.Label8.TabIndex = 16
         Me.Label8.Text = "Money"
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Location = New System.Drawing.Point(93, 187)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(60, 52)
-        Me.PictureBox9.TabIndex = 15
-        Me.PictureBox9.TabStop = False
         '
         'Label9
         '
@@ -439,6 +427,33 @@ Partial Class PhoneApp
         Me.MessagePanel.Size = New System.Drawing.Size(238, 344)
         Me.MessagePanel.TabIndex = 4
         '
+        'KidMessage
+        '
+        Me.KidMessage.Image = CType(resources.GetObject("KidMessage.Image"), System.Drawing.Image)
+        Me.KidMessage.Location = New System.Drawing.Point(168, 187)
+        Me.KidMessage.Name = "KidMessage"
+        Me.KidMessage.Size = New System.Drawing.Size(60, 52)
+        Me.KidMessage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.KidMessage.TabIndex = 23
+        Me.KidMessage.TabStop = False
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(17, 104)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(199, 96)
+        Me.RichTextBox1.TabIndex = 22
+        Me.RichTextBox1.Text = "None"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(14, 74)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(58, 13)
+        Me.Label15.TabIndex = 21
+        Me.Label15.Text = "Messages:"
+        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(3, 26)
@@ -458,28 +473,215 @@ Partial Class PhoneApp
         Me.Label23.TabIndex = 0
         Me.Label23.Text = "12:59 PM"
         '
-        'Label15
+        'SchedulePanel
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(14, 74)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(58, 13)
-        Me.Label15.TabIndex = 21
-        Me.Label15.Text = "Messages:"
+        Me.SchedulePanel.Controls.Add(Me.ListBox1)
+        Me.SchedulePanel.Controls.Add(Me.Button5)
+        Me.SchedulePanel.Controls.Add(Me.Button4)
+        Me.SchedulePanel.Controls.Add(Me.Label16)
+        Me.SchedulePanel.Controls.Add(Me.Button3)
+        Me.SchedulePanel.Controls.Add(Me.Label17)
+        Me.SchedulePanel.Location = New System.Drawing.Point(986, 12)
+        Me.SchedulePanel.Name = "SchedulePanel"
+        Me.SchedulePanel.Size = New System.Drawing.Size(238, 344)
+        Me.SchedulePanel.TabIndex = 5
         '
-        'RichTextBox1
+        'Button5
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(17, 104)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(199, 96)
-        Me.RichTextBox1.TabIndex = 22
-        Me.RichTextBox1.Text = "None"
+        Me.Button5.Location = New System.Drawing.Point(153, 287)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 24
+        Me.Button5.Text = "Remove"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(17, 287)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(118, 23)
+        Me.Button4.TabIndex = 23
+        Me.Button4.Text = "Add New Schedule"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(14, 74)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(55, 13)
+        Me.Label16.TabIndex = 21
+        Me.Label16.Text = "Schedule:"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(3, 26)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 20
+        Me.Button3.Text = "Back"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(157, 9)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(71, 18)
+        Me.Label17.TabIndex = 0
+        Me.Label17.Text = "12:59 PM"
+        '
+        'KidMoney
+        '
+        Me.KidMoney.Image = CType(resources.GetObject("KidMoney.Image"), System.Drawing.Image)
+        Me.KidMoney.Location = New System.Drawing.Point(93, 187)
+        Me.KidMoney.Name = "KidMoney"
+        Me.KidMoney.Size = New System.Drawing.Size(60, 52)
+        Me.KidMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.KidMoney.TabIndex = 23
+        Me.KidMoney.TabStop = False
+        '
+        'KidPhone
+        '
+        Me.KidPhone.Image = CType(resources.GetObject("KidPhone.Image"), System.Drawing.Image)
+        Me.KidPhone.Location = New System.Drawing.Point(18, 187)
+        Me.KidPhone.Name = "KidPhone"
+        Me.KidPhone.Size = New System.Drawing.Size(60, 52)
+        Me.KidPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.KidPhone.TabIndex = 24
+        Me.KidPhone.TabStop = False
+        '
+        'KidSchedule
+        '
+        Me.KidSchedule.Image = CType(resources.GetObject("KidSchedule.Image"), System.Drawing.Image)
+        Me.KidSchedule.Location = New System.Drawing.Point(18, 268)
+        Me.KidSchedule.Name = "KidSchedule"
+        Me.KidSchedule.Size = New System.Drawing.Size(60, 52)
+        Me.KidSchedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.KidSchedule.TabIndex = 25
+        Me.KidSchedule.TabStop = False
+        '
+        'SchedulePanel1
+        '
+        Me.SchedulePanel1.Controls.Add(Me.Button8)
+        Me.SchedulePanel1.Controls.Add(Me.RichTextBox5)
+        Me.SchedulePanel1.Controls.Add(Me.Label21)
+        Me.SchedulePanel1.Controls.Add(Me.RichTextBox4)
+        Me.SchedulePanel1.Controls.Add(Me.Label20)
+        Me.SchedulePanel1.Controls.Add(Me.Button7)
+        Me.SchedulePanel1.Controls.Add(Me.RichTextBox3)
+        Me.SchedulePanel1.Controls.Add(Me.Label18)
+        Me.SchedulePanel1.Controls.Add(Me.Button6)
+        Me.SchedulePanel1.Controls.Add(Me.Label19)
+        Me.SchedulePanel1.Location = New System.Drawing.Point(12, 362)
+        Me.SchedulePanel1.Name = "SchedulePanel1"
+        Me.SchedulePanel1.Size = New System.Drawing.Size(238, 344)
+        Me.SchedulePanel1.TabIndex = 6
+        '
+        'RichTextBox3
+        '
+        Me.RichTextBox3.Location = New System.Drawing.Point(12, 84)
+        Me.RichTextBox3.Name = "RichTextBox3"
+        Me.RichTextBox3.Size = New System.Drawing.Size(199, 69)
+        Me.RichTextBox3.TabIndex = 22
+        Me.RichTextBox3.Text = "Add Here"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(9, 68)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(80, 13)
+        Me.Label18.TabIndex = 21
+        Me.Label18.Text = "New Schedule:"
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(3, 26)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 20
+        Me.Button6.Text = "Back"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(157, 9)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(71, 18)
+        Me.Label19.TabIndex = 0
+        Me.Label19.Text = "12:59 PM"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(14, 309)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 24
+        Me.Button7.Text = "Add"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'RichTextBox4
+        '
+        Me.RichTextBox4.Location = New System.Drawing.Point(12, 185)
+        Me.RichTextBox4.Name = "RichTextBox4"
+        Me.RichTextBox4.Size = New System.Drawing.Size(123, 26)
+        Me.RichTextBox4.TabIndex = 26
+        Me.RichTextBox4.Text = ""
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(9, 169)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(96, 13)
+        Me.Label20.TabIndex = 25
+        Me.Label20.Text = "Date (yyyy-mm-dd):"
+        '
+        'RichTextBox5
+        '
+        Me.RichTextBox5.Location = New System.Drawing.Point(12, 253)
+        Me.RichTextBox5.Name = "RichTextBox5"
+        Me.RichTextBox5.Size = New System.Drawing.Size(123, 27)
+        Me.RichTextBox5.TabIndex = 28
+        Me.RichTextBox5.Text = ""
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(9, 237)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(79, 13)
+        Me.Label21.TabIndex = 27
+        Me.Label21.Text = "Time (hh:mm tt)"
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(153, 309)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 29
+        Me.Button8.Text = "Cancel"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(17, 105)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(197, 95)
+        Me.ListBox1.TabIndex = 25
         '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1314, 641)
+        Me.ClientSize = New System.Drawing.Size(1246, 728)
+        Me.Controls.Add(Me.SchedulePanel1)
+        Me.Controls.Add(Me.SchedulePanel)
         Me.Controls.Add(Me.MessagePanel)
         Me.Controls.Add(Me.AppPanel)
         Me.Controls.Add(Me.HomePanel)
@@ -499,15 +701,19 @@ Partial Class PhoneApp
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AppPanel.ResumeLayout(False)
         Me.AppPanel.PerformLayout()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel.ResumeLayout(False)
         Me.MessagePanel.PerformLayout()
+        CType(Me.KidMessage, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SchedulePanel.ResumeLayout(False)
+        Me.SchedulePanel.PerformLayout()
+        CType(Me.KidMoney, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KidPhone, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KidSchedule, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SchedulePanel1.ResumeLayout(False)
+        Me.SchedulePanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -533,14 +739,10 @@ Partial Class PhoneApp
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents Label9 As Label
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label12 As Label
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label13 As Label
@@ -553,4 +755,26 @@ Partial Class PhoneApp
     Friend WithEvents Label15 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Label23 As Label
+    Friend WithEvents SchedulePanel As Panel
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents KidMessage As PictureBox
+    Friend WithEvents KidMoney As PictureBox
+    Friend WithEvents KidPhone As PictureBox
+    Friend WithEvents KidSchedule As PictureBox
+    Friend WithEvents SchedulePanel1 As Panel
+    Friend WithEvents RichTextBox5 As RichTextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents RichTextBox4 As RichTextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents RichTextBox3 As RichTextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label19 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button8 As Button
 End Class
