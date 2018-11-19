@@ -246,9 +246,11 @@
         If CallID = "Mom" Then
             CallPanel.Visible = False
             ContactPanel1.Visible = True
+            PhoneApp.CallPanel.Visible = False
         ElseIf CallID = "Dad" Then
             CallPanel.Visible = False
             ContactPanel2.Visible = True
+            PhoneApp.CallPanel.Visible = False
         End If
     End Sub
 
