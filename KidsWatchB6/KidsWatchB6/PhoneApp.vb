@@ -49,28 +49,11 @@
         AppPanel.Visible = False
     End Sub
 
-    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
-
-    End Sub
-
-    Private Sub HomePanel_Paint(sender As Object, e As PaintEventArgs) Handles HomePanel.Paint
-        TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
-    End Sub
-
-    Private Sub AppPanel_Paint(sender As Object, e As PaintEventArgs) Handles AppPanel.Paint
-        TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles MessageBackButton.Click
         MessagePanel.Visible = False
         AppPanel.Visible = True
     End Sub
 
-
-
-    Private Sub MessagePanel_Paint(sender As Object, e As PaintEventArgs) Handles MessagePanel.Paint
-        Label23.Text = TimeOfDay.ToString("hh:mm tt")
-    End Sub
 
     Private Sub KidMessage_Click(sender As Object, e As EventArgs) Handles KidMessage.Click
         MessagePanel.Visible = True
@@ -83,26 +66,27 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles AddNewSchedule.Click
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = True
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Schedule2BackButton.Click
         SchedulePanel.Visible = True
         SchedulePanel1.Visible = False
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ScheduleBackButton.Click
         SchedulePanel.Visible = False
         AppPanel.Visible = True
     End Sub
 
-    Private Sub SchedulePanel_Paint(sender As Object, e As PaintEventArgs) Handles SchedulePanel.Paint
-        Label17.Text = TimeOfDay.ToString("hh:mm tt")
-    End Sub
 
-    Private Sub SchedulePanel1_Paint(sender As Object, e As PaintEventArgs) Handles SchedulePanel1.Paint
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
+        Label23.Text = TimeOfDay.ToString("hh:mm tt")
+        Label17.Text = TimeOfDay.ToString("hh:mm tt")
         Label19.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 End Class

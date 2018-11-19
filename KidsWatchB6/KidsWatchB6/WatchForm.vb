@@ -202,4 +202,8 @@
         MessagePanel.Visible = True
         MessagePanel1.Visible = False
     End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
 End Class
