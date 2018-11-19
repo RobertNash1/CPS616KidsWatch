@@ -222,4 +222,10 @@
         Balance = Balance - 8.63
         BalanceLabel.Text = Balance
     End Sub
+
+    Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click
+
+    End Sub
+
+
 End Class
