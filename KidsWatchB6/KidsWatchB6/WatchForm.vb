@@ -30,6 +30,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
+        Timer1.Start()
         Balance = 5
         Message = ""
         Schedule = ""

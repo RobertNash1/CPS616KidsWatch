@@ -1,6 +1,7 @@
 ﻿Public Class PhoneApp
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
+    Dim test As Integer
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -17,6 +18,12 @@
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
+        Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
         'Make all other panels not visible
@@ -64,7 +71,7 @@
         AppPanel.Visible = False
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs)
         TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
