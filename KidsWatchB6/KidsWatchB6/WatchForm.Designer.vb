@@ -94,9 +94,9 @@ Partial Class WatchForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MessageUp = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CallPanel = New System.Windows.Forms.Panel()
+        Me.CallPicture = New System.Windows.Forms.PictureBox()
+        Me.CallEndButton = New System.Windows.Forms.Button()
         Me.IDLabel = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
@@ -121,8 +121,8 @@ Partial Class WatchForm
         Me.MessagePanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CallPanel.SuspendLayout()
+        CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -867,36 +867,36 @@ Partial Class WatchForm
         '
         Me.Timer1.Interval = 1000
         '
-        'Panel1
+        'CallPanel
         '
-        Me.Panel1.Controls.Add(Me.PictureBox10)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.IDLabel)
-        Me.Panel1.Location = New System.Drawing.Point(271, 640)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(247, 201)
-        Me.Panel1.TabIndex = 16
+        Me.CallPanel.Controls.Add(Me.CallPicture)
+        Me.CallPanel.Controls.Add(Me.CallEndButton)
+        Me.CallPanel.Controls.Add(Me.IDLabel)
+        Me.CallPanel.Location = New System.Drawing.Point(271, 640)
+        Me.CallPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.CallPanel.Name = "CallPanel"
+        Me.CallPanel.Size = New System.Drawing.Size(247, 201)
+        Me.CallPanel.TabIndex = 16
         '
-        'PictureBox10
+        'CallPicture
         '
-        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(44, 42)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(152, 121)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 17
-        Me.PictureBox10.TabStop = False
+        Me.CallPicture.Image = CType(resources.GetObject("CallPicture.Image"), System.Drawing.Image)
+        Me.CallPicture.Location = New System.Drawing.Point(44, 42)
+        Me.CallPicture.Name = "CallPicture"
+        Me.CallPicture.Size = New System.Drawing.Size(152, 121)
+        Me.CallPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CallPicture.TabIndex = 17
+        Me.CallPicture.TabStop = False
         '
-        'Button2
+        'CallEndButton
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 7)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(36, 28)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "^"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CallEndButton.Location = New System.Drawing.Point(104, 7)
+        Me.CallEndButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.CallEndButton.Name = "CallEndButton"
+        Me.CallEndButton.Size = New System.Drawing.Size(36, 28)
+        Me.CallEndButton.TabIndex = 8
+        Me.CallEndButton.Text = "^"
+        Me.CallEndButton.UseVisualStyleBackColor = True
         '
         'IDLabel
         '
@@ -914,7 +914,7 @@ Partial Class WatchForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1544, 853)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.MessagePanel1)
         Me.Controls.Add(Me.MessagePanel)
         Me.Controls.Add(Me.ContactPanel2)
@@ -966,9 +966,9 @@ Partial Class WatchForm
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel1.ResumeLayout(False)
         Me.MessagePanel1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CallPanel.ResumeLayout(False)
+        Me.CallPanel.PerformLayout()
+        CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1043,8 +1043,8 @@ Partial Class WatchForm
     Friend WithEvents TapToPay As PictureBox
     Friend WithEvents MomPicture As PictureBox
     Friend WithEvents DadPicture As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents CallPanel As Panel
+    Friend WithEvents CallPicture As PictureBox
+    Friend WithEvents CallEndButton As Button
     Friend WithEvents IDLabel As Label
 End Class

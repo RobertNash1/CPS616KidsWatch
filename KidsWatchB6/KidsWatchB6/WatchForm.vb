@@ -4,6 +4,7 @@
     Dim Balance As Double
     Dim Message As String
     Dim Schedule As String
+    Dim CallID As String
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -20,7 +21,8 @@
         myPanels.Add(MusicPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
-        For index As Integer = 0 To 12
+        myPanels.Add(CallPanel)
+        For index As Integer = 0 To 13
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -46,6 +48,7 @@
         MusicPanel.Visible = False
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
+        CallPanel.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -223,9 +226,33 @@
         BalanceLabel.Text = Balance
     End Sub
 
-    Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click
-
+    Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click, MomCallButton.Click
+        CallID = "Mom"
+        IDLabel.Text = CallID
+        CallPanel.Visible = True
+        ContactPanel1.Visible = False
+        PhoneApp.CallPanel.Visible = True
     End Sub
 
+    Private Sub DadPicture_Click(sender As Object, e As EventArgs) Handles DadPicture.Click, DadCallButton.Click
+        CallID = "Dad"
+        IDLabel.Text = CallID
+        CallPanel.Visible = True
+        ContactPanel2.Visible = False
+        PhoneApp.CallPanel.Visible = True
+    End Sub
 
+    Private Sub CallEndButton_Click(sender As Object, e As EventArgs) Handles CallEndButton.Click, CallPicture.Click
+        If CallID = "Mom" Then
+            CallPanel.Visible = False
+            ContactPanel1.Visible = True
+        ElseIf CallID = "Dad" Then
+            CallPanel.Visible = False
+            ContactPanel2.Visible = True
+        End If
+    End Sub
+
+    Public Function getCallID()
+        Return CallID
+    End Function
 End Class
