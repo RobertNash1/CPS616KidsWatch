@@ -50,6 +50,10 @@
         MusicPanel.Visible = False
     End Sub
 
+    Public Sub AddTask(e As String)
+        TreeView1.Nodes.Add(1, "test")
+    End Sub
+
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
         ClockPanel.Visible = False
         ContactPanel.Visible = True
@@ -77,12 +81,22 @@
 
     Private Sub PaymentRight_Click(sender As Object, e As EventArgs) Handles PaymentRight.Click
         PaymentPanel.Visible = False
+        MessagePanel.Visible = True
+    End Sub
+
+    Private Sub MessageLeft_Click(sender As Object, e As EventArgs) Handles MessageLeft.Click
+        PaymentPanel.Visible = True
+        MessagePanel.Visible = False
+    End Sub
+
+    Private Sub MessageRight_Click(sender As Object, e As EventArgs) Handles MessageRight.Click
         SchedulePanel.Visible = True
+        MessagePanel.Visible = False
     End Sub
 
     Private Sub ScheduleLeft_Click(sender As Object, e As EventArgs) Handles ScheduleLeft.Click
         SchedulePanel.Visible = False
-        PaymentPanel.Visible = True
+        MessagePanel.Visible = True
     End Sub
     Private Sub ScheduleRight_Click(sender As Object, e As EventArgs) Handles ScheduleRight.Click
         SchedulePanel.Visible = False
@@ -140,6 +154,9 @@
     Private Sub ScheduleDown_Click(sender As Object, e As EventArgs) Handles ScheduleDown.Click
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = True
+
+        'Deal with Schedule items
+
     End Sub
 
     Private Sub ScheduleUp_Click(sender As Object, e As EventArgs) Handles ScheduleUp.Click
@@ -166,4 +183,10 @@
         PaymentPanel2.Visible = False
         PaymentPanel1.Visible = True
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Test.Click
+        AddTask("irrelevant")
+    End Sub
+
+
 End Class
