@@ -16,6 +16,8 @@
         myPanels.Add(GamesPanel)
         myPanels.Add(GamesPanel1)
         myPanels.Add(MusicPanel)
+        myPanels.Add(MessagePanel)
+        myPanels.Add(MessagePanel1)
         myPanels(0).Location = Panelocation
         myPanels(1).Location = Panelocation
         myPanels(2).Location = Panelocation
@@ -28,7 +30,8 @@
         myPanels(9).Location = Panelocation
         myPanels(10).Location = Panelocation
         myPanels(11).Location = Panelocation
-
+        myPanels(12).Location = Panelocation
+        myPanels(13).Location = Panelocation
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -48,6 +51,8 @@
         GamesPanel.Visible = False
         GamesPanel1.Visible = False
         MusicPanel.Visible = False
+        MessagePanel.Visible = False
+        MessagePanel1.Visible = False
     End Sub
 
     Public Sub AddTask(e As String)
@@ -188,5 +193,13 @@
         AddTask("irrelevant")
     End Sub
 
+    Private Sub MessageDown_Click(sender As Object, e As EventArgs) Handles MessageDown.Click
+        MessagePanel.Visible = False
+        MessagePanel1.Visible = True
+    End Sub
 
+    Private Sub MessageUp_Click(sender As Object, e As EventArgs) Handles MessageUp.Click
+        MessagePanel.Visible = True
+        MessagePanel1.Visible = False
+    End Sub
 End Class

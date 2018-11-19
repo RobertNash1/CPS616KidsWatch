@@ -64,6 +64,7 @@ Partial Class WatchForm
         Me.ContactDown1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PaymentPanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PaymentUp1 = New System.Windows.Forms.Button()
         Me.BalanceLabel = New System.Windows.Forms.Label()
         Me.PaymentDown1 = New System.Windows.Forms.Button()
@@ -92,7 +93,6 @@ Partial Class WatchForm
         Me.MessagePanel1 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MessageUp = New System.Windows.Forms.Button()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,6 +106,7 @@ Partial Class WatchForm
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel1.SuspendLayout()
         Me.PaymentPanel1.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PaymentPanel2.SuspendLayout()
         Me.SchedulePanel1.SuspendLayout()
         Me.GamesPanel1.SuspendLayout()
@@ -113,7 +114,6 @@ Partial Class WatchForm
         Me.MessagePanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel1.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -520,6 +520,16 @@ Partial Class WatchForm
         Me.PaymentPanel1.Size = New System.Drawing.Size(185, 163)
         Me.PaymentPanel1.TabIndex = 9
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(44, 32)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(94, 75)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 8
+        Me.PictureBox7.TabStop = False
+        '
         'PaymentUp1
         '
         Me.PaymentUp1.Location = New System.Drawing.Point(78, 3)
@@ -785,16 +795,6 @@ Partial Class WatchForm
         Me.MessageUp.Text = "^"
         Me.MessageUp.UseVisualStyleBackColor = True
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(44, 32)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(94, 75)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 8
-        Me.PictureBox7.TabStop = False
-        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -837,6 +837,7 @@ Partial Class WatchForm
         Me.ContactPanel1.PerformLayout()
         Me.PaymentPanel1.ResumeLayout(False)
         Me.PaymentPanel1.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PaymentPanel2.ResumeLayout(False)
         Me.PaymentPanel2.PerformLayout()
         Me.SchedulePanel1.ResumeLayout(False)
@@ -850,7 +851,6 @@ Partial Class WatchForm
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel1.ResumeLayout(False)
         Me.MessagePanel1.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
