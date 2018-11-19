@@ -662,7 +662,7 @@ Partial Class PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1435, 953)
+        Me.ClientSize = New System.Drawing.Size(337, 444)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.AddMoneyPanel)
         Me.Controls.Add(Me.SchedulePanel)
