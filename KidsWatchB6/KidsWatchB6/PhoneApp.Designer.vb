@@ -59,6 +59,11 @@ Partial Class PhoneApp
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
+        Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,6 +80,7 @@ Partial Class PhoneApp
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MessagePanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -422,11 +428,59 @@ Partial Class PhoneApp
         Me.TimeLabel3.TabIndex = 0
         Me.TimeLabel3.Text = "12:59 PM"
         '
+        'MessagePanel
+        '
+        Me.MessagePanel.Controls.Add(Me.RichTextBox1)
+        Me.MessagePanel.Controls.Add(Me.Label15)
+        Me.MessagePanel.Controls.Add(Me.Button2)
+        Me.MessagePanel.Controls.Add(Me.Label23)
+        Me.MessagePanel.Location = New System.Drawing.Point(742, 12)
+        Me.MessagePanel.Name = "MessagePanel"
+        Me.MessagePanel.Size = New System.Drawing.Size(238, 344)
+        Me.MessagePanel.TabIndex = 4
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(3, 26)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 20
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(157, 9)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(71, 18)
+        Me.Label23.TabIndex = 0
+        Me.Label23.Text = "12:59 PM"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(14, 74)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(58, 13)
+        Me.Label15.TabIndex = 21
+        Me.Label15.Text = "Messages:"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(17, 104)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(199, 96)
+        Me.RichTextBox1.TabIndex = 22
+        Me.RichTextBox1.Text = "None"
+        '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(996, 366)
+        Me.ClientSize = New System.Drawing.Size(1314, 641)
+        Me.Controls.Add(Me.MessagePanel)
         Me.Controls.Add(Me.AppPanel)
         Me.Controls.Add(Me.HomePanel)
         Me.Controls.Add(Me.ClockPanel)
@@ -452,6 +506,8 @@ Partial Class PhoneApp
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MessagePanel.ResumeLayout(False)
+        Me.MessagePanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -492,4 +548,9 @@ Partial Class PhoneApp
     Friend WithEvents Label14 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents MessagePanel As Panel
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label23 As Label
 End Class

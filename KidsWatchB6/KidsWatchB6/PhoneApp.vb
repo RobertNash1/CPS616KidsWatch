@@ -9,9 +9,12 @@
         myPanels.Add(ClockPanel)
         myPanels.Add(HomePanel)
         myPanels.Add(AppPanel)
+        myPanels.Add(MessagePanel)
+
         myPanels(0).Location = Panelocation
         myPanels(1).Location = Panelocation
         myPanels(2).Location = Panelocation
+        myPanels(3).Location = Panelocation
 
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -20,6 +23,7 @@
         DrawPanels()
         HomePanel.Visible = False
         AppPanel.Visible = False
+        MessagePanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -51,6 +55,13 @@
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MessagePanel.Visible = False
+        AppPanel.Visible = True
+    End Sub
 
-
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        MessagePanel.Visible = True
+        AppPanel.Visible = False
+    End Sub
 End Class
