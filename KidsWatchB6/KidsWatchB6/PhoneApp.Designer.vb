@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class PhoneApp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,17 @@ Partial Class PhoneApp
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PhoneApp))
         Me.ClockPanel = New System.Windows.Forms.Panel()
+        Me.HScrollBar1 = New System.Windows.Forms.HScrollBar()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.HomePanel = New System.Windows.Forms.Panel()
-        Me.TimeLabel2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TimeLabel2 = New System.Windows.Forms.Label()
         Me.AppPanel = New System.Windows.Forms.Panel()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
@@ -40,12 +41,21 @@ Partial Class PhoneApp
         '
         'ClockPanel
         '
+        Me.ClockPanel.Controls.Add(Me.HScrollBar1)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
         Me.ClockPanel.Controls.Add(Me.TimeLabel)
         Me.ClockPanel.Location = New System.Drawing.Point(10, 11)
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(238, 344)
         Me.ClockPanel.TabIndex = 1
+        '
+        'HScrollBar1
+        '
+        Me.HScrollBar1.LargeChange = 30
+        Me.HScrollBar1.Location = New System.Drawing.Point(0, 260)
+        Me.HScrollBar1.Name = "HScrollBar1"
+        Me.HScrollBar1.Size = New System.Drawing.Size(238, 61)
+        Me.HScrollBar1.TabIndex = 2
         '
         'DateLabel
         '
@@ -77,15 +87,14 @@ Partial Class PhoneApp
         Me.HomePanel.Size = New System.Drawing.Size(238, 344)
         Me.HomePanel.TabIndex = 2
         '
-        'TimeLabel2
+        'Label1
         '
-        Me.TimeLabel2.AutoSize = True
-        Me.TimeLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel2.Location = New System.Drawing.Point(157, 9)
-        Me.TimeLabel2.Name = "TimeLabel2"
-        Me.TimeLabel2.Size = New System.Drawing.Size(71, 18)
-        Me.TimeLabel2.TabIndex = 0
-        Me.TimeLabel2.Text = "12:59 PM"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(3, 129)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "SmartWatchApp"
         '
         'PictureBox1
         '
@@ -97,14 +106,15 @@ Partial Class PhoneApp
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'TimeLabel2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 129)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "SmartWatchApp"
+        Me.TimeLabel2.AutoSize = True
+        Me.TimeLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel2.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel2.Name = "TimeLabel2"
+        Me.TimeLabel2.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel2.TabIndex = 0
+        Me.TimeLabel2.Text = "12:59 PM"
         '
         'AppPanel
         '
@@ -155,4 +165,5 @@ Partial Class PhoneApp
     Friend WithEvents Label1 As Label
     Friend WithEvents AppPanel As Panel
     Friend WithEvents TimeLabel3 As Label
+    Friend WithEvents HScrollBar1 As HScrollBar
 End Class
