@@ -51,38 +51,27 @@ Partial Class PhoneApp
         Me.Contacts = New System.Windows.Forms.Label()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
         Me.MessagePanel = New System.Windows.Forms.Panel()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Send = New System.Windows.Forms.Button()
+        Me.MessageBox = New System.Windows.Forms.RichTextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.MessageBackButton = New System.Windows.Forms.Button()
         Me.TimeLabel4 = New System.Windows.Forms.Label()
         Me.SchedulePanel = New System.Windows.Forms.Panel()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.RemoveButton = New System.Windows.Forms.Button()
-        Me.AddNewSchedule = New System.Windows.Forms.Button()
+        Me.ScheduleBox = New System.Windows.Forms.RichTextBox()
+        Me.UpdateSchedule = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.ScheduleBackButton = New System.Windows.Forms.Button()
         Me.TimeLabel5 = New System.Windows.Forms.Label()
-        Me.SchedulePanel1 = New System.Windows.Forms.Panel()
-        Me.CancelButton = New System.Windows.Forms.Button()
-        Me.RichTextBox5 = New System.Windows.Forms.RichTextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.AddButton = New System.Windows.Forms.Button()
-        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Schedule2BackButton = New System.Windows.Forms.Button()
-        Me.TimeLabel6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.AddMoneyPanel = New System.Windows.Forms.Panel()
+        Me.AddVerification = New System.Windows.Forms.Label()
+        Me.AmountBox = New System.Windows.Forms.TextBox()
+        Me.CurrBalanceLabel = New System.Windows.Forms.Label()
         Me.CancelMoney = New System.Windows.Forms.Button()
-        Me.RichTextBox6 = New System.Windows.Forms.RichTextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.AddMoney = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.CurrBalance = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,7 +85,6 @@ Partial Class PhoneApp
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel.SuspendLayout()
         Me.SchedulePanel.SuspendLayout()
-        Me.SchedulePanel1.SuspendLayout()
         Me.AddMoneyPanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -388,7 +376,8 @@ Partial Class PhoneApp
         '
         'MessagePanel
         '
-        Me.MessagePanel.Controls.Add(Me.RichTextBox1)
+        Me.MessagePanel.Controls.Add(Me.Send)
+        Me.MessagePanel.Controls.Add(Me.MessageBox)
         Me.MessagePanel.Controls.Add(Me.Label15)
         Me.MessagePanel.Controls.Add(Me.MessageBackButton)
         Me.MessagePanel.Controls.Add(Me.TimeLabel4)
@@ -398,14 +387,23 @@ Partial Class PhoneApp
         Me.MessagePanel.Size = New System.Drawing.Size(317, 423)
         Me.MessagePanel.TabIndex = 4
         '
-        'RichTextBox1
+        'Send
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(23, 128)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(264, 117)
-        Me.RichTextBox1.TabIndex = 22
-        Me.RichTextBox1.Text = "None"
+        Me.Send.Location = New System.Drawing.Point(112, 252)
+        Me.Send.Name = "Send"
+        Me.Send.Size = New System.Drawing.Size(75, 23)
+        Me.Send.TabIndex = 23
+        Me.Send.Text = "Send"
+        Me.Send.UseVisualStyleBackColor = True
+        '
+        'MessageBox
+        '
+        Me.MessageBox.Location = New System.Drawing.Point(23, 128)
+        Me.MessageBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessageBox.Name = "MessageBox"
+        Me.MessageBox.Size = New System.Drawing.Size(264, 117)
+        Me.MessageBox.TabIndex = 22
+        Me.MessageBox.Text = ""
         '
         'Label15
         '
@@ -440,9 +438,8 @@ Partial Class PhoneApp
         '
         'SchedulePanel
         '
-        Me.SchedulePanel.Controls.Add(Me.ListBox1)
-        Me.SchedulePanel.Controls.Add(Me.RemoveButton)
-        Me.SchedulePanel.Controls.Add(Me.AddNewSchedule)
+        Me.SchedulePanel.Controls.Add(Me.ScheduleBox)
+        Me.SchedulePanel.Controls.Add(Me.UpdateSchedule)
         Me.SchedulePanel.Controls.Add(Me.Label16)
         Me.SchedulePanel.Controls.Add(Me.ScheduleBackButton)
         Me.SchedulePanel.Controls.Add(Me.TimeLabel5)
@@ -452,35 +449,24 @@ Partial Class PhoneApp
         Me.SchedulePanel.Size = New System.Drawing.Size(317, 423)
         Me.SchedulePanel.TabIndex = 5
         '
-        'ListBox1
+        'ScheduleBox
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(23, 129)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(261, 116)
-        Me.ListBox1.TabIndex = 25
+        Me.ScheduleBox.Location = New System.Drawing.Point(22, 128)
+        Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.ScheduleBox.Name = "ScheduleBox"
+        Me.ScheduleBox.Size = New System.Drawing.Size(264, 117)
+        Me.ScheduleBox.TabIndex = 24
+        Me.ScheduleBox.Text = ""
         '
-        'RemoveButton
+        'UpdateSchedule
         '
-        Me.RemoveButton.Location = New System.Drawing.Point(204, 353)
-        Me.RemoveButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.RemoveButton.Name = "RemoveButton"
-        Me.RemoveButton.Size = New System.Drawing.Size(100, 28)
-        Me.RemoveButton.TabIndex = 24
-        Me.RemoveButton.Text = "Remove"
-        Me.RemoveButton.UseVisualStyleBackColor = True
-        '
-        'AddNewSchedule
-        '
-        Me.AddNewSchedule.Location = New System.Drawing.Point(23, 353)
-        Me.AddNewSchedule.Margin = New System.Windows.Forms.Padding(4)
-        Me.AddNewSchedule.Name = "AddNewSchedule"
-        Me.AddNewSchedule.Size = New System.Drawing.Size(157, 28)
-        Me.AddNewSchedule.TabIndex = 23
-        Me.AddNewSchedule.Text = "Add New Schedule"
-        Me.AddNewSchedule.UseVisualStyleBackColor = True
+        Me.UpdateSchedule.Location = New System.Drawing.Point(68, 253)
+        Me.UpdateSchedule.Margin = New System.Windows.Forms.Padding(4)
+        Me.UpdateSchedule.Name = "UpdateSchedule"
+        Me.UpdateSchedule.Size = New System.Drawing.Size(157, 28)
+        Me.UpdateSchedule.TabIndex = 23
+        Me.UpdateSchedule.Text = "Update Schedule"
+        Me.UpdateSchedule.UseVisualStyleBackColor = True
         '
         'Label16
         '
@@ -513,141 +499,51 @@ Partial Class PhoneApp
         Me.TimeLabel5.TabIndex = 0
         Me.TimeLabel5.Text = "12:59 PM"
         '
-        'SchedulePanel1
-        '
-        Me.SchedulePanel1.Controls.Add(Me.CancelButton)
-        Me.SchedulePanel1.Controls.Add(Me.RichTextBox5)
-        Me.SchedulePanel1.Controls.Add(Me.Label21)
-        Me.SchedulePanel1.Controls.Add(Me.RichTextBox4)
-        Me.SchedulePanel1.Controls.Add(Me.Label20)
-        Me.SchedulePanel1.Controls.Add(Me.AddButton)
-        Me.SchedulePanel1.Controls.Add(Me.RichTextBox3)
-        Me.SchedulePanel1.Controls.Add(Me.Label18)
-        Me.SchedulePanel1.Controls.Add(Me.Schedule2BackButton)
-        Me.SchedulePanel1.Controls.Add(Me.TimeLabel6)
-        Me.SchedulePanel1.Location = New System.Drawing.Point(16, 446)
-        Me.SchedulePanel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.SchedulePanel1.Name = "SchedulePanel1"
-        Me.SchedulePanel1.Size = New System.Drawing.Size(317, 423)
-        Me.SchedulePanel1.TabIndex = 6
-        '
-        'CancelButton
-        '
-        Me.CancelButton.Location = New System.Drawing.Point(204, 380)
-        Me.CancelButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.CancelButton.Name = "CancelButton"
-        Me.CancelButton.Size = New System.Drawing.Size(100, 28)
-        Me.CancelButton.TabIndex = 29
-        Me.CancelButton.Text = "Cancel"
-        Me.CancelButton.UseVisualStyleBackColor = True
-        '
-        'RichTextBox5
-        '
-        Me.RichTextBox5.Location = New System.Drawing.Point(16, 311)
-        Me.RichTextBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox5.Name = "RichTextBox5"
-        Me.RichTextBox5.Size = New System.Drawing.Size(163, 32)
-        Me.RichTextBox5.TabIndex = 28
-        Me.RichTextBox5.Text = ""
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(12, 292)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(107, 17)
-        Me.Label21.TabIndex = 27
-        Me.Label21.Text = "Time (hh:mm tt)"
-        '
-        'RichTextBox4
-        '
-        Me.RichTextBox4.Location = New System.Drawing.Point(16, 228)
-        Me.RichTextBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox4.Name = "RichTextBox4"
-        Me.RichTextBox4.Size = New System.Drawing.Size(163, 31)
-        Me.RichTextBox4.TabIndex = 26
-        Me.RichTextBox4.Text = ""
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(12, 208)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(132, 17)
-        Me.Label20.TabIndex = 25
-        Me.Label20.Text = "Date (yyyy-mm-dd):"
-        '
-        'AddButton
-        '
-        Me.AddButton.Location = New System.Drawing.Point(19, 380)
-        Me.AddButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(100, 28)
-        Me.AddButton.TabIndex = 24
-        Me.AddButton.Text = "Add"
-        Me.AddButton.UseVisualStyleBackColor = True
-        '
-        'RichTextBox3
-        '
-        Me.RichTextBox3.Location = New System.Drawing.Point(16, 103)
-        Me.RichTextBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox3.Name = "RichTextBox3"
-        Me.RichTextBox3.Size = New System.Drawing.Size(264, 84)
-        Me.RichTextBox3.TabIndex = 22
-        Me.RichTextBox3.Text = "Add Here"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(12, 84)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(102, 17)
-        Me.Label18.TabIndex = 21
-        Me.Label18.Text = "New Schedule:"
-        '
-        'Schedule2BackButton
-        '
-        Me.Schedule2BackButton.Location = New System.Drawing.Point(4, 32)
-        Me.Schedule2BackButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.Schedule2BackButton.Name = "Schedule2BackButton"
-        Me.Schedule2BackButton.Size = New System.Drawing.Size(100, 28)
-        Me.Schedule2BackButton.TabIndex = 20
-        Me.Schedule2BackButton.Text = "Back"
-        Me.Schedule2BackButton.UseVisualStyleBackColor = True
-        '
-        'TimeLabel6
-        '
-        Me.TimeLabel6.AutoSize = True
-        Me.TimeLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel6.Location = New System.Drawing.Point(209, 11)
-        Me.TimeLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.TimeLabel6.Name = "TimeLabel6"
-        Me.TimeLabel6.Size = New System.Drawing.Size(88, 24)
-        Me.TimeLabel6.TabIndex = 0
-        Me.TimeLabel6.Text = "12:59 PM"
-        '
         'Timer1
         '
         Me.Timer1.Interval = 1000
         '
         'AddMoneyPanel
         '
-        Me.AddMoneyPanel.Controls.Add(Me.CurrBalance)
+        Me.AddMoneyPanel.Controls.Add(Me.AddVerification)
+        Me.AddMoneyPanel.Controls.Add(Me.AmountBox)
+        Me.AddMoneyPanel.Controls.Add(Me.CurrBalanceLabel)
         Me.AddMoneyPanel.Controls.Add(Me.CancelMoney)
-        Me.AddMoneyPanel.Controls.Add(Me.RichTextBox6)
         Me.AddMoneyPanel.Controls.Add(Me.Label17)
         Me.AddMoneyPanel.Controls.Add(Me.AddMoney)
         Me.AddMoneyPanel.Controls.Add(Me.Label19)
-        Me.AddMoneyPanel.Controls.Add(Me.Button4)
         Me.AddMoneyPanel.Controls.Add(Me.Label22)
-        Me.AddMoneyPanel.Location = New System.Drawing.Point(339, 446)
+        Me.AddMoneyPanel.Location = New System.Drawing.Point(1640, 15)
         Me.AddMoneyPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.AddMoneyPanel.Name = "AddMoneyPanel"
         Me.AddMoneyPanel.Size = New System.Drawing.Size(317, 423)
         Me.AddMoneyPanel.TabIndex = 30
+        '
+        'AddVerification
+        '
+        Me.AddVerification.AutoSize = True
+        Me.AddVerification.Location = New System.Drawing.Point(21, 181)
+        Me.AddVerification.Name = "AddVerification"
+        Me.AddVerification.Size = New System.Drawing.Size(78, 17)
+        Me.AddVerification.TabIndex = 32
+        Me.AddVerification.Text = "Verification"
+        '
+        'AmountBox
+        '
+        Me.AmountBox.Location = New System.Drawing.Point(133, 120)
+        Me.AmountBox.Name = "AmountBox"
+        Me.AmountBox.Size = New System.Drawing.Size(100, 22)
+        Me.AmountBox.TabIndex = 31
+        '
+        'CurrBalanceLabel
+        '
+        Me.CurrBalanceLabel.AutoSize = True
+        Me.CurrBalanceLabel.Location = New System.Drawing.Point(134, 84)
+        Me.CurrBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.CurrBalanceLabel.Name = "CurrBalanceLabel"
+        Me.CurrBalanceLabel.Size = New System.Drawing.Size(36, 17)
+        Me.CurrBalanceLabel.TabIndex = 30
+        Me.CurrBalanceLabel.Text = "0.00"
         '
         'CancelMoney
         '
@@ -658,15 +554,6 @@ Partial Class PhoneApp
         Me.CancelMoney.TabIndex = 29
         Me.CancelMoney.Text = "Cancel"
         Me.CancelMoney.UseVisualStyleBackColor = True
-        '
-        'RichTextBox6
-        '
-        Me.RichTextBox6.Location = New System.Drawing.Point(13, 146)
-        Me.RichTextBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox6.Name = "RichTextBox6"
-        Me.RichTextBox6.Size = New System.Drawing.Size(163, 31)
-        Me.RichTextBox6.TabIndex = 26
-        Me.RichTextBox6.Text = ""
         '
         'Label17
         '
@@ -698,16 +585,6 @@ Partial Class PhoneApp
         Me.Label19.TabIndex = 21
         Me.Label19.Text = "Current Balance:"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(4, 32)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 28)
-        Me.Button4.TabIndex = 20
-        Me.Button4.Text = "Back"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Label22
         '
         Me.Label22.AutoSize = True
@@ -719,23 +596,12 @@ Partial Class PhoneApp
         Me.Label22.TabIndex = 0
         Me.Label22.Text = "12:59 PM"
         '
-        'CurrBalance
-        '
-        Me.CurrBalance.AutoSize = True
-        Me.CurrBalance.Location = New System.Drawing.Point(134, 84)
-        Me.CurrBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.CurrBalance.Name = "CurrBalance"
-        Me.CurrBalance.Size = New System.Drawing.Size(36, 17)
-        Me.CurrBalance.TabIndex = 30
-        Me.CurrBalance.Text = "0.00"
-        '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1661, 896)
+        Me.ClientSize = New System.Drawing.Size(340, 453)
         Me.Controls.Add(Me.AddMoneyPanel)
-        Me.Controls.Add(Me.SchedulePanel1)
         Me.Controls.Add(Me.SchedulePanel)
         Me.Controls.Add(Me.MessagePanel)
         Me.Controls.Add(Me.AppPanel)
@@ -762,8 +628,6 @@ Partial Class PhoneApp
         Me.MessagePanel.PerformLayout()
         Me.SchedulePanel.ResumeLayout(False)
         Me.SchedulePanel.PerformLayout()
-        Me.SchedulePanel1.ResumeLayout(False)
-        Me.SchedulePanel1.PerformLayout()
         Me.AddMoneyPanel.ResumeLayout(False)
         Me.AddMoneyPanel.PerformLayout()
         Me.ResumeLayout(False)
@@ -793,7 +657,7 @@ Partial Class PhoneApp
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents MessagePanel As Panel
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents MessageBox As RichTextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents MessageBackButton As Button
     Friend WithEvents TimeLabel4 As Label
@@ -801,32 +665,21 @@ Partial Class PhoneApp
     Friend WithEvents Label16 As Label
     Friend WithEvents ScheduleBackButton As Button
     Friend WithEvents TimeLabel5 As Label
-    Friend WithEvents RemoveButton As Button
-    Friend WithEvents AddNewSchedule As Button
+    Friend WithEvents UpdateSchedule As Button
     Friend WithEvents KidMessage As PictureBox
     Friend WithEvents KidMoney As PictureBox
     Friend WithEvents KidPhone As PictureBox
     Friend WithEvents KidSchedule As PictureBox
-    Friend WithEvents SchedulePanel1 As Panel
-    Friend WithEvents RichTextBox5 As RichTextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents RichTextBox4 As RichTextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents AddButton As Button
-    Friend WithEvents RichTextBox3 As RichTextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Schedule2BackButton As Button
-    Friend WithEvents TimeLabel6 As Label
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents CancelButton As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents AddMoneyPanel As Panel
     Friend WithEvents CancelMoney As Button
-    Friend WithEvents RichTextBox6 As RichTextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents AddMoney As Button
     Friend WithEvents Label19 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents Label22 As Label
-    Friend WithEvents CurrBalance As Label
+    Friend WithEvents CurrBalanceLabel As Label
+    Friend WithEvents AmountBox As TextBox
+    Friend WithEvents AddVerification As Label
+    Friend WithEvents Send As Button
+    Friend WithEvents ScheduleBox As RichTextBox
 End Class

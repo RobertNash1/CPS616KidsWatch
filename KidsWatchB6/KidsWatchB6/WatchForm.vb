@@ -2,6 +2,8 @@
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
     Dim Balance As Double
+    Dim Message As String
+    Dim Schedule As String
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -27,6 +29,8 @@
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
         Balance = 5
+        Message = ""
+        Schedule = ""
         PhoneApp.Show()
         DrawPanels()
         'Make all other panels not visible
@@ -42,10 +46,6 @@
         MusicPanel.Visible = False
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
-    End Sub
-
-    Public Sub AddTask(e As String)
-        TreeView1.Nodes.Add(1, "test")
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -149,9 +149,11 @@
     Private Sub ScheduleDown_Click(sender As Object, e As EventArgs) Handles ScheduleDown.Click
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = True
-
-        'Deal with Schedule items
-
+        If Schedule.Length > 0 Then
+            ScheduleBox.Text = Schedule
+        Else
+            ScheduleBox.Text = "You have nothing scheduled for today."
+        End If
     End Sub
 
     Private Sub ScheduleUp_Click(sender As Object, e As EventArgs) Handles ScheduleUp.Click
@@ -169,13 +171,15 @@
         PaymentPanel1.Visible = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Test.Click
-        AddTask("irrelevant")
-    End Sub
-
     Private Sub MessageDown_Click(sender As Object, e As EventArgs) Handles MessageDown.Click
         MessagePanel.Visible = False
         MessagePanel1.Visible = True
+        'MessageBox
+        If Message.Length > 0 Then
+            MessageBox.Text = Message
+        Else
+            MessageBox.Text = "You have no messages."
+        End If
     End Sub
 
     Private Sub MessageUp_Click(sender As Object, e As EventArgs) Handles MessageUp.Click
@@ -187,5 +191,35 @@
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 
+    Public Sub addBalance(amt As Double)
+        Balance = Balance + amt
+        BalanceLabel.Text = Balance
+    End Sub
+    Public Function getBalance()
+        Return Balance
+    End Function
 
+    Public Function getMessages()
+        Return Message
+    End Function
+
+    Public Sub setMessage(msg As String)
+        Message = msg
+        MessageBox.Text = Message
+    End Sub
+    Public Function getSchedule()
+        Return Schedule
+    End Function
+
+    Public Sub setSchedule(msg As String)
+        Schedule = msg
+        ScheduleBox.Text = Schedule
+    End Sub
+
+    Private Sub TapToPay_Click(sender As Object, e As EventArgs) Handles TapToPay.Click
+        PaymentPanel2.Visible = False
+        PaymentPanel1.Visible = True
+        Balance = Balance - 8.63
+        BalanceLabel.Text = Balance
+    End Sub
 End Class

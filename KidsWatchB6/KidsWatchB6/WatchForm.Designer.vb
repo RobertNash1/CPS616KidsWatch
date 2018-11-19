@@ -71,11 +71,10 @@ Partial Class WatchForm
         Me.PaymentDown1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PaymentPanel2 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TapToPay = New System.Windows.Forms.PictureBox()
         Me.PaymentUp2 = New System.Windows.Forms.Button()
         Me.SchedulePanel1 = New System.Windows.Forms.Panel()
-        Me.Test = New System.Windows.Forms.Button()
-        Me.TreeView1 = New System.Windows.Forms.TreeView()
+        Me.ScheduleBox = New System.Windows.Forms.RichTextBox()
         Me.ScheduleUp = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ContactPanel2 = New System.Windows.Forms.Panel()
@@ -89,7 +88,7 @@ Partial Class WatchForm
         Me.MessageRight = New System.Windows.Forms.Button()
         Me.MessageLabel = New System.Windows.Forms.Label()
         Me.MessagePanel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.MessageBox = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MessageUp = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -108,6 +107,7 @@ Partial Class WatchForm
         Me.PaymentPanel1.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PaymentPanel2.SuspendLayout()
+        CType(Me.TapToPay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SchedulePanel1.SuspendLayout()
         Me.ContactPanel2.SuspendLayout()
         Me.MessagePanel.SuspendLayout()
@@ -613,7 +613,7 @@ Partial Class WatchForm
         '
         'PaymentPanel2
         '
-        Me.PaymentPanel2.Controls.Add(Me.Label4)
+        Me.PaymentPanel2.Controls.Add(Me.TapToPay)
         Me.PaymentPanel2.Controls.Add(Me.PaymentUp2)
         Me.PaymentPanel2.Location = New System.Drawing.Point(525, 431)
         Me.PaymentPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -621,16 +621,15 @@ Partial Class WatchForm
         Me.PaymentPanel2.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel2.TabIndex = 10
         '
-        'Label4
+        'TapToPay
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(71, 150)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 25)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Pay Now"
+        Me.TapToPay.Image = CType(resources.GetObject("TapToPay.Image"), System.Drawing.Image)
+        Me.TapToPay.Location = New System.Drawing.Point(32, 42)
+        Me.TapToPay.Name = "TapToPay"
+        Me.TapToPay.Size = New System.Drawing.Size(181, 147)
+        Me.TapToPay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.TapToPay.TabIndex = 7
+        Me.TapToPay.TabStop = False
         '
         'PaymentUp2
         '
@@ -644,8 +643,7 @@ Partial Class WatchForm
         '
         'SchedulePanel1
         '
-        Me.SchedulePanel1.Controls.Add(Me.Test)
-        Me.SchedulePanel1.Controls.Add(Me.TreeView1)
+        Me.SchedulePanel1.Controls.Add(Me.ScheduleBox)
         Me.SchedulePanel1.Controls.Add(Me.ScheduleUp)
         Me.SchedulePanel1.Controls.Add(Me.Label5)
         Me.SchedulePanel1.Location = New System.Drawing.Point(1033, 223)
@@ -654,23 +652,13 @@ Partial Class WatchForm
         Me.SchedulePanel1.Size = New System.Drawing.Size(247, 201)
         Me.SchedulePanel1.TabIndex = 11
         '
-        'Test
+        'ScheduleBox
         '
-        Me.Test.Location = New System.Drawing.Point(129, 39)
-        Me.Test.Margin = New System.Windows.Forms.Padding(4)
-        Me.Test.Name = "Test"
-        Me.Test.Size = New System.Drawing.Size(100, 28)
-        Me.Test.TabIndex = 6
-        Me.Test.Text = "Test Populate"
-        Me.Test.UseVisualStyleBackColor = True
-        '
-        'TreeView1
-        '
-        Me.TreeView1.Location = New System.Drawing.Point(12, 70)
-        Me.TreeView1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.Size = New System.Drawing.Size(216, 118)
-        Me.TreeView1.TabIndex = 6
+        Me.ScheduleBox.Location = New System.Drawing.Point(18, 77)
+        Me.ScheduleBox.Name = "ScheduleBox"
+        Me.ScheduleBox.Size = New System.Drawing.Size(203, 98)
+        Me.ScheduleBox.TabIndex = 9
+        Me.ScheduleBox.Text = ""
         '
         'ScheduleUp
         '
@@ -802,7 +790,7 @@ Partial Class WatchForm
         '
         'MessagePanel1
         '
-        Me.MessagePanel1.Controls.Add(Me.Label3)
+        Me.MessagePanel1.Controls.Add(Me.MessageBox)
         Me.MessagePanel1.Controls.Add(Me.Label6)
         Me.MessagePanel1.Controls.Add(Me.MessageUp)
         Me.MessagePanel1.Location = New System.Drawing.Point(780, 223)
@@ -811,16 +799,14 @@ Partial Class WatchForm
         Me.MessagePanel1.Size = New System.Drawing.Size(247, 201)
         Me.MessagePanel1.TabIndex = 15
         '
-        'Label3
+        'MessageBox
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(179, 43)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(23, 25)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "0"
+        Me.MessageBox.Location = New System.Drawing.Point(23, 73)
+        Me.MessageBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessageBox.Name = "MessageBox"
+        Me.MessageBox.Size = New System.Drawing.Size(201, 102)
+        Me.MessageBox.TabIndex = 10
+        Me.MessageBox.Text = ""
         '
         'Label6
         '
@@ -851,7 +837,7 @@ Partial Class WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1979, 681)
+        Me.ClientSize = New System.Drawing.Size(1544, 681)
         Me.Controls.Add(Me.MessagePanel1)
         Me.Controls.Add(Me.MessagePanel)
         Me.Controls.Add(Me.ContactPanel2)
@@ -891,7 +877,7 @@ Partial Class WatchForm
         Me.PaymentPanel1.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PaymentPanel2.ResumeLayout(False)
-        Me.PaymentPanel2.PerformLayout()
+        CType(Me.TapToPay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SchedulePanel1.ResumeLayout(False)
         Me.SchedulePanel1.PerformLayout()
         Me.ContactPanel2.ResumeLayout(False)
@@ -948,7 +934,6 @@ Partial Class WatchForm
     Friend WithEvents PaymentDown1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents PaymentPanel2 As Panel
-    Friend WithEvents Label4 As Label
     Friend WithEvents PaymentUp2 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents ContactUp1 As Button
@@ -960,8 +945,6 @@ Partial Class WatchForm
     Friend WithEvents Button9 As Button
     Friend WithEvents ContactUp2 As Button
     Friend WithEvents Label8 As Label
-    Friend WithEvents TreeView1 As TreeView
-    Friend WithEvents Test As Button
     Friend WithEvents MessagePanel As Panel
     Friend WithEvents MessageDown As Button
     Friend WithEvents PictureBox6 As PictureBox
@@ -972,6 +955,8 @@ Partial Class WatchForm
     Friend WithEvents Label6 As Label
     Friend WithEvents MessageUp As Button
     Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents MessageBox As RichTextBox
+    Friend WithEvents ScheduleBox As RichTextBox
+    Friend WithEvents TapToPay As PictureBox
 End Class

@@ -1,26 +1,23 @@
 ﻿Public Class PhoneApp
-
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
-
         myPanels.Add(ClockPanel)
         myPanels.Add(AddMoneyPanel)
         myPanels.Add(HomePanel)
         myPanels.Add(AppPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(SchedulePanel)
-        myPanels.Add(SchedulePanel1)
-        For index As Integer = 0 To 6
+        For index As Integer = 0 To 5
             myPanels(index).Location = Panelocation
         Next
-
     End Sub
     Private Sub PhoneApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
+        AddVerification.Text = ""
         'Make all other panels not visible
         DrawPanels()
         HomePanel.Visible = False
@@ -28,7 +25,6 @@
         MessagePanel.Visible = False
         SchedulePanel.Visible = False
         SchedulePanel.Visible = False
-        SchedulePanel1.Visible = False
         AddMoneyPanel.Visible = False
     End Sub
 
@@ -49,11 +45,12 @@
         AppPanel.Visible = False
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles MessageBackButton.Click
+    Private Sub MessageBackButton_Click(sender As Object, e As EventArgs) Handles MessageBackButton.Click, ScheduleBackButton.Click, CancelMoney.Click
         MessagePanel.Visible = False
+        SchedulePanel.Visible = False
+        AddMoneyPanel.Visible = False
         AppPanel.Visible = True
     End Sub
-
 
     Private Sub KidMessage_Click(sender As Object, e As EventArgs) Handles KidMessage.Click
         MessagePanel.Visible = True
@@ -63,35 +60,37 @@
     Private Sub KidSchedule_Click(sender As Object, e As EventArgs) Handles KidSchedule.Click
         SchedulePanel.Visible = True
         AppPanel.Visible = False
-
     End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles AddNewSchedule.Click
-        SchedulePanel.Visible = False
-        SchedulePanel1.Visible = True
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Schedule2BackButton.Click
-        SchedulePanel.Visible = True
-        SchedulePanel1.Visible = False
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ScheduleBackButton.Click
-        SchedulePanel.Visible = False
-        AppPanel.Visible = True
-    End Sub
-
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
-        TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 
     Private Sub KidMoney_Click(sender As Object, e As EventArgs) Handles KidMoney.Click
         AddMoneyPanel.Visible = True
         AppPanel.Visible = False
+        CurrBalanceLabel.Text = WatchForm.getBalance
+    End Sub
+
+    Private Sub AddMoney_Click(sender As Object, e As EventArgs) Handles AddMoney.Click
+        WatchForm.addBalance(CDbl(Val(AmountBox.Text)))
+        CurrBalanceLabel.Text = WatchForm.getBalance
+        If AmountBox.Text.Length > 0 Then
+            AddVerification.Text = "You have added " & AmountBox.Text & " dollars!"
+        Else
+            AddVerification.Text = ""
+        End If
+        AmountBox.Text = ""
+    End Sub
+
+    Private Sub Send_Click(sender As Object, e As EventArgs) Handles Send.Click
+        WatchForm.setMessage(MessageBox.Text)
+    End Sub
+
+    Private Sub UpdateSchedule_Click(sender As Object, e As EventArgs) Handles UpdateSchedule.Click
+        WatchForm.setSchedule(ScheduleBox.Text)
     End Sub
 End Class
