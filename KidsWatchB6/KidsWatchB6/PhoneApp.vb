@@ -42,4 +42,15 @@
     Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
 
     End Sub
+
+    Private Sub HomePanel_Paint(sender As Object, e As PaintEventArgs) Handles HomePanel.Paint
+        TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
+
+    Private Sub AppPanel_Paint(sender As Object, e As PaintEventArgs) Handles AppPanel.Paint
+        TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
+    End Sub
+
+
+
 End Class
