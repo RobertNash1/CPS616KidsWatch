@@ -34,5 +34,12 @@
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        HomePanel.Visible = True
+        AppPanel.Visible = False
+    End Sub
 
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+
+    End Sub
 End Class
