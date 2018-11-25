@@ -78,6 +78,8 @@ Partial Class PhoneApp
         Me.TimeLabel6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.SentMsg = New System.Windows.Forms.RichTextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,6 +364,8 @@ Partial Class PhoneApp
         '
         'MessagePanel
         '
+        Me.MessagePanel.Controls.Add(Me.Label4)
+        Me.MessagePanel.Controls.Add(Me.SentMsg)
         Me.MessagePanel.Controls.Add(Me.Send)
         Me.MessagePanel.Controls.Add(Me.MessageBox)
         Me.MessagePanel.Controls.Add(Me.Label15)
@@ -374,7 +378,7 @@ Partial Class PhoneApp
         '
         'Send
         '
-        Me.Send.Location = New System.Drawing.Point(84, 205)
+        Me.Send.Location = New System.Drawing.Point(84, 308)
         Me.Send.Margin = New System.Windows.Forms.Padding(2)
         Me.Send.Name = "Send"
         Me.Send.Size = New System.Drawing.Size(56, 19)
@@ -384,7 +388,7 @@ Partial Class PhoneApp
         '
         'MessageBox
         '
-        Me.MessageBox.Location = New System.Drawing.Point(17, 104)
+        Me.MessageBox.Location = New System.Drawing.Point(17, 207)
         Me.MessageBox.Name = "MessageBox"
         Me.MessageBox.Size = New System.Drawing.Size(199, 96)
         Me.MessageBox.TabIndex = 22
@@ -628,6 +632,24 @@ Partial Class PhoneApp
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "None"
         '
+        'SentMsg
+        '
+        Me.SentMsg.Location = New System.Drawing.Point(17, 121)
+        Me.SentMsg.Name = "SentMsg"
+        Me.SentMsg.ReadOnly = True
+        Me.SentMsg.Size = New System.Drawing.Size(199, 39)
+        Me.SentMsg.TabIndex = 24
+        Me.SentMsg.Text = ""
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(14, 102)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Sent:"
+        '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -725,4 +747,6 @@ Partial Class PhoneApp
     Friend WithEvents CallEndPicture As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents SentMsg As RichTextBox
 End Class

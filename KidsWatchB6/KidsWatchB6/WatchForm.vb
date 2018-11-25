@@ -156,7 +156,8 @@
         If Schedule.Length > 0 Then
             ScheduleBox.Text = Schedule
         Else
-            ScheduleBox.Text = "You have nothing scheduled for today."
+            ScheduleBox.Text = ""
+            '  ScheduleBox.Text = "You have nothing scheduled for today."
         End If
     End Sub
 
@@ -182,7 +183,8 @@
         If Message.Length > 0 Then
             MessageBox.Text = Message
         Else
-            MessageBox.Text = "You have no messages."
+            MessageBox.Text = ""
+            '    MessageBox.Text = "You have no messages."
         End If
     End Sub
 
@@ -209,7 +211,9 @@
 
     Public Sub setMessage(msg As String)
         Message = msg
-        MessageBox.Text = Message
+
+        MessageBox.AppendText(Message & Environment.NewLine)
+
     End Sub
     Public Function getSchedule()
         Return Schedule
@@ -259,7 +263,5 @@
         Return CallID
     End Function
 
-    Private Sub ScheduleBox_TextChanged(sender As Object, e As EventArgs) Handles ScheduleBox.TextChanged
 
-    End Sub
 End Class

@@ -98,6 +98,10 @@
 
     Private Sub Send_Click(sender As Object, e As EventArgs) Handles Send.Click
         WatchForm.setMessage(MessageBox.Text)
+        SentMsg.AppendText(MessageBox.Text & Environment.NewLine)
+
+        MessageBox.Text = ""
+
     End Sub
 
     Private Sub UpdateSchedule_Click(sender As Object, e As EventArgs) Handles UpdateSchedule.Click
