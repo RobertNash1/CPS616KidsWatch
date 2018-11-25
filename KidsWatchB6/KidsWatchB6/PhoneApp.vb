@@ -116,4 +116,8 @@
             WatchForm.ContactPanel2.Visible = True
         End If
     End Sub
+
+    Private Sub ScheduleBox_TextChanged(sender As Object, e As EventArgs) Handles ScheduleBox.TextChanged
+
+    End Sub
 End Class

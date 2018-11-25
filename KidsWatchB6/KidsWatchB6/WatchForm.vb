@@ -258,4 +258,8 @@
     Public Function getCallID()
         Return CallID
     End Function
+
+    Private Sub ScheduleBox_TextChanged(sender As Object, e As EventArgs) Handles ScheduleBox.TextChanged
+
+    End Sub
 End Class
