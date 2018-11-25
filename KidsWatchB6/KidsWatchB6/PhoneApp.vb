@@ -26,6 +26,8 @@
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
@@ -81,6 +83,8 @@
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
     End Sub
 
     Private Sub KidMoney_Click(sender As Object, e As EventArgs) Handles KidMoney.Click
@@ -131,8 +135,6 @@
         End If
     End Sub
 
-
-
     Private Sub countSchedule_Click(sender As Object, e As EventArgs) Handles countSchedule.Click
         SchedulePanel1.Visible = True
         SchedulePanel.Visible = False
@@ -141,5 +143,15 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         SchedulePanel1.Visible = False
         SchedulePanel.Visible = True
+        If ExistingS.TextLength < 2 Then
+            counter = 0
+        End If
+    End Sub
+
+    Private Sub ClearAll_Click(sender As Object, e As EventArgs) Handles ClearAll.Click
+
+        ExistingS.Text = ""
+        countSchedule.Text = "None Existing"
+        WatchForm.ScheduleBox.Text = ExistingS.Text
     End Sub
 End Class

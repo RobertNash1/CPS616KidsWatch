@@ -77,7 +77,7 @@ Partial Class PhoneApp
         Me.Label17 = New System.Windows.Forms.Label()
         Me.AddMoney = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TimeLabel22 = New System.Windows.Forms.Label()
         Me.CallPanel = New System.Windows.Forms.Panel()
         Me.CallEndPicture = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -88,7 +88,8 @@ Partial Class PhoneApp
         Me.ExistingS = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TimeLabel9 = New System.Windows.Forms.Label()
+        Me.ClearAll = New System.Windows.Forms.Button()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -564,7 +565,7 @@ Partial Class PhoneApp
         Me.AddMoneyPanel.Controls.Add(Me.Label17)
         Me.AddMoneyPanel.Controls.Add(Me.AddMoney)
         Me.AddMoneyPanel.Controls.Add(Me.Label19)
-        Me.AddMoneyPanel.Controls.Add(Me.Label22)
+        Me.AddMoneyPanel.Controls.Add(Me.TimeLabel22)
         Me.AddMoneyPanel.Location = New System.Drawing.Point(498, 362)
         Me.AddMoneyPanel.Name = "AddMoneyPanel"
         Me.AddMoneyPanel.Size = New System.Drawing.Size(238, 344)
@@ -633,15 +634,15 @@ Partial Class PhoneApp
         Me.Label19.TabIndex = 21
         Me.Label19.Text = "Current Balance:"
         '
-        'Label22
+        'TimeLabel22
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(157, 9)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(71, 18)
-        Me.Label22.TabIndex = 0
-        Me.Label22.Text = "12:59 PM"
+        Me.TimeLabel22.AutoSize = True
+        Me.TimeLabel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel22.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel22.Name = "TimeLabel22"
+        Me.TimeLabel22.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel22.TabIndex = 0
+        Me.TimeLabel22.Text = "12:59 PM"
         '
         'CallPanel
         '
@@ -700,10 +701,11 @@ Partial Class PhoneApp
         '
         'SchedulePanel1
         '
+        Me.SchedulePanel1.Controls.Add(Me.ClearAll)
         Me.SchedulePanel1.Controls.Add(Me.ExistingS)
         Me.SchedulePanel1.Controls.Add(Me.Label6)
         Me.SchedulePanel1.Controls.Add(Me.Button3)
-        Me.SchedulePanel1.Controls.Add(Me.Label9)
+        Me.SchedulePanel1.Controls.Add(Me.TimeLabel9)
         Me.SchedulePanel1.Location = New System.Drawing.Point(748, 362)
         Me.SchedulePanel1.Name = "SchedulePanel1"
         Me.SchedulePanel1.Size = New System.Drawing.Size(238, 344)
@@ -713,6 +715,7 @@ Partial Class PhoneApp
         '
         Me.ExistingS.Location = New System.Drawing.Point(17, 102)
         Me.ExistingS.Name = "ExistingS"
+        Me.ExistingS.ReadOnly = True
         Me.ExistingS.Size = New System.Drawing.Size(199, 170)
         Me.ExistingS.TabIndex = 24
         Me.ExistingS.Text = ""
@@ -722,9 +725,9 @@ Partial Class PhoneApp
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(14, 74)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(55, 13)
+        Me.Label6.Size = New System.Drawing.Size(60, 13)
         Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Schedule:"
+        Me.Label6.Text = "Schedules:"
         '
         'Button3
         '
@@ -735,15 +738,24 @@ Partial Class PhoneApp
         Me.Button3.Text = "Back"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label9
+        'TimeLabel9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(157, 9)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(71, 18)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "12:59 PM"
+        Me.TimeLabel9.AutoSize = True
+        Me.TimeLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel9.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel9.Name = "TimeLabel9"
+        Me.TimeLabel9.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel9.TabIndex = 0
+        Me.TimeLabel9.Text = "12:59 PM"
+        '
+        'ClearAll
+        '
+        Me.ClearAll.Location = New System.Drawing.Point(80, 300)
+        Me.ClearAll.Name = "ClearAll"
+        Me.ClearAll.Size = New System.Drawing.Size(75, 23)
+        Me.ClearAll.TabIndex = 25
+        Me.ClearAll.Text = "Clear All"
+        Me.ClearAll.UseVisualStyleBackColor = True
         '
         'PhoneApp
         '
@@ -832,7 +844,7 @@ Partial Class PhoneApp
     Friend WithEvents Label17 As Label
     Friend WithEvents AddMoney As Button
     Friend WithEvents Label19 As Label
-    Friend WithEvents Label22 As Label
+    Friend WithEvents TimeLabel22 As Label
     Friend WithEvents CurrBalanceLabel As Label
     Friend WithEvents AmountBox As TextBox
     Friend WithEvents AddVerification As Label
@@ -855,5 +867,6 @@ Partial Class PhoneApp
     Friend WithEvents ExistingS As RichTextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label9 As Label
+    Friend WithEvents TimeLabel9 As Label
+    Friend WithEvents ClearAll As Button
 End Class
