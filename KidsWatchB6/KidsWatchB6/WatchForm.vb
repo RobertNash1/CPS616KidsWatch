@@ -211,7 +211,6 @@
 
     Public Sub setMessage(msg As String)
         Message = msg
-
         MessageBox.AppendText(Message & Environment.NewLine)
 
     End Sub
@@ -221,7 +220,7 @@
 
     Public Sub setSchedule(msg As String)
         Schedule = msg
-        ScheduleBox.Text = Schedule
+        ScheduleBox.AppendText(Schedule & Environment.NewLine)
     End Sub
 
     Private Sub TapToPay_Click(sender As Object, e As EventArgs) Handles TapToPay.Click

@@ -2,6 +2,7 @@
     Dim myPanels As List(Of Panel) = New List(Of Panel)
     Dim Panelocation As Point
     Dim test As Integer
+    Dim counter As Integer
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -11,7 +12,9 @@
         myPanels.Add(AppPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(SchedulePanel)
+        myPanels.Add(SchedulePanel1)
         myPanels.Add(CallPanel)
+
         For index As Integer = 0 To 6
             myPanels(index).Location = Panelocation
         Next
@@ -33,6 +36,7 @@
         MessagePanel.Visible = False
         SchedulePanel.Visible = False
         SchedulePanel.Visible = False
+        SchedulePanel1.Visible = False
         AddMoneyPanel.Visible = False
         CallPanel.Visible = False
     End Sub
@@ -105,7 +109,13 @@
     End Sub
 
     Private Sub UpdateSchedule_Click(sender As Object, e As EventArgs) Handles UpdateSchedule.Click
-        WatchForm.setSchedule(ScheduleBox.Text)
+        counter += 1
+        countSchedule.Text = CStr(counter) & " Existing"
+        ExistingS.AppendText(ScheduleBoxDate.Text & Environment.NewLine & ScheduleBoxTime.Text & Environment.NewLine & ScheduleBox.Text & Environment.NewLine & Environment.NewLine)
+        WatchForm.setSchedule(ExistingS.Text)
+        ScheduleBox.Text = ""
+        ScheduleBoxDate.Text = ""
+        ScheduleBoxTime.Text = ""
     End Sub
 
     Private Sub CallEndPicture_Click(sender As Object, e As EventArgs) Handles CallEndPicture.Click
@@ -121,7 +131,15 @@
         End If
     End Sub
 
-    Private Sub ScheduleBox_TextChanged(sender As Object, e As EventArgs) Handles ScheduleBox.TextChanged
 
+
+    Private Sub countSchedule_Click(sender As Object, e As EventArgs) Handles countSchedule.Click
+        SchedulePanel1.Visible = True
+        SchedulePanel.Visible = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SchedulePanel1.Visible = False
+        SchedulePanel.Visible = True
     End Sub
 End Class

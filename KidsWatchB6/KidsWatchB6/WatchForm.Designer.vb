@@ -630,7 +630,6 @@ Partial Class WatchForm
         '
         'ScheduleBox
         '
-        Me.ScheduleBox.Enabled = False
         Me.ScheduleBox.Location = New System.Drawing.Point(14, 63)
         Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2)
         Me.ScheduleBox.Name = "ScheduleBox"

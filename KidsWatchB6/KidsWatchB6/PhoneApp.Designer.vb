@@ -51,12 +51,19 @@ Partial Class PhoneApp
         Me.Contacts = New System.Windows.Forms.Label()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
         Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.SentMsg = New System.Windows.Forms.RichTextBox()
         Me.Send = New System.Windows.Forms.Button()
         Me.MessageBox = New System.Windows.Forms.RichTextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.MessageBackButton = New System.Windows.Forms.Button()
         Me.TimeLabel4 = New System.Windows.Forms.Label()
         Me.SchedulePanel = New System.Windows.Forms.Panel()
+        Me.countSchedule = New System.Windows.Forms.Button()
+        Me.ScheduleBoxTime = New System.Windows.Forms.RichTextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ScheduleBoxDate = New System.Windows.Forms.RichTextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.ScheduleBox = New System.Windows.Forms.RichTextBox()
         Me.UpdateSchedule = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -77,9 +84,11 @@ Partial Class PhoneApp
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.SentMsg = New System.Windows.Forms.RichTextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.SchedulePanel1 = New System.Windows.Forms.Panel()
+        Me.ExistingS = New System.Windows.Forms.RichTextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,6 +106,7 @@ Partial Class PhoneApp
         Me.CallPanel.SuspendLayout()
         CType(Me.CallEndPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SchedulePanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -376,6 +386,24 @@ Partial Class PhoneApp
         Me.MessagePanel.Size = New System.Drawing.Size(238, 344)
         Me.MessagePanel.TabIndex = 4
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(14, 102)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Sent:"
+        '
+        'SentMsg
+        '
+        Me.SentMsg.Location = New System.Drawing.Point(17, 121)
+        Me.SentMsg.Name = "SentMsg"
+        Me.SentMsg.ReadOnly = True
+        Me.SentMsg.Size = New System.Drawing.Size(199, 39)
+        Me.SentMsg.TabIndex = 24
+        Me.SentMsg.Text = ""
+        '
         'Send
         '
         Me.Send.Location = New System.Drawing.Point(84, 308)
@@ -424,7 +452,11 @@ Partial Class PhoneApp
         '
         'SchedulePanel
         '
-        Me.SchedulePanel.Controls.Add(Me.Label3)
+        Me.SchedulePanel.Controls.Add(Me.countSchedule)
+        Me.SchedulePanel.Controls.Add(Me.ScheduleBoxTime)
+        Me.SchedulePanel.Controls.Add(Me.Label21)
+        Me.SchedulePanel.Controls.Add(Me.ScheduleBoxDate)
+        Me.SchedulePanel.Controls.Add(Me.Label20)
         Me.SchedulePanel.Controls.Add(Me.ScheduleBox)
         Me.SchedulePanel.Controls.Add(Me.UpdateSchedule)
         Me.SchedulePanel.Controls.Add(Me.Label16)
@@ -435,17 +467,60 @@ Partial Class PhoneApp
         Me.SchedulePanel.Size = New System.Drawing.Size(238, 344)
         Me.SchedulePanel.TabIndex = 5
         '
+        'countSchedule
+        '
+        Me.countSchedule.Location = New System.Drawing.Point(124, 63)
+        Me.countSchedule.Name = "countSchedule"
+        Me.countSchedule.Size = New System.Drawing.Size(92, 23)
+        Me.countSchedule.TabIndex = 30
+        Me.countSchedule.Text = "None Existing"
+        Me.countSchedule.UseVisualStyleBackColor = True
+        '
+        'ScheduleBoxTime
+        '
+        Me.ScheduleBoxTime.Location = New System.Drawing.Point(18, 247)
+        Me.ScheduleBoxTime.Name = "ScheduleBoxTime"
+        Me.ScheduleBoxTime.Size = New System.Drawing.Size(199, 25)
+        Me.ScheduleBoxTime.TabIndex = 29
+        Me.ScheduleBoxTime.Text = ""
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(15, 231)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(88, 13)
+        Me.Label21.TabIndex = 28
+        Me.Label21.Text = "Time (HH:MM tt):"
+        '
+        'ScheduleBoxDate
+        '
+        Me.ScheduleBoxDate.Location = New System.Drawing.Point(18, 194)
+        Me.ScheduleBoxDate.Name = "ScheduleBoxDate"
+        Me.ScheduleBoxDate.Size = New System.Drawing.Size(199, 25)
+        Me.ScheduleBoxDate.TabIndex = 27
+        Me.ScheduleBoxDate.Text = ""
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(15, 174)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(110, 13)
+        Me.Label20.TabIndex = 26
+        Me.Label20.Text = "Date (YYYY-MM-DD):"
+        '
         'ScheduleBox
         '
-        Me.ScheduleBox.Location = New System.Drawing.Point(16, 104)
+        Me.ScheduleBox.Location = New System.Drawing.Point(17, 102)
         Me.ScheduleBox.Name = "ScheduleBox"
-        Me.ScheduleBox.Size = New System.Drawing.Size(199, 96)
+        Me.ScheduleBox.Size = New System.Drawing.Size(199, 58)
         Me.ScheduleBox.TabIndex = 24
         Me.ScheduleBox.Text = ""
         '
         'UpdateSchedule
         '
-        Me.UpdateSchedule.Location = New System.Drawing.Point(55, 257)
+        Me.UpdateSchedule.Location = New System.Drawing.Point(52, 306)
         Me.UpdateSchedule.Name = "UpdateSchedule"
         Me.UpdateSchedule.Size = New System.Drawing.Size(118, 23)
         Me.UpdateSchedule.TabIndex = 23
@@ -623,38 +698,59 @@ Partial Class PhoneApp
         '
         Me.Timer1.Interval = 1000
         '
-        'Label3
+        'SchedulePanel1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(89, 74)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 13)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "None"
+        Me.SchedulePanel1.Controls.Add(Me.ExistingS)
+        Me.SchedulePanel1.Controls.Add(Me.Label6)
+        Me.SchedulePanel1.Controls.Add(Me.Button3)
+        Me.SchedulePanel1.Controls.Add(Me.Label9)
+        Me.SchedulePanel1.Location = New System.Drawing.Point(748, 362)
+        Me.SchedulePanel1.Name = "SchedulePanel1"
+        Me.SchedulePanel1.Size = New System.Drawing.Size(238, 344)
+        Me.SchedulePanel1.TabIndex = 32
         '
-        'SentMsg
+        'ExistingS
         '
-        Me.SentMsg.Location = New System.Drawing.Point(17, 121)
-        Me.SentMsg.Name = "SentMsg"
-        Me.SentMsg.ReadOnly = True
-        Me.SentMsg.Size = New System.Drawing.Size(199, 39)
-        Me.SentMsg.TabIndex = 24
-        Me.SentMsg.Text = ""
+        Me.ExistingS.Location = New System.Drawing.Point(17, 102)
+        Me.ExistingS.Name = "ExistingS"
+        Me.ExistingS.Size = New System.Drawing.Size(199, 170)
+        Me.ExistingS.TabIndex = 24
+        Me.ExistingS.Text = ""
         '
-        'Label4
+        'Label6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 102)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Sent:"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(14, 74)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(55, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Schedule:"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(3, 26)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 20
+        Me.Button3.Text = "Back"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(157, 9)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(71, 18)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "12:59 PM"
         '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1200, 697)
+        Me.Controls.Add(Me.SchedulePanel1)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.AddMoneyPanel)
         Me.Controls.Add(Me.SchedulePanel)
@@ -689,6 +785,8 @@ Partial Class PhoneApp
         Me.CallPanel.PerformLayout()
         CType(Me.CallEndPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SchedulePanel1.ResumeLayout(False)
+        Me.SchedulePanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -746,7 +844,16 @@ Partial Class PhoneApp
     Friend WithEvents TimeLabel6 As Label
     Friend WithEvents CallEndPicture As PictureBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents SentMsg As RichTextBox
+    Friend WithEvents countSchedule As Button
+    Friend WithEvents ScheduleBoxTime As RichTextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents ScheduleBoxDate As RichTextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents SchedulePanel1 As Panel
+    Friend WithEvents ExistingS As RichTextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label9 As Label
 End Class
