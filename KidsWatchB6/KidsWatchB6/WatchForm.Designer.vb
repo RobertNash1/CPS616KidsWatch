@@ -157,10 +157,11 @@ Partial Class WatchForm
         'DateLabel
         '
         Me.DateLabel.AutoSize = True
+        Me.DateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel.Location = New System.Drawing.Point(26, 53)
         Me.DateLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(56, 13)
+        Me.DateLabel.Size = New System.Drawing.Size(74, 18)
         Me.DateLabel.TabIndex = 1
         Me.DateLabel.Text = "DateLabel"
         '
@@ -494,9 +495,9 @@ Partial Class WatchForm
         '
         'MomCallButton
         '
-        Me.MomCallButton.Location = New System.Drawing.Point(134, 124)
+        Me.MomCallButton.Location = New System.Drawing.Point(120, 112)
         Me.MomCallButton.Name = "MomCallButton"
-        Me.MomCallButton.Size = New System.Drawing.Size(41, 23)
+        Me.MomCallButton.Size = New System.Drawing.Size(55, 35)
         Me.MomCallButton.TabIndex = 9
         Me.MomCallButton.Text = "Call >"
         Me.MomCallButton.UseVisualStyleBackColor = True
@@ -630,6 +631,7 @@ Partial Class WatchForm
         '
         'ScheduleBox
         '
+        Me.ScheduleBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ScheduleBox.Location = New System.Drawing.Point(14, 63)
         Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2)
         Me.ScheduleBox.Name = "ScheduleBox"
@@ -681,9 +683,9 @@ Partial Class WatchForm
         '
         'DadCallButton
         '
-        Me.DadCallButton.Location = New System.Drawing.Point(134, 120)
+        Me.DadCallButton.Location = New System.Drawing.Point(120, 111)
         Me.DadCallButton.Name = "DadCallButton"
-        Me.DadCallButton.Size = New System.Drawing.Size(41, 23)
+        Me.DadCallButton.Size = New System.Drawing.Size(55, 32)
         Me.DadCallButton.TabIndex = 9
         Me.DadCallButton.Text = "Call >"
         Me.DadCallButton.UseVisualStyleBackColor = True
@@ -778,6 +780,7 @@ Partial Class WatchForm
         '
         'MessageBox
         '
+        Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MessageBox.Location = New System.Drawing.Point(17, 59)
         Me.MessageBox.Name = "MessageBox"
         Me.MessageBox.ReadOnly = True
