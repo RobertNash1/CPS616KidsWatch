@@ -102,6 +102,9 @@ Partial Class WatchForm
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,10 +132,14 @@ Partial Class WatchForm
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RingPanel.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
         '
+        Me.ClockPanel.Controls.Add(Me.PictureBox11)
         Me.ClockPanel.Controls.Add(Me.LeftButton)
         Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
@@ -163,21 +170,21 @@ Partial Class WatchForm
         'DateLabel
         '
         Me.DateLabel.AutoSize = True
-        Me.DateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateLabel.Location = New System.Drawing.Point(26, 53)
+        Me.DateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.Location = New System.Drawing.Point(15, 130)
         Me.DateLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(74, 18)
+        Me.DateLabel.Size = New System.Drawing.Size(83, 20)
         Me.DateLabel.TabIndex = 1
         Me.DateLabel.Text = "DateLabel"
         '
         'TimeLabel
         '
         Me.TimeLabel.AutoSize = True
-        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel.Location = New System.Drawing.Point(24, 28)
+        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel.Location = New System.Drawing.Point(25, 17)
         Me.TimeLabel.Name = "TimeLabel"
-        Me.TimeLabel.Size = New System.Drawing.Size(112, 25)
+        Me.TimeLabel.Size = New System.Drawing.Size(140, 31)
         Me.TimeLabel.TabIndex = 0
         Me.TimeLabel.Text = "TimeLabel"
         '
@@ -551,9 +558,9 @@ Partial Class WatchForm
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(44, 32)
+        Me.PictureBox7.Location = New System.Drawing.Point(48, 32)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(94, 75)
+        Me.PictureBox7.Size = New System.Drawing.Size(90, 75)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 8
         Me.PictureBox7.TabStop = False
@@ -627,6 +634,7 @@ Partial Class WatchForm
         '
         'SchedulePanel1
         '
+        Me.SchedulePanel1.Controls.Add(Me.PictureBox10)
         Me.SchedulePanel1.Controls.Add(Me.ScheduleBox)
         Me.SchedulePanel1.Controls.Add(Me.ScheduleUp)
         Me.SchedulePanel1.Controls.Add(Me.Label5)
@@ -638,11 +646,11 @@ Partial Class WatchForm
         'ScheduleBox
         '
         Me.ScheduleBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ScheduleBox.Location = New System.Drawing.Point(14, 63)
+        Me.ScheduleBox.Location = New System.Drawing.Point(14, 58)
         Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2)
         Me.ScheduleBox.Name = "ScheduleBox"
         Me.ScheduleBox.ReadOnly = True
-        Me.ScheduleBox.Size = New System.Drawing.Size(153, 80)
+        Me.ScheduleBox.Size = New System.Drawing.Size(153, 85)
         Me.ScheduleBox.TabIndex = 9
         Me.ScheduleBox.Text = ""
         '
@@ -776,6 +784,7 @@ Partial Class WatchForm
         '
         'MessagePanel1
         '
+        Me.MessagePanel1.Controls.Add(Me.PictureBox9)
         Me.MessagePanel1.Controls.Add(Me.MessageBox)
         Me.MessagePanel1.Controls.Add(Me.Label6)
         Me.MessagePanel1.Controls.Add(Me.MessageUp)
@@ -897,6 +906,36 @@ Partial Class WatchForm
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Ringing"
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(130, 15)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 18
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
+        Me.PictureBox10.Location = New System.Drawing.Point(123, 15)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 18
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(41, 51)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(95, 76)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 18
+        Me.PictureBox11.TabStop = False
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -960,6 +999,9 @@ Partial Class WatchForm
         Me.RingPanel.ResumeLayout(False)
         Me.RingPanel.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1042,4 +1084,7 @@ Partial Class WatchForm
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents PictureBox9 As PictureBox
 End Class
