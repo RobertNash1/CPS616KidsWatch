@@ -109,6 +109,15 @@ Partial Class WatchForm
         Me.VolumeUP = New System.Windows.Forms.Button()
         Me.VolumeDown = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.HelpPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.HelpPanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel.SuspendLayout()
@@ -139,6 +148,10 @@ Partial Class WatchForm
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RingPanel.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HelpPanel.SuspendLayout()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HelpPanel1.SuspendLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -699,6 +712,7 @@ Partial Class WatchForm
         '
         'ContactPanel2
         '
+        Me.ContactPanel2.Controls.Add(Me.Button3)
         Me.ContactPanel2.Controls.Add(Me.DadPicture)
         Me.ContactPanel2.Controls.Add(Me.DadCallButton)
         Me.ContactPanel2.Controls.Add(Me.ContactUp2)
@@ -741,7 +755,7 @@ Partial Class WatchForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(70, 123)
+        Me.Label8.Location = New System.Drawing.Point(70, 116)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 20)
         Me.Label8.TabIndex = 0
@@ -976,11 +990,102 @@ Partial Class WatchForm
         Me.RichTextBox1.TabIndex = 21
         Me.RichTextBox1.Text = "(Buttons below are to be implemented on Physical version of Watch)"
         '
+        'HelpPanel
+        '
+        Me.HelpPanel.Controls.Add(Me.PictureBox12)
+        Me.HelpPanel.Controls.Add(Me.Button2)
+        Me.HelpPanel.Controls.Add(Me.Label4)
+        Me.HelpPanel.Location = New System.Drawing.Point(15, 519)
+        Me.HelpPanel.Name = "HelpPanel"
+        Me.HelpPanel.Size = New System.Drawing.Size(185, 163)
+        Me.HelpPanel.TabIndex = 22
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
+        Me.PictureBox12.Location = New System.Drawing.Point(43, 34)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(102, 98)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 17
+        Me.PictureBox12.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(78, 6)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(27, 23)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "^"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(29, 135)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(131, 20)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "TAP FOR HELP!!"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(78, 137)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(27, 23)
+        Me.Button3.TabIndex = 18
+        Me.Button3.Text = "\/"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'HelpPanel1
+        '
+        Me.HelpPanel1.Controls.Add(Me.PictureBox13)
+        Me.HelpPanel1.Controls.Add(Me.Button4)
+        Me.HelpPanel1.Controls.Add(Me.Label7)
+        Me.HelpPanel1.Location = New System.Drawing.Point(15, 685)
+        Me.HelpPanel1.Name = "HelpPanel1"
+        Me.HelpPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.HelpPanel1.TabIndex = 23
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
+        Me.PictureBox13.Location = New System.Drawing.Point(14, 37)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(159, 95)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 17
+        Me.PictureBox13.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(78, 6)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(27, 23)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "^"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(10, 134)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(163, 20)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "HELP ON THE WAY!!"
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1325, 894)
+        Me.Controls.Add(Me.HelpPanel1)
+        Me.Controls.Add(Me.HelpPanel)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.VolumeDown)
         Me.Controls.Add(Me.VolumeUP)
@@ -1046,6 +1151,12 @@ Partial Class WatchForm
         Me.RingPanel.ResumeLayout(False)
         Me.RingPanel.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HelpPanel.ResumeLayout(False)
+        Me.HelpPanel.PerformLayout()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HelpPanel1.ResumeLayout(False)
+        Me.HelpPanel1.PerformLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1135,4 +1246,13 @@ Partial Class WatchForm
     Friend WithEvents VolumeUP As Button
     Friend WithEvents VolumeDown As Button
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents HelpPanel As Panel
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents HelpPanel1 As Panel
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Label7 As Label
 End Class

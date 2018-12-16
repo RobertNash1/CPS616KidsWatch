@@ -15,8 +15,8 @@
         myPanels.Add(SchedulePanel1)
         myPanels.Add(CallPanel)
         myPanels.Add(CallPanel1)
-
-        For index As Integer = 0 To 8
+        myPanels.Add(SOSPanel)
+        For index As Integer = 0 To 9
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -30,6 +30,7 @@
         TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel8.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel11.Text = TimeOfDay.ToString("hh:mm tt")
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
@@ -176,5 +177,9 @@
         CallPanel.Visible = True
         WatchForm.RingPanel.Visible = False
         WatchForm.CallPanel.Visible = True
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SOSPanel.Visible = False
     End Sub
 End Class

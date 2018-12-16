@@ -23,7 +23,9 @@
         myPanels.Add(MessagePanel1)
         myPanels.Add(CallPanel)
         myPanels.Add(RingPanel)
-        For index As Integer = 0 To 14
+        myPanels.Add(HelpPanel)
+        myPanels.Add(HelpPanel1)
+        For index As Integer = 0 To 16
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -52,6 +54,8 @@
         MessagePanel1.Visible = False
         CallPanel.Visible = False
         RingPanel.Visible = False
+        HelpPanel.Visible = False
+        HelpPanel1.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -285,7 +289,6 @@
             PhoneApp.CallPanel.Visible = False
         End If
 
-
         ClockPanel.Visible = True
         ContactPanel.Visible = False
         ContactPanel1.Visible = False
@@ -301,6 +304,29 @@
         MessagePanel1.Visible = False
         CallPanel.Visible = False
         RingPanel.Visible = False
+        HelpPanel.Visible = False
+        HelpPanel1.Visible = False
 
+    End Sub
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        PhoneApp.SOSPanel.Visible = True
+        HelpPanel.Visible = False
+        HelpPanel1.Visible = True
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        HelpPanel.Visible = True
+        ContactPanel2.Visible = False
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ContactPanel2.Visible = True
+        HelpPanel.Visible = False
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        ContactPanel.Visible = True
+        HelpPanel1.Visible = False
     End Sub
 End Class
