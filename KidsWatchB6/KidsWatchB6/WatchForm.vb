@@ -28,7 +28,8 @@
         myPanels.Add(HelpPanel1)
         myPanels.Add(CallOptionPanel)
         myPanels.Add(VoiceMailPanel)
-        For index As Integer = 0 To 19
+        myPanels.Add(MapPanel)
+        For index As Integer = 0 To 20
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -80,6 +81,7 @@
         HelpPanel.Visible = False
         HelpPanel1.Visible = False
         GamesPanel1.Visible = False
+        MapPanel.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -88,7 +90,7 @@
     End Sub
 
     Private Sub LeftButton_Click(sender As Object, e As EventArgs) Handles LeftButton.Click
-        MusicPanel.Visible = True
+        MapPanel.Visible = True
         ClockPanel.Visible = False
     End Sub
 
@@ -144,8 +146,17 @@
         GamesPanel.Visible = True
         MusicPanel.Visible = False
     End Sub
-    Private Sub MusicRight_Click(sender As Object, e As EventArgs) Handles MusicRight.Click
+    Private Sub MapLeft_Click(sender As Object, e As EventArgs) Handles MapLeft.Click
+        MapPanel.Visible = False
+        MusicPanel.Visible = True
+    End Sub
+    Private Sub MapRight_Click(sender As Object, e As EventArgs) Handles MapRight.Click
+        MapPanel.Visible = False
         ClockPanel.Visible = True
+    End Sub
+
+    Private Sub MusicRight_Click(sender As Object, e As EventArgs) Handles MusicRight.Click
+        MapPanel.Visible = True
         MusicPanel.Visible = False
     End Sub
 

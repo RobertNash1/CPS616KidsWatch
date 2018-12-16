@@ -138,6 +138,12 @@ Partial Class WatchForm
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.VoiceMailPanelUpButton = New System.Windows.Forms.Button()
         Me.VoiceMailLabel = New System.Windows.Forms.Label()
+        Me.MapPanel = New System.Windows.Forms.Panel()
+        Me.MapButtonDown = New System.Windows.Forms.Button()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.MapLeft = New System.Windows.Forms.Button()
+        Me.MapRight = New System.Windows.Forms.Button()
+        Me.MapLabel = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,6 +190,8 @@ Partial Class WatchForm
         Me.VoiceMailPanel.SuspendLayout()
         CType(Me.HangUpPicture2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MapPanel.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -1324,11 +1332,71 @@ Partial Class WatchForm
         Me.VoiceMailLabel.TabIndex = 0
         Me.VoiceMailLabel.Text = "Leave a Voice Message"
         '
+        'MapPanel
+        '
+        Me.MapPanel.Controls.Add(Me.MapButtonDown)
+        Me.MapPanel.Controls.Add(Me.PictureBox11)
+        Me.MapPanel.Controls.Add(Me.MapLeft)
+        Me.MapPanel.Controls.Add(Me.MapRight)
+        Me.MapPanel.Controls.Add(Me.MapLabel)
+        Me.MapPanel.Location = New System.Drawing.Point(1349, 9)
+        Me.MapPanel.Name = "MapPanel"
+        Me.MapPanel.Size = New System.Drawing.Size(185, 163)
+        Me.MapPanel.TabIndex = 27
+        '
+        'MapButtonDown
+        '
+        Me.MapButtonDown.Location = New System.Drawing.Point(78, 137)
+        Me.MapButtonDown.Name = "MapButtonDown"
+        Me.MapButtonDown.Size = New System.Drawing.Size(27, 23)
+        Me.MapButtonDown.TabIndex = 5
+        Me.MapButtonDown.Text = "\/"
+        Me.MapButtonDown.UseVisualStyleBackColor = True
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 4
+        Me.PictureBox11.TabStop = False
+        '
+        'MapLeft
+        '
+        Me.MapLeft.Location = New System.Drawing.Point(3, 73)
+        Me.MapLeft.Name = "MapLeft"
+        Me.MapLeft.Size = New System.Drawing.Size(24, 23)
+        Me.MapLeft.TabIndex = 3
+        Me.MapLeft.Text = "<"
+        Me.MapLeft.UseVisualStyleBackColor = True
+        '
+        'MapRight
+        '
+        Me.MapRight.Location = New System.Drawing.Point(158, 73)
+        Me.MapRight.Name = "MapRight"
+        Me.MapRight.Size = New System.Drawing.Size(24, 23)
+        Me.MapRight.TabIndex = 2
+        Me.MapRight.Text = ">"
+        Me.MapRight.UseVisualStyleBackColor = True
+        '
+        'MapLabel
+        '
+        Me.MapLabel.AutoSize = True
+        Me.MapLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MapLabel.Location = New System.Drawing.Point(71, 115)
+        Me.MapLabel.Name = "MapLabel"
+        Me.MapLabel.Size = New System.Drawing.Size(40, 20)
+        Me.MapLabel.TabIndex = 0
+        Me.MapLabel.Text = "Map"
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1484, 845)
+        Me.ClientSize = New System.Drawing.Size(1540, 845)
+        Me.Controls.Add(Me.MapPanel)
         Me.Controls.Add(Me.VoiceMailPanel)
         Me.Controls.Add(Me.CallOptionPanel)
         Me.Controls.Add(Me.GamesPanel1)
@@ -1420,6 +1488,9 @@ Partial Class WatchForm
         Me.VoiceMailPanel.PerformLayout()
         CType(Me.HangUpPicture2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MapPanel.ResumeLayout(False)
+        Me.MapPanel.PerformLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1538,4 +1609,10 @@ Partial Class WatchForm
     Friend WithEvents VoiceMailPanelUpButton As Button
     Friend WithEvents VoiceMailLabel As Label
     Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents MapPanel As Panel
+    Friend WithEvents MapButtonDown As Button
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents MapLeft As Button
+    Friend WithEvents MapRight As Button
+    Friend WithEvents MapLabel As Label
 End Class
