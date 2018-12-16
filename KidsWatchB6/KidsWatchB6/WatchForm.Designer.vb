@@ -81,6 +81,7 @@ Partial Class WatchForm
         Me.ScheduleUp = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ContactPanel2 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.DadPicture = New System.Windows.Forms.PictureBox()
         Me.DadCallButton = New System.Windows.Forms.Button()
         Me.ContactUp2 = New System.Windows.Forms.Button()
@@ -113,11 +114,16 @@ Partial Class WatchForm
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.HelpPanel1 = New System.Windows.Forms.Panel()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.GamesPanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.GamesUp = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel.SuspendLayout()
@@ -152,6 +158,8 @@ Partial Class WatchForm
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.HelpPanel1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GamesPanel1.SuspendLayout()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -722,6 +730,15 @@ Partial Class WatchForm
         Me.ContactPanel2.Size = New System.Drawing.Size(185, 163)
         Me.ContactPanel2.TabIndex = 13
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(78, 137)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(27, 23)
+        Me.Button3.TabIndex = 18
+        Me.Button3.Text = "\/"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'DadPicture
         '
         Me.DadPicture.Image = CType(resources.GetObject("DadPicture.Image"), System.Drawing.Image)
@@ -1030,15 +1047,6 @@ Partial Class WatchForm
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "TAP FOR HELP!!"
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(78, 137)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 23)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "\/"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'HelpPanel1
         '
         Me.HelpPanel1.Controls.Add(Me.PictureBox13)
@@ -1079,11 +1087,73 @@ Partial Class WatchForm
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "HELP ON THE WAY!!"
         '
+        'GamesPanel1
+        '
+        Me.GamesPanel1.Controls.Add(Me.Label10)
+        Me.GamesPanel1.Controls.Add(Me.GamesUp)
+        Me.GamesPanel1.Controls.Add(Me.Label11)
+        Me.GamesPanel1.Controls.Add(Me.PictureBox14)
+        Me.GamesPanel1.Controls.Add(Me.Label9)
+        Me.GamesPanel1.Location = New System.Drawing.Point(967, 184)
+        Me.GamesPanel1.Name = "GamesPanel1"
+        Me.GamesPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.GamesPanel1.TabIndex = 24
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
+        Me.PictureBox14.Location = New System.Drawing.Point(49, 24)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(92, 69)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox14.TabIndex = 4
+        Me.PictureBox14.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(45, 96)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(124, 20)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "No Games YET!"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(26, 116)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(151, 20)
+        Me.Label11.TabIndex = 7
+        Me.Label11.Text = "Ask Your Parent To "
+        '
+        'GamesUp
+        '
+        Me.GamesUp.Location = New System.Drawing.Point(78, 3)
+        Me.GamesUp.Name = "GamesUp"
+        Me.GamesUp.Size = New System.Drawing.Size(27, 23)
+        Me.GamesUp.TabIndex = 9
+        Me.GamesUp.Text = "^"
+        Me.GamesUp.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(61, 137)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(80, 20)
+        Me.Label10.TabIndex = 10
+        Me.Label10.Text = "Buy Them"
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1325, 894)
+        Me.ClientSize = New System.Drawing.Size(1349, 894)
+        Me.Controls.Add(Me.GamesPanel1)
         Me.Controls.Add(Me.HelpPanel1)
         Me.Controls.Add(Me.HelpPanel)
         Me.Controls.Add(Me.RichTextBox1)
@@ -1157,6 +1227,9 @@ Partial Class WatchForm
         Me.HelpPanel1.ResumeLayout(False)
         Me.HelpPanel1.PerformLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GamesPanel1.ResumeLayout(False)
+        Me.GamesPanel1.PerformLayout()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1255,4 +1328,10 @@ Partial Class WatchForm
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents Button4 As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents GamesPanel1 As Panel
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents GamesUp As Button
+    Friend WithEvents Label11 As Label
 End Class

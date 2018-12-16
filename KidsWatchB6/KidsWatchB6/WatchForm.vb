@@ -18,6 +18,7 @@
         myPanels.Add(SchedulePanel)
         myPanels.Add(SchedulePanel1)
         myPanels.Add(GamesPanel)
+        myPanels.Add(GamesPanel1)
         myPanels.Add(MusicPanel)
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
@@ -25,7 +26,7 @@
         myPanels.Add(RingPanel)
         myPanels.Add(HelpPanel)
         myPanels.Add(HelpPanel1)
-        For index As Integer = 0 To 16
+        For index As Integer = 0 To 17
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -56,6 +57,7 @@
         RingPanel.Visible = False
         HelpPanel.Visible = False
         HelpPanel1.Visible = False
+        GamesPanel1.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -306,7 +308,7 @@
         RingPanel.Visible = False
         HelpPanel.Visible = False
         HelpPanel1.Visible = False
-
+        GamesPanel1.Visible = False
     End Sub
 
     Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
@@ -328,5 +330,15 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         ContactPanel.Visible = True
         HelpPanel1.Visible = False
+    End Sub
+
+    Private Sub GamesDown_Click(sender As Object, e As EventArgs) Handles GamesDown.Click
+        GamesPanel.Visible = False
+        GamesPanel1.Visible = True
+    End Sub
+
+    Private Sub GamesUp_Click(sender As Object, e As EventArgs) Handles GamesUp.Click
+        GamesPanel.Visible = True
+        GamesPanel1.Visible = False
     End Sub
 End Class
