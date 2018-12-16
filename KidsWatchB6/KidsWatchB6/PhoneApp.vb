@@ -45,6 +45,7 @@
         AddMoneyPanel.Visible = False
         CallPanel.Visible = False
         CallPanel1.Visible = False
+        SOSPanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -109,10 +110,16 @@
     End Sub
 
     Private Sub Send_Click(sender As Object, e As EventArgs) Handles Send.Click
-        WatchForm.setMessage(MessageBox.Text)
-        SentMsg.AppendText(MessageBox.Text & Environment.NewLine)
 
+        SentMsg.AppendText(MessageBox.Text & Environment.NewLine)
+        WatchForm.setMessage(SentMsg.Text)
         MessageBox.Text = ""
+
+    End Sub
+
+    Private Sub ClearMSG_Click(sender As Object, e As EventArgs) Handles ClearMSG.Click
+        SentMsg.Text = ""
+        WatchForm.setMessage(SentMsg.Text)
 
     End Sub
 
@@ -182,4 +189,6 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         SOSPanel.Visible = False
     End Sub
+
+
 End Class

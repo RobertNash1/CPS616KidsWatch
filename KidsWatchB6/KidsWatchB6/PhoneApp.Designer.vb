@@ -51,6 +51,7 @@ Partial Class PhoneApp
         Me.Contacts = New System.Windows.Forms.Label()
         Me.TimeLabel3 = New System.Windows.Forms.Label()
         Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.ClearMSG = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SentMsg = New System.Windows.Forms.RichTextBox()
         Me.Send = New System.Windows.Forms.Button()
@@ -97,11 +98,11 @@ Partial Class PhoneApp
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel8 = New System.Windows.Forms.Label()
         Me.SOSPanel = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel11 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -393,6 +394,7 @@ Partial Class PhoneApp
         '
         'MessagePanel
         '
+        Me.MessagePanel.Controls.Add(Me.ClearMSG)
         Me.MessagePanel.Controls.Add(Me.Label4)
         Me.MessagePanel.Controls.Add(Me.SentMsg)
         Me.MessagePanel.Controls.Add(Me.Send)
@@ -405,21 +407,32 @@ Partial Class PhoneApp
         Me.MessagePanel.Size = New System.Drawing.Size(238, 344)
         Me.MessagePanel.TabIndex = 4
         '
+        'ClearMSG
+        '
+        Me.ClearMSG.Location = New System.Drawing.Point(114, 192)
+        Me.ClearMSG.Name = "ClearMSG"
+        Me.ClearMSG.Size = New System.Drawing.Size(102, 23)
+        Me.ClearMSG.TabIndex = 26
+        Me.ClearMSG.Text = "Clear Messages"
+        Me.ClearMSG.UseVisualStyleBackColor = True
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 102)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(14, 88)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.Size = New System.Drawing.Size(38, 16)
         Me.Label4.TabIndex = 25
         Me.Label4.Text = "Sent:"
         '
         'SentMsg
         '
-        Me.SentMsg.Location = New System.Drawing.Point(17, 121)
+        Me.SentMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SentMsg.Location = New System.Drawing.Point(17, 104)
         Me.SentMsg.Name = "SentMsg"
         Me.SentMsg.ReadOnly = True
-        Me.SentMsg.Size = New System.Drawing.Size(199, 39)
+        Me.SentMsg.Size = New System.Drawing.Size(199, 82)
         Me.SentMsg.TabIndex = 24
         Me.SentMsg.Text = ""
         '
@@ -435,18 +448,20 @@ Partial Class PhoneApp
         '
         'MessageBox
         '
-        Me.MessageBox.Location = New System.Drawing.Point(17, 207)
+        Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessageBox.Location = New System.Drawing.Point(17, 231)
         Me.MessageBox.Name = "MessageBox"
-        Me.MessageBox.Size = New System.Drawing.Size(199, 96)
+        Me.MessageBox.Size = New System.Drawing.Size(199, 72)
         Me.MessageBox.TabIndex = 22
         Me.MessageBox.Text = ""
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(14, 74)
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(14, 63)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(58, 13)
+        Me.Label15.Size = New System.Drawing.Size(75, 16)
         Me.Label15.TabIndex = 21
         Me.Label15.Text = "Messages:"
         '
@@ -850,6 +865,25 @@ Partial Class PhoneApp
         Me.SOSPanel.Size = New System.Drawing.Size(238, 344)
         Me.SOSPanel.TabIndex = 34
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(153, 300)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 30
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(16, 239)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(200, 33)
+        Me.Label18.TabIndex = 3
+        Me.Label18.Text = "TROUBLE!!!!!!"
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -879,25 +913,6 @@ Partial Class PhoneApp
         Me.TimeLabel11.Size = New System.Drawing.Size(71, 18)
         Me.TimeLabel11.TabIndex = 0
         Me.TimeLabel11.Text = "12:59 PM"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(16, 239)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(200, 33)
-        Me.Label18.TabIndex = 3
-        Me.Label18.Text = "TROUBLE!!!!!!"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(153, 300)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 30
-        Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'PhoneApp
         '
@@ -1033,4 +1048,5 @@ Partial Class PhoneApp
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents TimeLabel11 As Label
+    Friend WithEvents ClearMSG As Button
 End Class

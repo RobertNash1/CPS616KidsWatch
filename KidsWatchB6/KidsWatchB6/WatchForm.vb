@@ -219,7 +219,7 @@
 
     Public Sub setMessage(msg As String)
         Message = msg
-        MessageBox.AppendText(Message & Environment.NewLine)
+        MessageBox.Text = Message
 
     End Sub
     Public Function getSchedule()
