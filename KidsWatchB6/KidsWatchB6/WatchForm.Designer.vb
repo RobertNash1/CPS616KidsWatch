@@ -98,6 +98,10 @@ Partial Class WatchForm
         Me.CallPicture = New System.Windows.Forms.PictureBox()
         Me.CallEndButton = New System.Windows.Forms.Button()
         Me.IDLabel = New System.Windows.Forms.Label()
+        Me.RingPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,6 +127,8 @@ Partial Class WatchForm
         Me.MessagePanel1.SuspendLayout()
         Me.CallPanel.SuspendLayout()
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RingPanel.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -851,11 +857,52 @@ Partial Class WatchForm
         Me.IDLabel.TabIndex = 0
         Me.IDLabel.Text = "CID"
         '
+        'RingPanel
+        '
+        Me.RingPanel.Controls.Add(Me.PictureBox8)
+        Me.RingPanel.Controls.Add(Me.Button1)
+        Me.RingPanel.Controls.Add(Me.Label3)
+        Me.RingPanel.Location = New System.Drawing.Point(203, 688)
+        Me.RingPanel.Name = "RingPanel"
+        Me.RingPanel.Size = New System.Drawing.Size(185, 163)
+        Me.RingPanel.TabIndex = 17
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(33, 34)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(114, 98)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 17
+        Me.PictureBox8.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(78, 6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(27, 23)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "^"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(63, 134)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 20)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Ringing"
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1325, 894)
+        Me.Controls.Add(Me.RingPanel)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.MessagePanel1)
         Me.Controls.Add(Me.MessagePanel)
@@ -910,6 +957,9 @@ Partial Class WatchForm
         Me.CallPanel.ResumeLayout(False)
         Me.CallPanel.PerformLayout()
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RingPanel.ResumeLayout(False)
+        Me.RingPanel.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -988,4 +1038,8 @@ Partial Class WatchForm
     Friend WithEvents CallPicture As PictureBox
     Friend WithEvents CallEndButton As Button
     Friend WithEvents IDLabel As Label
+    Friend WithEvents RingPanel As Panel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label3 As Label
 End Class

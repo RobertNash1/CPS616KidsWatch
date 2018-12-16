@@ -163,10 +163,10 @@
         Dim CallID = WatchForm.getCallID
 
         If CallID = "Mom" Then
-            WatchForm.CallPanel.Visible = False
+            WatchForm.RingPanel.Visible = False
             WatchForm.ContactPanel1.Visible = True
         ElseIf CallID = "Dad" Then
-            WatchForm.CallPanel.Visible = False
+            WatchForm.RingPanel.Visible = False
             WatchForm.ContactPanel2.Visible = True
         End If
     End Sub
@@ -174,5 +174,7 @@
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         CallPanel1.Visible = False
         CallPanel.Visible = True
+        WatchForm.RingPanel.Visible = False
+        WatchForm.CallPanel.Visible = True
     End Sub
 End Class

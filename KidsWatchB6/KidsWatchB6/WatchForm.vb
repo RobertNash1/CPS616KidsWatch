@@ -22,7 +22,8 @@
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
         myPanels.Add(CallPanel)
-        For index As Integer = 0 To 13
+        myPanels.Add(RingPanel)
+        For index As Integer = 0 To 14
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -50,6 +51,7 @@
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
         CallPanel.Visible = False
+        RingPanel.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -233,7 +235,7 @@
     Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click, MomCallButton.Click
         CallID = "Mom"
         IDLabel.Text = CallID
-        CallPanel.Visible = True
+        RingPanel.Visible = True
         ContactPanel1.Visible = False
         PhoneApp.CallPanel1.Visible = True
     End Sub
@@ -241,7 +243,7 @@
     Private Sub DadPicture_Click(sender As Object, e As EventArgs) Handles DadPicture.Click, DadCallButton.Click
         CallID = "Dad"
         IDLabel.Text = CallID
-        CallPanel.Visible = True
+        RingPanel.Visible = True
         ContactPanel2.Visible = False
         PhoneApp.CallPanel1.Visible = True
     End Sub
@@ -262,5 +264,15 @@
         Return CallID
     End Function
 
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If CallID = "Mom" Then
+            RingPanel.Visible = False
+            ContactPanel1.Visible = True
+            PhoneApp.CallPanel1.Visible = False
+        ElseIf CallID = "Dad" Then
+            RingPanel.Visible = False
+            ContactPanel2.Visible = True
+            PhoneApp.CallPanel1.Visible = False
+        End If
+    End Sub
 End Class
