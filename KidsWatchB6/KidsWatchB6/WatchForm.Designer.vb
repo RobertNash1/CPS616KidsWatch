@@ -25,6 +25,7 @@ Partial Class WatchForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WatchForm))
         Me.ClockPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.LeftButton = New System.Windows.Forms.Button()
         Me.RightButton = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
@@ -75,6 +76,7 @@ Partial Class WatchForm
         Me.TapToPay = New System.Windows.Forms.PictureBox()
         Me.PaymentUp2 = New System.Windows.Forms.Button()
         Me.SchedulePanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.ScheduleBox = New System.Windows.Forms.RichTextBox()
         Me.ScheduleUp = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -90,6 +92,7 @@ Partial Class WatchForm
         Me.MessageRight = New System.Windows.Forms.Button()
         Me.MessageLabel = New System.Windows.Forms.Label()
         Me.MessagePanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.MessageBox = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MessageUp = New System.Windows.Forms.Button()
@@ -102,10 +105,12 @@ Partial Class WatchForm
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.HomeButton = New System.Windows.Forms.Button()
+        Me.VolumeUP = New System.Windows.Forms.Button()
+        Me.VolumeDown = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ClockPanel.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PaymentPanel.SuspendLayout()
@@ -123,18 +128,17 @@ Partial Class WatchForm
         Me.PaymentPanel2.SuspendLayout()
         CType(Me.TapToPay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SchedulePanel1.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel2.SuspendLayout()
         CType(Me.DadPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel1.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CallPanel.SuspendLayout()
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RingPanel.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -148,6 +152,16 @@ Partial Class WatchForm
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(185, 163)
         Me.ClockPanel.TabIndex = 0
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(41, 51)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(95, 76)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 18
+        Me.PictureBox11.TabStop = False
         '
         'LeftButton
         '
@@ -643,6 +657,16 @@ Partial Class WatchForm
         Me.SchedulePanel1.Size = New System.Drawing.Size(185, 163)
         Me.SchedulePanel1.TabIndex = 11
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
+        Me.PictureBox10.Location = New System.Drawing.Point(123, 15)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 18
+        Me.PictureBox10.TabStop = False
+        '
         'ScheduleBox
         '
         Me.ScheduleBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -793,6 +817,16 @@ Partial Class WatchForm
         Me.MessagePanel1.Size = New System.Drawing.Size(185, 163)
         Me.MessagePanel1.TabIndex = 15
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(130, 15)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 18
+        Me.PictureBox9.TabStop = False
+        '
         'MessageBox
         '
         Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -906,41 +940,51 @@ Partial Class WatchForm
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Ringing"
         '
-        'PictureBox9
+        'HomeButton
         '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(130, 15)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(44, 38)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 18
-        Me.PictureBox9.TabStop = False
+        Me.HomeButton.Location = New System.Drawing.Point(120, 262)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(75, 23)
+        Me.HomeButton.TabIndex = 18
+        Me.HomeButton.Text = "Home"
+        Me.HomeButton.UseVisualStyleBackColor = True
         '
-        'PictureBox10
+        'VolumeUP
         '
-        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(123, 15)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(44, 38)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 18
-        Me.PictureBox10.TabStop = False
+        Me.VolumeUP.Location = New System.Drawing.Point(13, 262)
+        Me.VolumeUP.Name = "VolumeUP"
+        Me.VolumeUP.Size = New System.Drawing.Size(75, 23)
+        Me.VolumeUP.TabIndex = 19
+        Me.VolumeUP.Text = "Volume Up"
+        Me.VolumeUP.UseVisualStyleBackColor = True
         '
-        'PictureBox11
+        'VolumeDown
         '
-        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(41, 51)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(95, 76)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 18
-        Me.PictureBox11.TabStop = False
+        Me.VolumeDown.Location = New System.Drawing.Point(13, 291)
+        Me.VolumeDown.Name = "VolumeDown"
+        Me.VolumeDown.Size = New System.Drawing.Size(75, 40)
+        Me.VolumeDown.TabIndex = 20
+        Me.VolumeDown.Text = "Volume Down"
+        Me.VolumeDown.UseVisualStyleBackColor = True
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(15, 215)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
+        Me.RichTextBox1.Size = New System.Drawing.Size(182, 47)
+        Me.RichTextBox1.TabIndex = 21
+        Me.RichTextBox1.Text = "(Buttons below are to be implemented on Physical version of Watch)"
         '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1325, 894)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.VolumeDown)
+        Me.Controls.Add(Me.VolumeUP)
+        Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.RingPanel)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.MessagePanel1)
@@ -960,6 +1004,7 @@ Partial Class WatchForm
         Me.Text = "WatchForm"
         Me.ClockPanel.ResumeLayout(False)
         Me.ClockPanel.PerformLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContactPanel.ResumeLayout(False)
         Me.ContactPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -985,6 +1030,7 @@ Partial Class WatchForm
         CType(Me.TapToPay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SchedulePanel1.ResumeLayout(False)
         Me.SchedulePanel1.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContactPanel2.ResumeLayout(False)
         Me.ContactPanel2.PerformLayout()
         CType(Me.DadPicture, System.ComponentModel.ISupportInitialize).EndInit()
@@ -993,15 +1039,13 @@ Partial Class WatchForm
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel1.ResumeLayout(False)
         Me.MessagePanel1.PerformLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CallPanel.ResumeLayout(False)
         Me.CallPanel.PerformLayout()
         CType(Me.CallPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RingPanel.ResumeLayout(False)
         Me.RingPanel.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1087,4 +1131,8 @@ Partial Class WatchForm
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents HomeButton As Button
+    Friend WithEvents VolumeUP As Button
+    Friend WithEvents VolumeDown As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

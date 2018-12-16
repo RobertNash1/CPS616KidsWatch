@@ -275,4 +275,32 @@
             PhoneApp.CallPanel1.Visible = False
         End If
     End Sub
+
+    Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+
+        If RingPanel.Visible = True Then
+            PhoneApp.CallPanel1.Visible = False
+        End If
+        If CallPanel.Visible = True Then
+            PhoneApp.CallPanel.Visible = False
+        End If
+
+
+        ClockPanel.Visible = True
+        ContactPanel.Visible = False
+        ContactPanel1.Visible = False
+        ContactPanel2.Visible = False
+        PaymentPanel.Visible = False
+        PaymentPanel1.Visible = False
+        PaymentPanel2.Visible = False
+        SchedulePanel.Visible = False
+        SchedulePanel1.Visible = False
+        GamesPanel.Visible = False
+        MusicPanel.Visible = False
+        MessagePanel.Visible = False
+        MessagePanel1.Visible = False
+        CallPanel.Visible = False
+        RingPanel.Visible = False
+
+    End Sub
 End Class
