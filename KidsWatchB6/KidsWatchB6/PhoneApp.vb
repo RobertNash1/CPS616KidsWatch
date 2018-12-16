@@ -110,10 +110,9 @@
     End Sub
 
     Private Sub Send_Click(sender As Object, e As EventArgs) Handles Send.Click
-
-        SentMsg.AppendText(MessageBox.Text & Environment.NewLine)
+        SentMsg.AppendText(MessagesBox.Text & Environment.NewLine)
         WatchForm.setMessage(SentMsg.Text)
-        MessageBox.Text = ""
+        MessagesBox.Text = ""
 
     End Sub
 

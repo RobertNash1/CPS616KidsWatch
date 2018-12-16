@@ -55,7 +55,7 @@ Partial Class PhoneApp
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SentMsg = New System.Windows.Forms.RichTextBox()
         Me.Send = New System.Windows.Forms.Button()
-        Me.MessageBox = New System.Windows.Forms.RichTextBox()
+        Me.MessagesBox = New System.Windows.Forms.RichTextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.MessageBackButton = New System.Windows.Forms.Button()
         Me.TimeLabel4 = New System.Windows.Forms.Label()
@@ -398,7 +398,7 @@ Partial Class PhoneApp
         Me.MessagePanel.Controls.Add(Me.Label4)
         Me.MessagePanel.Controls.Add(Me.SentMsg)
         Me.MessagePanel.Controls.Add(Me.Send)
-        Me.MessagePanel.Controls.Add(Me.MessageBox)
+        Me.MessagePanel.Controls.Add(Me.MessagesBox)
         Me.MessagePanel.Controls.Add(Me.Label15)
         Me.MessagePanel.Controls.Add(Me.MessageBackButton)
         Me.MessagePanel.Controls.Add(Me.TimeLabel4)
@@ -446,14 +446,14 @@ Partial Class PhoneApp
         Me.Send.Text = "Send"
         Me.Send.UseVisualStyleBackColor = True
         '
-        'MessageBox
+        'MessagesBox
         '
-        Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessageBox.Location = New System.Drawing.Point(17, 231)
-        Me.MessageBox.Name = "MessageBox"
-        Me.MessageBox.Size = New System.Drawing.Size(199, 72)
-        Me.MessageBox.TabIndex = 22
-        Me.MessageBox.Text = ""
+        Me.MessagesBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessagesBox.Location = New System.Drawing.Point(17, 231)
+        Me.MessagesBox.Name = "MessagesBox"
+        Me.MessagesBox.Size = New System.Drawing.Size(199, 72)
+        Me.MessagesBox.TabIndex = 22
+        Me.MessagesBox.Text = ""
         '
         'Label15
         '
@@ -993,7 +993,7 @@ Partial Class PhoneApp
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents MessagePanel As Panel
-    Friend WithEvents MessageBox As RichTextBox
+    Friend WithEvents MessagesBox As RichTextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents MessageBackButton As Button
     Friend WithEvents TimeLabel4 As Label

@@ -25,7 +25,7 @@ Partial Class WatchForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WatchForm))
         Me.ClockPanel = New System.Windows.Forms.Panel()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.HomePicture = New System.Windows.Forms.PictureBox()
         Me.LeftButton = New System.Windows.Forms.Button()
         Me.RightButton = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
@@ -94,7 +94,7 @@ Partial Class WatchForm
         Me.MessageLabel = New System.Windows.Forms.Label()
         Me.MessagePanel1 = New System.Windows.Forms.Panel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.MessageBox = New System.Windows.Forms.RichTextBox()
+        Me.MessagesBox = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MessageUp = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -119,13 +119,15 @@ Partial Class WatchForm
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GamesPanel1 = New System.Windows.Forms.Panel()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.GamesUp = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.GamesUp = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.NewMessageItem = New System.Windows.Forms.PictureBox()
+        Me.NewScheduleItem = New System.Windows.Forms.PictureBox()
         Me.ClockPanel.SuspendLayout()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HomePicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PaymentPanel.SuspendLayout()
@@ -160,11 +162,15 @@ Partial Class WatchForm
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GamesPanel1.SuspendLayout()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
         '
-        Me.ClockPanel.Controls.Add(Me.PictureBox11)
+        Me.ClockPanel.Controls.Add(Me.NewScheduleItem)
+        Me.ClockPanel.Controls.Add(Me.NewMessageItem)
+        Me.ClockPanel.Controls.Add(Me.HomePicture)
         Me.ClockPanel.Controls.Add(Me.LeftButton)
         Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
@@ -174,15 +180,15 @@ Partial Class WatchForm
         Me.ClockPanel.Size = New System.Drawing.Size(185, 163)
         Me.ClockPanel.TabIndex = 0
         '
-        'PictureBox11
+        'HomePicture
         '
-        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(41, 51)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(95, 76)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 18
-        Me.PictureBox11.TabStop = False
+        Me.HomePicture.Image = CType(resources.GetObject("HomePicture.Image"), System.Drawing.Image)
+        Me.HomePicture.Location = New System.Drawing.Point(30, 50)
+        Me.HomePicture.Name = "HomePicture"
+        Me.HomePicture.Size = New System.Drawing.Size(80, 75)
+        Me.HomePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.HomePicture.TabIndex = 18
+        Me.HomePicture.TabStop = False
         '
         'LeftButton
         '
@@ -840,7 +846,7 @@ Partial Class WatchForm
         'MessagePanel1
         '
         Me.MessagePanel1.Controls.Add(Me.PictureBox9)
-        Me.MessagePanel1.Controls.Add(Me.MessageBox)
+        Me.MessagePanel1.Controls.Add(Me.MessagesBox)
         Me.MessagePanel1.Controls.Add(Me.Label6)
         Me.MessagePanel1.Controls.Add(Me.MessageUp)
         Me.MessagePanel1.Location = New System.Drawing.Point(585, 181)
@@ -858,15 +864,15 @@ Partial Class WatchForm
         Me.PictureBox9.TabIndex = 18
         Me.PictureBox9.TabStop = False
         '
-        'MessageBox
+        'MessagesBox
         '
-        Me.MessageBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessageBox.Location = New System.Drawing.Point(17, 59)
-        Me.MessageBox.Name = "MessageBox"
-        Me.MessageBox.ReadOnly = True
-        Me.MessageBox.Size = New System.Drawing.Size(152, 84)
-        Me.MessageBox.TabIndex = 10
-        Me.MessageBox.Text = ""
+        Me.MessagesBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessagesBox.Location = New System.Drawing.Point(17, 59)
+        Me.MessagesBox.Name = "MessagesBox"
+        Me.MessagesBox.ReadOnly = True
+        Me.MessagesBox.Size = New System.Drawing.Size(152, 84)
+        Me.MessagesBox.TabIndex = 10
+        Me.MessagesBox.Text = ""
         '
         'Label6
         '
@@ -1099,6 +1105,35 @@ Partial Class WatchForm
         Me.GamesPanel1.Size = New System.Drawing.Size(185, 163)
         Me.GamesPanel1.TabIndex = 24
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(61, 137)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(80, 20)
+        Me.Label10.TabIndex = 10
+        Me.Label10.Text = "Buy Them"
+        '
+        'GamesUp
+        '
+        Me.GamesUp.Location = New System.Drawing.Point(78, 3)
+        Me.GamesUp.Name = "GamesUp"
+        Me.GamesUp.Size = New System.Drawing.Size(27, 23)
+        Me.GamesUp.TabIndex = 9
+        Me.GamesUp.Text = "^"
+        Me.GamesUp.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(26, 116)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(151, 20)
+        Me.Label11.TabIndex = 7
+        Me.Label11.Text = "Ask Your Parent To "
+        '
         'PictureBox14
         '
         Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
@@ -1119,40 +1154,33 @@ Partial Class WatchForm
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "No Games YET!"
         '
-        'Label11
+        'NewMessageItem
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(26, 116)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(151, 20)
-        Me.Label11.TabIndex = 7
-        Me.Label11.Text = "Ask Your Parent To "
+        Me.NewMessageItem.Image = CType(resources.GetObject("NewMessageItem.Image"), System.Drawing.Image)
+        Me.NewMessageItem.Location = New System.Drawing.Point(116, 51)
+        Me.NewMessageItem.Name = "NewMessageItem"
+        Me.NewMessageItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewMessageItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.NewMessageItem.TabIndex = 19
+        Me.NewMessageItem.TabStop = False
+        Me.NewMessageItem.Visible = False
         '
-        'GamesUp
+        'NewScheduleItem
         '
-        Me.GamesUp.Location = New System.Drawing.Point(78, 3)
-        Me.GamesUp.Name = "GamesUp"
-        Me.GamesUp.Size = New System.Drawing.Size(27, 23)
-        Me.GamesUp.TabIndex = 9
-        Me.GamesUp.Text = "^"
-        Me.GamesUp.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(61, 137)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 20)
-        Me.Label10.TabIndex = 10
-        Me.Label10.Text = "Buy Them"
+        Me.NewScheduleItem.Image = CType(resources.GetObject("NewScheduleItem.Image"), System.Drawing.Image)
+        Me.NewScheduleItem.Location = New System.Drawing.Point(116, 92)
+        Me.NewScheduleItem.Name = "NewScheduleItem"
+        Me.NewScheduleItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewScheduleItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.NewScheduleItem.TabIndex = 20
+        Me.NewScheduleItem.TabStop = False
+        Me.NewScheduleItem.Visible = False
         '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1349, 894)
+        Me.ClientSize = New System.Drawing.Size(1349, 845)
         Me.Controls.Add(Me.GamesPanel1)
         Me.Controls.Add(Me.HelpPanel1)
         Me.Controls.Add(Me.HelpPanel)
@@ -1179,7 +1207,7 @@ Partial Class WatchForm
         Me.Text = "WatchForm"
         Me.ClockPanel.ResumeLayout(False)
         Me.ClockPanel.PerformLayout()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HomePicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContactPanel.ResumeLayout(False)
         Me.ContactPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1230,6 +1258,8 @@ Partial Class WatchForm
         Me.GamesPanel1.ResumeLayout(False)
         Me.GamesPanel1.PerformLayout()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1299,7 +1329,7 @@ Partial Class WatchForm
     Friend WithEvents MessageUp As Button
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents MessageBox As RichTextBox
+    Friend WithEvents MessagesBox As RichTextBox
     Friend WithEvents ScheduleBox As RichTextBox
     Friend WithEvents TapToPay As PictureBox
     Friend WithEvents MomPicture As PictureBox
@@ -1312,7 +1342,7 @@ Partial Class WatchForm
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents HomePicture As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents HomeButton As Button
@@ -1334,4 +1364,6 @@ Partial Class WatchForm
     Friend WithEvents Label10 As Label
     Friend WithEvents GamesUp As Button
     Friend WithEvents Label11 As Label
+    Friend WithEvents NewScheduleItem As PictureBox
+    Friend WithEvents NewMessageItem As PictureBox
 End Class

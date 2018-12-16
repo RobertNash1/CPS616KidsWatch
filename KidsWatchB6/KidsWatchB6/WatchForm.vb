@@ -31,6 +31,24 @@
         Next
     End Sub
 
+    Private Sub ReDrawHomePicture(Alert As Boolean)
+        Dim PictureLoc As Point
+        PictureLoc.X = 30
+        PictureLoc.Y = 50
+        If Alert = True Then
+            HomePicture.Size.Height.Equals(75)
+            HomePicture.Size.Width.Equals(80)
+        Else
+            MessageBox.Show("Error")
+            HomePicture.Size.Height.Equals(75)
+            HomePicture.Size.Width.Equals(125)
+
+        End If
+        HomePicture.Location = PictureLoc
+        HomePicture.Refresh()
+    End Sub
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         DateLabel.Text = Date.Now().ToString("D")
@@ -158,9 +176,10 @@
         PaymentPanel1.Visible = False
     End Sub
 
-    Private Sub ScheduleDown_Click(sender As Object, e As EventArgs) Handles ScheduleDown.Click
+    Private Sub ScheduleDown_Click(sender As Object, e As EventArgs) Handles ScheduleDown.Click, NewScheduleItem.Click
         SchedulePanel.Visible = False
         SchedulePanel1.Visible = True
+        NewScheduleItem.Visible = False
         If Schedule.Length > 0 Then
             ScheduleBox.Text = Schedule
         Else
@@ -184,14 +203,15 @@
         PaymentPanel1.Visible = True
     End Sub
 
-    Private Sub MessageDown_Click(sender As Object, e As EventArgs) Handles MessageDown.Click
+    Private Sub MessageDown_Click(sender As Object, e As EventArgs) Handles MessageDown.Click, NewMessageItem.Click
         MessagePanel.Visible = False
         MessagePanel1.Visible = True
+        NewMessageItem.Visible = False
         'MessageBox
         If Message.Length > 0 Then
-            MessageBox.Text = Message
+            MessagesBox.Text = Message
         Else
-            MessageBox.Text = ""
+            MessagesBox.Text = ""
             '    MessageBox.Text = "You have no messages."
         End If
     End Sub
@@ -219,8 +239,8 @@
 
     Public Sub setMessage(msg As String)
         Message = msg
-        MessageBox.Text = Message
-
+        MessagesBox.Text = Message
+        NewMessageItem.Visible = True
     End Sub
     Public Function getSchedule()
         Return Schedule
@@ -229,6 +249,7 @@
     Public Sub setSchedule(msg As String)
         Schedule = msg
         ScheduleBox.AppendText(Schedule & Environment.NewLine)
+        NewScheduleItem.Visible = True
     End Sub
 
     Private Sub TapToPay_Click(sender As Object, e As EventArgs) Handles TapToPay.Click
@@ -341,4 +362,10 @@
         GamesPanel.Visible = True
         GamesPanel1.Visible = False
     End Sub
+
+    Private Sub VolumeUP_Click(sender As Object, e As EventArgs) Handles VolumeUP.Click
+        ReDrawHomePicture(False)
+    End Sub
+
+
 End Class
