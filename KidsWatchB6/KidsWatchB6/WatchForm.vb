@@ -235,7 +235,7 @@
         IDLabel.Text = CallID
         CallPanel.Visible = True
         ContactPanel1.Visible = False
-        PhoneApp.CallPanel.Visible = True
+        PhoneApp.CallPanel1.Visible = True
     End Sub
 
     Private Sub DadPicture_Click(sender As Object, e As EventArgs) Handles DadPicture.Click, DadCallButton.Click
@@ -243,7 +243,7 @@
         IDLabel.Text = CallID
         CallPanel.Visible = True
         ContactPanel2.Visible = False
-        PhoneApp.CallPanel.Visible = True
+        PhoneApp.CallPanel1.Visible = True
     End Sub
 
     Private Sub CallEndButton_Click(sender As Object, e As EventArgs) Handles CallEndButton.Click, CallPicture.Click

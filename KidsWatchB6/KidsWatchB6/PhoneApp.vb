@@ -14,8 +14,9 @@
         myPanels.Add(SchedulePanel)
         myPanels.Add(SchedulePanel1)
         myPanels.Add(CallPanel)
+        myPanels.Add(CallPanel1)
 
-        For index As Integer = 0 To 6
+        For index As Integer = 0 To 8
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -28,6 +29,7 @@
         TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel8.Text = TimeOfDay.ToString("hh:mm tt")
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
@@ -41,6 +43,7 @@
         SchedulePanel1.Visible = False
         AddMoneyPanel.Visible = False
         CallPanel.Visible = False
+        CallPanel1.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -153,5 +156,23 @@
         ExistingS.Text = ""
         countSchedule.Text = "None Existing"
         WatchForm.ScheduleBox.Text = ExistingS.Text
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        CallPanel1.Visible = False
+        Dim CallID = WatchForm.getCallID
+
+        If CallID = "Mom" Then
+            WatchForm.CallPanel.Visible = False
+            WatchForm.ContactPanel1.Visible = True
+        ElseIf CallID = "Dad" Then
+            WatchForm.CallPanel.Visible = False
+            WatchForm.ContactPanel2.Visible = True
+        End If
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        CallPanel1.Visible = False
+        CallPanel.Visible = True
     End Sub
 End Class

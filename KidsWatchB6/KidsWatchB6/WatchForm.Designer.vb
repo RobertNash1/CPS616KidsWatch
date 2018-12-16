@@ -816,7 +816,7 @@ Partial Class WatchForm
         Me.CallPanel.Controls.Add(Me.CallPicture)
         Me.CallPanel.Controls.Add(Me.CallEndButton)
         Me.CallPanel.Controls.Add(Me.IDLabel)
-        Me.CallPanel.Location = New System.Drawing.Point(203, 520)
+        Me.CallPanel.Location = New System.Drawing.Point(203, 519)
         Me.CallPanel.Name = "CallPanel"
         Me.CallPanel.Size = New System.Drawing.Size(185, 163)
         Me.CallPanel.TabIndex = 16
@@ -855,7 +855,7 @@ Partial Class WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1325, 594)
+        Me.ClientSize = New System.Drawing.Size(1325, 894)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.MessagePanel1)
         Me.Controls.Add(Me.MessagePanel)

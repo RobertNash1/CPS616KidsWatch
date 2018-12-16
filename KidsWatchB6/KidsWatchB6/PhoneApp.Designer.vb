@@ -85,11 +85,17 @@ Partial Class PhoneApp
         Me.TimeLabel6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SchedulePanel1 = New System.Windows.Forms.Panel()
+        Me.ClearAll = New System.Windows.Forms.Button()
         Me.ExistingS = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TimeLabel9 = New System.Windows.Forms.Label()
-        Me.ClearAll = New System.Windows.Forms.Button()
+        Me.CallPanel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.TimeLabel8 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,6 +114,10 @@ Partial Class PhoneApp
         CType(Me.CallEndPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SchedulePanel1.SuspendLayout()
+        Me.CallPanel1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -669,7 +679,7 @@ Partial Class PhoneApp
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(86, 259)
+        Me.Label2.Location = New System.Drawing.Point(87, 260)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 2
@@ -711,6 +721,15 @@ Partial Class PhoneApp
         Me.SchedulePanel1.Size = New System.Drawing.Size(238, 344)
         Me.SchedulePanel1.TabIndex = 32
         '
+        'ClearAll
+        '
+        Me.ClearAll.Location = New System.Drawing.Point(80, 300)
+        Me.ClearAll.Name = "ClearAll"
+        Me.ClearAll.Size = New System.Drawing.Size(75, 23)
+        Me.ClearAll.TabIndex = 25
+        Me.ClearAll.Text = "Clear All"
+        Me.ClearAll.UseVisualStyleBackColor = True
+        '
         'ExistingS
         '
         Me.ExistingS.Location = New System.Drawing.Point(17, 102)
@@ -748,20 +767,75 @@ Partial Class PhoneApp
         Me.TimeLabel9.TabIndex = 0
         Me.TimeLabel9.Text = "12:59 PM"
         '
-        'ClearAll
+        'CallPanel1
         '
-        Me.ClearAll.Location = New System.Drawing.Point(80, 300)
-        Me.ClearAll.Name = "ClearAll"
-        Me.ClearAll.Size = New System.Drawing.Size(75, 23)
-        Me.ClearAll.TabIndex = 25
-        Me.ClearAll.Text = "Clear All"
-        Me.ClearAll.UseVisualStyleBackColor = True
+        Me.CallPanel1.Controls.Add(Me.PictureBox5)
+        Me.CallPanel1.Controls.Add(Me.PictureBox3)
+        Me.CallPanel1.Controls.Add(Me.Label3)
+        Me.CallPanel1.Controls.Add(Me.PictureBox4)
+        Me.CallPanel1.Controls.Add(Me.TimeLabel8)
+        Me.CallPanel1.Location = New System.Drawing.Point(992, 12)
+        Me.CallPanel1.Name = "CallPanel1"
+        Me.CallPanel1.Size = New System.Drawing.Size(238, 344)
+        Me.CallPanel1.TabIndex = 33
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(153, 281)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(63, 55)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 3
+        Me.PictureBox3.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(64, 259)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(91, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Your Kid is Calling"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(18, 49)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(198, 207)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 1
+        Me.PictureBox4.TabStop = False
+        '
+        'TimeLabel8
+        '
+        Me.TimeLabel8.AutoSize = True
+        Me.TimeLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel8.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel8.Name = "TimeLabel8"
+        Me.TimeLabel8.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel8.TabIndex = 0
+        Me.TimeLabel8.Text = "12:59 PM"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(18, 281)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(63, 55)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 4
+        Me.PictureBox5.TabStop = False
         '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1200, 697)
+        Me.ClientSize = New System.Drawing.Size(1254, 697)
+        Me.Controls.Add(Me.CallPanel1)
         Me.Controls.Add(Me.SchedulePanel1)
         Me.Controls.Add(Me.CallPanel)
         Me.Controls.Add(Me.AddMoneyPanel)
@@ -799,6 +873,11 @@ Partial Class PhoneApp
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SchedulePanel1.ResumeLayout(False)
         Me.SchedulePanel1.PerformLayout()
+        Me.CallPanel1.ResumeLayout(False)
+        Me.CallPanel1.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -869,4 +948,10 @@ Partial Class PhoneApp
     Friend WithEvents Button3 As Button
     Friend WithEvents TimeLabel9 As Label
     Friend WithEvents ClearAll As Button
+    Friend WithEvents CallPanel1 As Panel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents TimeLabel8 As Label
 End Class
