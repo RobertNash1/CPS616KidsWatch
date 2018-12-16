@@ -110,6 +110,13 @@ Partial Class PhoneApp
         Me.Label9 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel10 = New System.Windows.Forms.Label()
+        Me.AddAllowance = New System.Windows.Forms.Button()
+        Me.AllowanceAmtLabel = New System.Windows.Forms.Label()
+        Me.AllowanceLabel = New System.Windows.Forms.Label()
+        Me.AllowanceBox = New System.Windows.Forms.TextBox()
+        Me.SetAllowanceAmt = New System.Windows.Forms.Label()
+        Me.SetAllowance = New System.Windows.Forms.Button()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,6 +145,7 @@ Partial Class PhoneApp
         Me.VoiceMailPanel.SuspendLayout()
         CType(Me.CallEndPicture2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -614,6 +622,12 @@ Partial Class PhoneApp
         '
         'AddMoneyPanel
         '
+        Me.AddMoneyPanel.Controls.Add(Me.SetAllowance)
+        Me.AddMoneyPanel.Controls.Add(Me.AllowanceBox)
+        Me.AddMoneyPanel.Controls.Add(Me.SetAllowanceAmt)
+        Me.AddMoneyPanel.Controls.Add(Me.AllowanceAmtLabel)
+        Me.AddMoneyPanel.Controls.Add(Me.AllowanceLabel)
+        Me.AddMoneyPanel.Controls.Add(Me.AddAllowance)
         Me.AddMoneyPanel.Controls.Add(Me.AddVerification)
         Me.AddMoneyPanel.Controls.Add(Me.AmountBox)
         Me.AddMoneyPanel.Controls.Add(Me.CurrBalanceLabel)
@@ -630,7 +644,7 @@ Partial Class PhoneApp
         'AddVerification
         '
         Me.AddVerification.AutoSize = True
-        Me.AddVerification.Location = New System.Drawing.Point(16, 147)
+        Me.AddVerification.Location = New System.Drawing.Point(15, 135)
         Me.AddVerification.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AddVerification.Name = "AddVerification"
         Me.AddVerification.Size = New System.Drawing.Size(59, 13)
@@ -656,7 +670,7 @@ Partial Class PhoneApp
         '
         'CancelMoney
         '
-        Me.CancelMoney.Location = New System.Drawing.Point(153, 309)
+        Me.CancelMoney.Location = New System.Drawing.Point(133, 156)
         Me.CancelMoney.Name = "CancelMoney"
         Me.CancelMoney.Size = New System.Drawing.Size(75, 23)
         Me.CancelMoney.TabIndex = 29
@@ -666,7 +680,7 @@ Partial Class PhoneApp
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(12, 102)
+        Me.Label17.Location = New System.Drawing.Point(11, 102)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(84, 13)
         Me.Label17.TabIndex = 25
@@ -674,7 +688,7 @@ Partial Class PhoneApp
         '
         'AddMoney
         '
-        Me.AddMoney.Location = New System.Drawing.Point(14, 309)
+        Me.AddMoney.Location = New System.Drawing.Point(15, 156)
         Me.AddMoney.Name = "AddMoney"
         Me.AddMoney.Size = New System.Drawing.Size(75, 23)
         Me.AddMoney.TabIndex = 24
@@ -998,6 +1012,59 @@ Partial Class PhoneApp
         Me.TimeLabel10.TabIndex = 0
         Me.TimeLabel10.Text = "12:59 PM"
         '
+        'AddAllowance
+        '
+        Me.AddAllowance.Location = New System.Drawing.Point(138, 213)
+        Me.AddAllowance.Name = "AddAllowance"
+        Me.AddAllowance.Size = New System.Drawing.Size(87, 23)
+        Me.AddAllowance.TabIndex = 33
+        Me.AddAllowance.Text = "Add Allowance"
+        Me.AddAllowance.UseVisualStyleBackColor = True
+        '
+        'AllowanceAmtLabel
+        '
+        Me.AllowanceAmtLabel.AutoSize = True
+        Me.AllowanceAmtLabel.Location = New System.Drawing.Point(100, 218)
+        Me.AllowanceAmtLabel.Name = "AllowanceAmtLabel"
+        Me.AllowanceAmtLabel.Size = New System.Drawing.Size(28, 13)
+        Me.AllowanceAmtLabel.TabIndex = 35
+        Me.AllowanceAmtLabel.Text = "0.00"
+        '
+        'AllowanceLabel
+        '
+        Me.AllowanceLabel.AutoSize = True
+        Me.AllowanceLabel.Location = New System.Drawing.Point(9, 219)
+        Me.AllowanceLabel.Name = "AllowanceLabel"
+        Me.AllowanceLabel.Size = New System.Drawing.Size(59, 13)
+        Me.AllowanceLabel.TabIndex = 34
+        Me.AllowanceLabel.Text = "Allowance:"
+        '
+        'AllowanceBox
+        '
+        Me.AllowanceBox.Location = New System.Drawing.Point(100, 243)
+        Me.AllowanceBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.AllowanceBox.Name = "AllowanceBox"
+        Me.AllowanceBox.Size = New System.Drawing.Size(76, 20)
+        Me.AllowanceBox.TabIndex = 37
+        '
+        'SetAllowanceAmt
+        '
+        Me.SetAllowanceAmt.AutoSize = True
+        Me.SetAllowanceAmt.Location = New System.Drawing.Point(9, 246)
+        Me.SetAllowanceAmt.Name = "SetAllowanceAmt"
+        Me.SetAllowanceAmt.Size = New System.Drawing.Size(84, 13)
+        Me.SetAllowanceAmt.TabIndex = 36
+        Me.SetAllowanceAmt.Text = "New Allowance:"
+        '
+        'SetAllowance
+        '
+        Me.SetAllowance.Location = New System.Drawing.Point(12, 268)
+        Me.SetAllowance.Name = "SetAllowance"
+        Me.SetAllowance.Size = New System.Drawing.Size(113, 23)
+        Me.SetAllowance.TabIndex = 38
+        Me.SetAllowance.Text = "Set new allowance"
+        Me.SetAllowance.UseVisualStyleBackColor = True
+        '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1056,6 +1123,7 @@ Partial Class PhoneApp
         Me.VoiceMailPanel.PerformLayout()
         CType(Me.CallEndPicture2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1146,4 +1214,11 @@ Partial Class PhoneApp
     Friend WithEvents Label9 As Label
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents TimeLabel10 As Label
+    Friend WithEvents AddAllowance As Button
+    Friend WithEvents AllowanceBox As TextBox
+    Friend WithEvents SetAllowanceAmt As Label
+    Friend WithEvents AllowanceAmtLabel As Label
+    Friend WithEvents AllowanceLabel As Label
+    Friend WithEvents SetAllowance As Button
+    Friend WithEvents BindingSource1 As BindingSource
 End Class

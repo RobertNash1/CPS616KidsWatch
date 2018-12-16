@@ -3,6 +3,7 @@
     Dim Panelocation As Point
     Dim test As Integer
     Dim counter As Integer
+    Dim allowance As Double
     Public Sub DrawPanels()
         Panelocation.X = 15
         Panelocation.Y = 15
@@ -36,6 +37,8 @@
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
+        allowance = 5
+        AllowanceAmtLabel.Text = Format(allowance, "0.00")
         'Make all other panels not visible
         DrawPanels()
         HomePanel.Visible = False
@@ -214,5 +217,17 @@
     Private Sub CallEndPicture2_Click(sender As Object, e As EventArgs) Handles CallEndPicture2.Click
         VoiceMailPanel.Visible = False
         AppPanel.Visible = True
+    End Sub
+
+    Private Sub SetAllowance_Click(sender As Object, e As EventArgs) Handles SetAllowance.Click
+        allowance = CDbl(Val(AllowanceBox.Text))
+        AllowanceBox.Text = ""
+        AllowanceAmtLabel.Text = Format(allowance, "0.00")
+    End Sub
+
+    Private Sub AddAllowance_Click(sender As Object, e As EventArgs) Handles AddAllowance.Click
+        WatchForm.addBalance(allowance)
+        AddVerification.Text = "You have added " & Format(allowance, "0.00") & " dollars!"
+        CurrBalanceLabel.Text = WatchForm.getBalance
     End Sub
 End Class

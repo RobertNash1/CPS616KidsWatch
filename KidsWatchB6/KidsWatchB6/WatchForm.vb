@@ -172,7 +172,7 @@
     Private Sub PaymentDown_Click(sender As Object, e As EventArgs) Handles PaymentDown.Click
         PaymentPanel.Visible = False
         PaymentPanel1.Visible = True
-        BalanceLabel.Text = Balance
+        BalanceLabel.Text = Format(Balance, "0.00")
     End Sub
 
     Private Sub PaymentUp1_Click(sender As Object, e As EventArgs) Handles PaymentUp1.Click
