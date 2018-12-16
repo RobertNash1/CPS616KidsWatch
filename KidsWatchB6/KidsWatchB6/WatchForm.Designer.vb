@@ -203,17 +203,19 @@ Partial Class WatchForm
         Me.ClockPanel.Controls.Add(Me.RightButton)
         Me.ClockPanel.Controls.Add(Me.DateLabel)
         Me.ClockPanel.Controls.Add(Me.TimeLabel)
-        Me.ClockPanel.Location = New System.Drawing.Point(10, 12)
+        Me.ClockPanel.Location = New System.Drawing.Point(13, 15)
+        Me.ClockPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ClockPanel.Name = "ClockPanel"
-        Me.ClockPanel.Size = New System.Drawing.Size(185, 163)
+        Me.ClockPanel.Size = New System.Drawing.Size(247, 201)
         Me.ClockPanel.TabIndex = 0
         '
         'NewScheduleItem
         '
         Me.NewScheduleItem.Image = CType(resources.GetObject("NewScheduleItem.Image"), System.Drawing.Image)
-        Me.NewScheduleItem.Location = New System.Drawing.Point(116, 92)
+        Me.NewScheduleItem.Location = New System.Drawing.Point(155, 113)
+        Me.NewScheduleItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NewScheduleItem.Name = "NewScheduleItem"
-        Me.NewScheduleItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewScheduleItem.Size = New System.Drawing.Size(44, 43)
         Me.NewScheduleItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.NewScheduleItem.TabIndex = 20
         Me.NewScheduleItem.TabStop = False
@@ -222,9 +224,10 @@ Partial Class WatchForm
         'NewMessageItem
         '
         Me.NewMessageItem.Image = CType(resources.GetObject("NewMessageItem.Image"), System.Drawing.Image)
-        Me.NewMessageItem.Location = New System.Drawing.Point(116, 51)
+        Me.NewMessageItem.Location = New System.Drawing.Point(155, 63)
+        Me.NewMessageItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NewMessageItem.Name = "NewMessageItem"
-        Me.NewMessageItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewMessageItem.Size = New System.Drawing.Size(44, 43)
         Me.NewMessageItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.NewMessageItem.TabIndex = 19
         Me.NewMessageItem.TabStop = False
@@ -233,27 +236,30 @@ Partial Class WatchForm
         'HomePicture
         '
         Me.HomePicture.Image = CType(resources.GetObject("HomePicture.Image"), System.Drawing.Image)
-        Me.HomePicture.Location = New System.Drawing.Point(30, 50)
+        Me.HomePicture.Location = New System.Drawing.Point(40, 62)
+        Me.HomePicture.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HomePicture.Name = "HomePicture"
-        Me.HomePicture.Size = New System.Drawing.Size(80, 75)
+        Me.HomePicture.Size = New System.Drawing.Size(107, 92)
         Me.HomePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.HomePicture.TabIndex = 18
         Me.HomePicture.TabStop = False
         '
         'LeftButton
         '
-        Me.LeftButton.Location = New System.Drawing.Point(3, 73)
+        Me.LeftButton.Location = New System.Drawing.Point(4, 90)
+        Me.LeftButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LeftButton.Name = "LeftButton"
-        Me.LeftButton.Size = New System.Drawing.Size(24, 23)
+        Me.LeftButton.Size = New System.Drawing.Size(32, 28)
         Me.LeftButton.TabIndex = 3
         Me.LeftButton.Text = "<"
         Me.LeftButton.UseVisualStyleBackColor = True
         '
         'RightButton
         '
-        Me.RightButton.Location = New System.Drawing.Point(158, 73)
+        Me.RightButton.Location = New System.Drawing.Point(211, 90)
+        Me.RightButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RightButton.Name = "RightButton"
-        Me.RightButton.Size = New System.Drawing.Size(24, 23)
+        Me.RightButton.Size = New System.Drawing.Size(32, 28)
         Me.RightButton.TabIndex = 2
         Me.RightButton.Text = ">"
         Me.RightButton.UseVisualStyleBackColor = True
@@ -262,10 +268,9 @@ Partial Class WatchForm
         '
         Me.DateLabel.AutoSize = True
         Me.DateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateLabel.Location = New System.Drawing.Point(15, 130)
-        Me.DateLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.DateLabel.Location = New System.Drawing.Point(20, 160)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(83, 20)
+        Me.DateLabel.Size = New System.Drawing.Size(101, 25)
         Me.DateLabel.TabIndex = 1
         Me.DateLabel.Text = "DateLabel"
         '
@@ -273,9 +278,10 @@ Partial Class WatchForm
         '
         Me.TimeLabel.AutoSize = True
         Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel.Location = New System.Drawing.Point(25, 17)
+        Me.TimeLabel.Location = New System.Drawing.Point(33, 21)
+        Me.TimeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TimeLabel.Name = "TimeLabel"
-        Me.TimeLabel.Size = New System.Drawing.Size(140, 31)
+        Me.TimeLabel.Size = New System.Drawing.Size(177, 39)
         Me.TimeLabel.TabIndex = 0
         Me.TimeLabel.Text = "TimeLabel"
         '
@@ -286,16 +292,18 @@ Partial Class WatchForm
         Me.ContactPanel.Controls.Add(Me.ContactLeft)
         Me.ContactPanel.Controls.Add(Me.ContactRight)
         Me.ContactPanel.Controls.Add(Me.ContactLabel)
-        Me.ContactPanel.Location = New System.Drawing.Point(203, 12)
+        Me.ContactPanel.Location = New System.Drawing.Point(271, 15)
+        Me.ContactPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactPanel.Name = "ContactPanel"
-        Me.ContactPanel.Size = New System.Drawing.Size(185, 163)
+        Me.ContactPanel.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel.TabIndex = 1
         '
         'ContactDown
         '
-        Me.ContactDown.Location = New System.Drawing.Point(78, 137)
+        Me.ContactDown.Location = New System.Drawing.Point(104, 169)
+        Me.ContactDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactDown.Name = "ContactDown"
-        Me.ContactDown.Size = New System.Drawing.Size(27, 23)
+        Me.ContactDown.Size = New System.Drawing.Size(36, 28)
         Me.ContactDown.TabIndex = 5
         Me.ContactDown.Text = "\/"
         Me.ContactDown.UseVisualStyleBackColor = True
@@ -303,27 +311,30 @@ Partial Class WatchForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox1.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'ContactLeft
         '
-        Me.ContactLeft.Location = New System.Drawing.Point(3, 73)
+        Me.ContactLeft.Location = New System.Drawing.Point(4, 90)
+        Me.ContactLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactLeft.Name = "ContactLeft"
-        Me.ContactLeft.Size = New System.Drawing.Size(24, 23)
+        Me.ContactLeft.Size = New System.Drawing.Size(32, 28)
         Me.ContactLeft.TabIndex = 3
         Me.ContactLeft.Text = "<"
         Me.ContactLeft.UseVisualStyleBackColor = True
         '
         'ContactRight
         '
-        Me.ContactRight.Location = New System.Drawing.Point(158, 73)
+        Me.ContactRight.Location = New System.Drawing.Point(211, 90)
+        Me.ContactRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactRight.Name = "ContactRight"
-        Me.ContactRight.Size = New System.Drawing.Size(24, 23)
+        Me.ContactRight.Size = New System.Drawing.Size(32, 28)
         Me.ContactRight.TabIndex = 2
         Me.ContactRight.Text = ">"
         Me.ContactRight.UseVisualStyleBackColor = True
@@ -332,9 +343,10 @@ Partial Class WatchForm
         '
         Me.ContactLabel.AutoSize = True
         Me.ContactLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContactLabel.Location = New System.Drawing.Point(53, 115)
+        Me.ContactLabel.Location = New System.Drawing.Point(71, 142)
+        Me.ContactLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ContactLabel.Name = "ContactLabel"
-        Me.ContactLabel.Size = New System.Drawing.Size(73, 20)
+        Me.ContactLabel.Size = New System.Drawing.Size(90, 25)
         Me.ContactLabel.TabIndex = 0
         Me.ContactLabel.Text = "Contacts"
         '
@@ -345,16 +357,18 @@ Partial Class WatchForm
         Me.PaymentPanel.Controls.Add(Me.PaymentLeft)
         Me.PaymentPanel.Controls.Add(Me.PaymentRight)
         Me.PaymentPanel.Controls.Add(Me.PaymentLabel)
-        Me.PaymentPanel.Location = New System.Drawing.Point(394, 12)
+        Me.PaymentPanel.Location = New System.Drawing.Point(525, 15)
+        Me.PaymentPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentPanel.Name = "PaymentPanel"
-        Me.PaymentPanel.Size = New System.Drawing.Size(185, 163)
+        Me.PaymentPanel.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel.TabIndex = 2
         '
         'PaymentDown
         '
-        Me.PaymentDown.Location = New System.Drawing.Point(78, 137)
+        Me.PaymentDown.Location = New System.Drawing.Point(104, 169)
+        Me.PaymentDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentDown.Name = "PaymentDown"
-        Me.PaymentDown.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentDown.Size = New System.Drawing.Size(36, 28)
         Me.PaymentDown.TabIndex = 5
         Me.PaymentDown.Text = "\/"
         Me.PaymentDown.UseVisualStyleBackColor = True
@@ -362,27 +376,30 @@ Partial Class WatchForm
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox2.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox2.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
         '
         'PaymentLeft
         '
-        Me.PaymentLeft.Location = New System.Drawing.Point(3, 73)
+        Me.PaymentLeft.Location = New System.Drawing.Point(4, 90)
+        Me.PaymentLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentLeft.Name = "PaymentLeft"
-        Me.PaymentLeft.Size = New System.Drawing.Size(24, 23)
+        Me.PaymentLeft.Size = New System.Drawing.Size(32, 28)
         Me.PaymentLeft.TabIndex = 3
         Me.PaymentLeft.Text = "<"
         Me.PaymentLeft.UseVisualStyleBackColor = True
         '
         'PaymentRight
         '
-        Me.PaymentRight.Location = New System.Drawing.Point(158, 73)
+        Me.PaymentRight.Location = New System.Drawing.Point(211, 90)
+        Me.PaymentRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentRight.Name = "PaymentRight"
-        Me.PaymentRight.Size = New System.Drawing.Size(24, 23)
+        Me.PaymentRight.Size = New System.Drawing.Size(32, 28)
         Me.PaymentRight.TabIndex = 2
         Me.PaymentRight.Text = ">"
         Me.PaymentRight.UseVisualStyleBackColor = True
@@ -391,9 +408,10 @@ Partial Class WatchForm
         '
         Me.PaymentLabel.AutoSize = True
         Me.PaymentLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PaymentLabel.Location = New System.Drawing.Point(53, 115)
+        Me.PaymentLabel.Location = New System.Drawing.Point(71, 142)
+        Me.PaymentLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PaymentLabel.Name = "PaymentLabel"
-        Me.PaymentLabel.Size = New System.Drawing.Size(85, 20)
+        Me.PaymentLabel.Size = New System.Drawing.Size(109, 25)
         Me.PaymentLabel.TabIndex = 0
         Me.PaymentLabel.Text = "Mobile Pay"
         '
@@ -404,16 +422,18 @@ Partial Class WatchForm
         Me.SchedulePanel.Controls.Add(Me.ScheduleLeft)
         Me.SchedulePanel.Controls.Add(Me.ScheduleRight)
         Me.SchedulePanel.Controls.Add(Me.ScheduleLabel)
-        Me.SchedulePanel.Location = New System.Drawing.Point(776, 12)
+        Me.SchedulePanel.Location = New System.Drawing.Point(1035, 15)
+        Me.SchedulePanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SchedulePanel.Name = "SchedulePanel"
-        Me.SchedulePanel.Size = New System.Drawing.Size(185, 163)
+        Me.SchedulePanel.Size = New System.Drawing.Size(247, 201)
         Me.SchedulePanel.TabIndex = 3
         '
         'ScheduleDown
         '
-        Me.ScheduleDown.Location = New System.Drawing.Point(78, 137)
+        Me.ScheduleDown.Location = New System.Drawing.Point(104, 169)
+        Me.ScheduleDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ScheduleDown.Name = "ScheduleDown"
-        Me.ScheduleDown.Size = New System.Drawing.Size(27, 23)
+        Me.ScheduleDown.Size = New System.Drawing.Size(36, 28)
         Me.ScheduleDown.TabIndex = 5
         Me.ScheduleDown.Text = "\/"
         Me.ScheduleDown.UseVisualStyleBackColor = True
@@ -421,27 +441,30 @@ Partial Class WatchForm
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox3.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox3.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 4
         Me.PictureBox3.TabStop = False
         '
         'ScheduleLeft
         '
-        Me.ScheduleLeft.Location = New System.Drawing.Point(3, 73)
+        Me.ScheduleLeft.Location = New System.Drawing.Point(4, 90)
+        Me.ScheduleLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ScheduleLeft.Name = "ScheduleLeft"
-        Me.ScheduleLeft.Size = New System.Drawing.Size(24, 23)
+        Me.ScheduleLeft.Size = New System.Drawing.Size(32, 28)
         Me.ScheduleLeft.TabIndex = 3
         Me.ScheduleLeft.Text = "<"
         Me.ScheduleLeft.UseVisualStyleBackColor = True
         '
         'ScheduleRight
         '
-        Me.ScheduleRight.Location = New System.Drawing.Point(158, 73)
+        Me.ScheduleRight.Location = New System.Drawing.Point(211, 90)
+        Me.ScheduleRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ScheduleRight.Name = "ScheduleRight"
-        Me.ScheduleRight.Size = New System.Drawing.Size(24, 23)
+        Me.ScheduleRight.Size = New System.Drawing.Size(32, 28)
         Me.ScheduleRight.TabIndex = 2
         Me.ScheduleRight.Text = ">"
         Me.ScheduleRight.UseVisualStyleBackColor = True
@@ -450,9 +473,10 @@ Partial Class WatchForm
         '
         Me.ScheduleLabel.AutoSize = True
         Me.ScheduleLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ScheduleLabel.Location = New System.Drawing.Point(53, 115)
+        Me.ScheduleLabel.Location = New System.Drawing.Point(71, 142)
+        Me.ScheduleLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ScheduleLabel.Name = "ScheduleLabel"
-        Me.ScheduleLabel.Size = New System.Drawing.Size(76, 20)
+        Me.ScheduleLabel.Size = New System.Drawing.Size(95, 25)
         Me.ScheduleLabel.TabIndex = 0
         Me.ScheduleLabel.Text = "Schedule"
         '
@@ -463,16 +487,18 @@ Partial Class WatchForm
         Me.GamesPanel.Controls.Add(Me.GamesLeft)
         Me.GamesPanel.Controls.Add(Me.GamesRight)
         Me.GamesPanel.Controls.Add(Me.GamesLabel)
-        Me.GamesPanel.Location = New System.Drawing.Point(967, 12)
+        Me.GamesPanel.Location = New System.Drawing.Point(1289, 15)
+        Me.GamesPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesPanel.Name = "GamesPanel"
-        Me.GamesPanel.Size = New System.Drawing.Size(185, 163)
+        Me.GamesPanel.Size = New System.Drawing.Size(247, 201)
         Me.GamesPanel.TabIndex = 6
         '
         'GamesDown
         '
-        Me.GamesDown.Location = New System.Drawing.Point(78, 137)
+        Me.GamesDown.Location = New System.Drawing.Point(104, 169)
+        Me.GamesDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesDown.Name = "GamesDown"
-        Me.GamesDown.Size = New System.Drawing.Size(27, 23)
+        Me.GamesDown.Size = New System.Drawing.Size(36, 28)
         Me.GamesDown.TabIndex = 5
         Me.GamesDown.Text = "\/"
         Me.GamesDown.UseVisualStyleBackColor = True
@@ -480,27 +506,30 @@ Partial Class WatchForm
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox4.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox4.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 4
         Me.PictureBox4.TabStop = False
         '
         'GamesLeft
         '
-        Me.GamesLeft.Location = New System.Drawing.Point(3, 73)
+        Me.GamesLeft.Location = New System.Drawing.Point(4, 90)
+        Me.GamesLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesLeft.Name = "GamesLeft"
-        Me.GamesLeft.Size = New System.Drawing.Size(24, 23)
+        Me.GamesLeft.Size = New System.Drawing.Size(32, 28)
         Me.GamesLeft.TabIndex = 3
         Me.GamesLeft.Text = "<"
         Me.GamesLeft.UseVisualStyleBackColor = True
         '
         'GamesRight
         '
-        Me.GamesRight.Location = New System.Drawing.Point(158, 73)
+        Me.GamesRight.Location = New System.Drawing.Point(211, 90)
+        Me.GamesRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesRight.Name = "GamesRight"
-        Me.GamesRight.Size = New System.Drawing.Size(24, 23)
+        Me.GamesRight.Size = New System.Drawing.Size(32, 28)
         Me.GamesRight.TabIndex = 2
         Me.GamesRight.Text = ">"
         Me.GamesRight.UseVisualStyleBackColor = True
@@ -509,9 +538,10 @@ Partial Class WatchForm
         '
         Me.GamesLabel.AutoSize = True
         Me.GamesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GamesLabel.Location = New System.Drawing.Point(64, 115)
+        Me.GamesLabel.Location = New System.Drawing.Point(85, 142)
+        Me.GamesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.GamesLabel.Name = "GamesLabel"
-        Me.GamesLabel.Size = New System.Drawing.Size(61, 20)
+        Me.GamesLabel.Size = New System.Drawing.Size(75, 25)
         Me.GamesLabel.TabIndex = 0
         Me.GamesLabel.Text = "Games"
         '
@@ -522,16 +552,18 @@ Partial Class WatchForm
         Me.MusicPanel.Controls.Add(Me.MusicLeft)
         Me.MusicPanel.Controls.Add(Me.MusicRight)
         Me.MusicPanel.Controls.Add(Me.MusicLabel)
-        Me.MusicPanel.Location = New System.Drawing.Point(1158, 12)
+        Me.MusicPanel.Location = New System.Drawing.Point(1544, 15)
+        Me.MusicPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MusicPanel.Name = "MusicPanel"
-        Me.MusicPanel.Size = New System.Drawing.Size(185, 163)
+        Me.MusicPanel.Size = New System.Drawing.Size(247, 201)
         Me.MusicPanel.TabIndex = 7
         '
         'MusicDown
         '
-        Me.MusicDown.Location = New System.Drawing.Point(78, 137)
+        Me.MusicDown.Location = New System.Drawing.Point(104, 169)
+        Me.MusicDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MusicDown.Name = "MusicDown"
-        Me.MusicDown.Size = New System.Drawing.Size(27, 23)
+        Me.MusicDown.Size = New System.Drawing.Size(36, 28)
         Me.MusicDown.TabIndex = 5
         Me.MusicDown.Text = "\/"
         Me.MusicDown.UseVisualStyleBackColor = True
@@ -539,27 +571,30 @@ Partial Class WatchForm
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox5.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox5.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
         '
         'MusicLeft
         '
-        Me.MusicLeft.Location = New System.Drawing.Point(3, 73)
+        Me.MusicLeft.Location = New System.Drawing.Point(4, 90)
+        Me.MusicLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MusicLeft.Name = "MusicLeft"
-        Me.MusicLeft.Size = New System.Drawing.Size(24, 23)
+        Me.MusicLeft.Size = New System.Drawing.Size(32, 28)
         Me.MusicLeft.TabIndex = 3
         Me.MusicLeft.Text = "<"
         Me.MusicLeft.UseVisualStyleBackColor = True
         '
         'MusicRight
         '
-        Me.MusicRight.Location = New System.Drawing.Point(158, 73)
+        Me.MusicRight.Location = New System.Drawing.Point(211, 90)
+        Me.MusicRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MusicRight.Name = "MusicRight"
-        Me.MusicRight.Size = New System.Drawing.Size(24, 23)
+        Me.MusicRight.Size = New System.Drawing.Size(32, 28)
         Me.MusicRight.TabIndex = 2
         Me.MusicRight.Text = ">"
         Me.MusicRight.UseVisualStyleBackColor = True
@@ -568,9 +603,10 @@ Partial Class WatchForm
         '
         Me.MusicLabel.AutoSize = True
         Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MusicLabel.Location = New System.Drawing.Point(64, 115)
+        Me.MusicLabel.Location = New System.Drawing.Point(85, 142)
+        Me.MusicLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MusicLabel.Name = "MusicLabel"
-        Me.MusicLabel.Size = New System.Drawing.Size(50, 20)
+        Me.MusicLabel.Size = New System.Drawing.Size(64, 25)
         Me.MusicLabel.TabIndex = 0
         Me.MusicLabel.Text = "Music"
         '
@@ -581,45 +617,49 @@ Partial Class WatchForm
         Me.ContactPanel1.Controls.Add(Me.ContactUp1)
         Me.ContactPanel1.Controls.Add(Me.ContactDown1)
         Me.ContactPanel1.Controls.Add(Me.Label1)
-        Me.ContactPanel1.Location = New System.Drawing.Point(203, 178)
+        Me.ContactPanel1.Location = New System.Drawing.Point(271, 219)
+        Me.ContactPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactPanel1.Name = "ContactPanel1"
-        Me.ContactPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.ContactPanel1.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel1.TabIndex = 8
         '
         'MomPicture
         '
         Me.MomPicture.Image = CType(resources.GetObject("MomPicture.Image"), System.Drawing.Image)
-        Me.MomPicture.Location = New System.Drawing.Point(33, 35)
-        Me.MomPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.MomPicture.Location = New System.Drawing.Point(44, 43)
+        Me.MomPicture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MomPicture.Name = "MomPicture"
-        Me.MomPicture.Size = New System.Drawing.Size(114, 72)
+        Me.MomPicture.Size = New System.Drawing.Size(152, 89)
         Me.MomPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.MomPicture.TabIndex = 16
         Me.MomPicture.TabStop = False
         '
         'MomCallButton
         '
-        Me.MomCallButton.Location = New System.Drawing.Point(120, 112)
+        Me.MomCallButton.Location = New System.Drawing.Point(160, 138)
+        Me.MomCallButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MomCallButton.Name = "MomCallButton"
-        Me.MomCallButton.Size = New System.Drawing.Size(55, 35)
+        Me.MomCallButton.Size = New System.Drawing.Size(73, 43)
         Me.MomCallButton.TabIndex = 9
         Me.MomCallButton.Text = "Call >"
         Me.MomCallButton.UseVisualStyleBackColor = True
         '
         'ContactUp1
         '
-        Me.ContactUp1.Location = New System.Drawing.Point(78, 6)
+        Me.ContactUp1.Location = New System.Drawing.Point(104, 7)
+        Me.ContactUp1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactUp1.Name = "ContactUp1"
-        Me.ContactUp1.Size = New System.Drawing.Size(27, 23)
+        Me.ContactUp1.Size = New System.Drawing.Size(36, 28)
         Me.ContactUp1.TabIndex = 8
         Me.ContactUp1.Text = "^"
         Me.ContactUp1.UseVisualStyleBackColor = True
         '
         'ContactDown1
         '
-        Me.ContactDown1.Location = New System.Drawing.Point(78, 137)
+        Me.ContactDown1.Location = New System.Drawing.Point(104, 169)
+        Me.ContactDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactDown1.Name = "ContactDown1"
-        Me.ContactDown1.Size = New System.Drawing.Size(27, 23)
+        Me.ContactDown1.Size = New System.Drawing.Size(36, 28)
         Me.ContactDown1.TabIndex = 5
         Me.ContactDown1.Text = "\/"
         Me.ContactDown1.UseVisualStyleBackColor = True
@@ -628,9 +668,10 @@ Partial Class WatchForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(70, 109)
+        Me.Label1.Location = New System.Drawing.Point(93, 134)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 20)
+        Me.Label1.Size = New System.Drawing.Size(56, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mom"
         '
@@ -641,26 +682,29 @@ Partial Class WatchForm
         Me.PaymentPanel1.Controls.Add(Me.BalanceLabel)
         Me.PaymentPanel1.Controls.Add(Me.PaymentDown1)
         Me.PaymentPanel1.Controls.Add(Me.Label2)
-        Me.PaymentPanel1.Location = New System.Drawing.Point(394, 181)
+        Me.PaymentPanel1.Location = New System.Drawing.Point(525, 223)
+        Me.PaymentPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentPanel1.Name = "PaymentPanel1"
-        Me.PaymentPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.PaymentPanel1.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel1.TabIndex = 9
         '
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(48, 32)
+        Me.PictureBox7.Location = New System.Drawing.Point(64, 39)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(90, 75)
+        Me.PictureBox7.Size = New System.Drawing.Size(120, 92)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 8
         Me.PictureBox7.TabStop = False
         '
         'PaymentUp1
         '
-        Me.PaymentUp1.Location = New System.Drawing.Point(78, 3)
+        Me.PaymentUp1.Location = New System.Drawing.Point(104, 4)
+        Me.PaymentUp1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentUp1.Name = "PaymentUp1"
-        Me.PaymentUp1.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentUp1.Size = New System.Drawing.Size(36, 28)
         Me.PaymentUp1.TabIndex = 7
         Me.PaymentUp1.Text = "^"
         Me.PaymentUp1.UseVisualStyleBackColor = True
@@ -669,17 +713,19 @@ Partial Class WatchForm
         '
         Me.BalanceLabel.AutoSize = True
         Me.BalanceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BalanceLabel.Location = New System.Drawing.Point(90, 114)
+        Me.BalanceLabel.Location = New System.Drawing.Point(120, 140)
+        Me.BalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BalanceLabel.Name = "BalanceLabel"
-        Me.BalanceLabel.Size = New System.Drawing.Size(58, 20)
+        Me.BalanceLabel.Size = New System.Drawing.Size(72, 25)
         Me.BalanceLabel.TabIndex = 6
         Me.BalanceLabel.Text = "$00.00"
         '
         'PaymentDown1
         '
-        Me.PaymentDown1.Location = New System.Drawing.Point(78, 137)
+        Me.PaymentDown1.Location = New System.Drawing.Point(104, 169)
+        Me.PaymentDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentDown1.Name = "PaymentDown1"
-        Me.PaymentDown1.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentDown1.Size = New System.Drawing.Size(36, 28)
         Me.PaymentDown1.TabIndex = 5
         Me.PaymentDown1.Text = "\/"
         Me.PaymentDown1.UseVisualStyleBackColor = True
@@ -688,9 +734,10 @@ Partial Class WatchForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 114)
+        Me.Label2.Location = New System.Drawing.Point(17, 140)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 20)
+        Me.Label2.Size = New System.Drawing.Size(89, 25)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Balance:"
         '
@@ -698,27 +745,29 @@ Partial Class WatchForm
         '
         Me.PaymentPanel2.Controls.Add(Me.TapToPay)
         Me.PaymentPanel2.Controls.Add(Me.PaymentUp2)
-        Me.PaymentPanel2.Location = New System.Drawing.Point(394, 350)
+        Me.PaymentPanel2.Location = New System.Drawing.Point(525, 431)
+        Me.PaymentPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentPanel2.Name = "PaymentPanel2"
-        Me.PaymentPanel2.Size = New System.Drawing.Size(185, 163)
+        Me.PaymentPanel2.Size = New System.Drawing.Size(247, 201)
         Me.PaymentPanel2.TabIndex = 10
         '
         'TapToPay
         '
         Me.TapToPay.Image = CType(resources.GetObject("TapToPay.Image"), System.Drawing.Image)
-        Me.TapToPay.Location = New System.Drawing.Point(24, 34)
-        Me.TapToPay.Margin = New System.Windows.Forms.Padding(2)
+        Me.TapToPay.Location = New System.Drawing.Point(32, 42)
+        Me.TapToPay.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TapToPay.Name = "TapToPay"
-        Me.TapToPay.Size = New System.Drawing.Size(136, 119)
+        Me.TapToPay.Size = New System.Drawing.Size(181, 146)
         Me.TapToPay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TapToPay.TabIndex = 7
         Me.TapToPay.TabStop = False
         '
         'PaymentUp2
         '
-        Me.PaymentUp2.Location = New System.Drawing.Point(78, 6)
+        Me.PaymentUp2.Location = New System.Drawing.Point(104, 7)
+        Me.PaymentUp2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PaymentUp2.Name = "PaymentUp2"
-        Me.PaymentUp2.Size = New System.Drawing.Size(27, 23)
+        Me.PaymentUp2.Size = New System.Drawing.Size(36, 28)
         Me.PaymentUp2.TabIndex = 5
         Me.PaymentUp2.Text = "^"
         Me.PaymentUp2.UseVisualStyleBackColor = True
@@ -729,17 +778,19 @@ Partial Class WatchForm
         Me.SchedulePanel1.Controls.Add(Me.ScheduleBox)
         Me.SchedulePanel1.Controls.Add(Me.ScheduleUp)
         Me.SchedulePanel1.Controls.Add(Me.Label5)
-        Me.SchedulePanel1.Location = New System.Drawing.Point(775, 181)
+        Me.SchedulePanel1.Location = New System.Drawing.Point(1033, 223)
+        Me.SchedulePanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SchedulePanel1.Name = "SchedulePanel1"
-        Me.SchedulePanel1.Size = New System.Drawing.Size(185, 163)
+        Me.SchedulePanel1.Size = New System.Drawing.Size(247, 201)
         Me.SchedulePanel1.TabIndex = 11
         '
         'PictureBox10
         '
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(123, 15)
+        Me.PictureBox10.Location = New System.Drawing.Point(164, 18)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox10.Size = New System.Drawing.Size(59, 47)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 18
         Me.PictureBox10.TabStop = False
@@ -747,19 +798,20 @@ Partial Class WatchForm
         'ScheduleBox
         '
         Me.ScheduleBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ScheduleBox.Location = New System.Drawing.Point(14, 58)
-        Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.ScheduleBox.Location = New System.Drawing.Point(19, 71)
+        Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ScheduleBox.Name = "ScheduleBox"
         Me.ScheduleBox.ReadOnly = True
-        Me.ScheduleBox.Size = New System.Drawing.Size(153, 85)
+        Me.ScheduleBox.Size = New System.Drawing.Size(203, 104)
         Me.ScheduleBox.TabIndex = 9
         Me.ScheduleBox.Text = ""
         '
         'ScheduleUp
         '
-        Me.ScheduleUp.Location = New System.Drawing.Point(79, 3)
+        Me.ScheduleUp.Location = New System.Drawing.Point(105, 4)
+        Me.ScheduleUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ScheduleUp.Name = "ScheduleUp"
-        Me.ScheduleUp.Size = New System.Drawing.Size(27, 23)
+        Me.ScheduleUp.Size = New System.Drawing.Size(36, 28)
         Me.ScheduleUp.TabIndex = 8
         Me.ScheduleUp.Text = "^"
         Me.ScheduleUp.UseVisualStyleBackColor = True
@@ -768,9 +820,10 @@ Partial Class WatchForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, 27)
+        Me.Label5.Location = New System.Drawing.Point(4, 33)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 20)
+        Me.Label5.Size = New System.Drawing.Size(74, 25)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Today:"
         '
@@ -781,16 +834,18 @@ Partial Class WatchForm
         Me.ContactPanel2.Controls.Add(Me.DadCallButton)
         Me.ContactPanel2.Controls.Add(Me.ContactUp2)
         Me.ContactPanel2.Controls.Add(Me.Label8)
-        Me.ContactPanel2.Location = New System.Drawing.Point(203, 350)
+        Me.ContactPanel2.Location = New System.Drawing.Point(271, 431)
+        Me.ContactPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactPanel2.Name = "ContactPanel2"
-        Me.ContactPanel2.Size = New System.Drawing.Size(185, 163)
+        Me.ContactPanel2.Size = New System.Drawing.Size(247, 201)
         Me.ContactPanel2.TabIndex = 13
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(78, 137)
+        Me.Button3.Location = New System.Drawing.Point(104, 169)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 23)
+        Me.Button3.Size = New System.Drawing.Size(36, 28)
         Me.Button3.TabIndex = 18
         Me.Button3.Text = "\/"
         Me.Button3.UseVisualStyleBackColor = True
@@ -798,28 +853,30 @@ Partial Class WatchForm
         'DadPicture
         '
         Me.DadPicture.Image = CType(resources.GetObject("DadPicture.Image"), System.Drawing.Image)
-        Me.DadPicture.Location = New System.Drawing.Point(33, 34)
-        Me.DadPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.DadPicture.Location = New System.Drawing.Point(44, 42)
+        Me.DadPicture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DadPicture.Name = "DadPicture"
-        Me.DadPicture.Size = New System.Drawing.Size(114, 72)
+        Me.DadPicture.Size = New System.Drawing.Size(152, 89)
         Me.DadPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.DadPicture.TabIndex = 17
         Me.DadPicture.TabStop = False
         '
         'DadCallButton
         '
-        Me.DadCallButton.Location = New System.Drawing.Point(120, 111)
+        Me.DadCallButton.Location = New System.Drawing.Point(160, 137)
+        Me.DadCallButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DadCallButton.Name = "DadCallButton"
-        Me.DadCallButton.Size = New System.Drawing.Size(55, 32)
+        Me.DadCallButton.Size = New System.Drawing.Size(73, 39)
         Me.DadCallButton.TabIndex = 9
         Me.DadCallButton.Text = "Call >"
         Me.DadCallButton.UseVisualStyleBackColor = True
         '
         'ContactUp2
         '
-        Me.ContactUp2.Location = New System.Drawing.Point(78, 6)
+        Me.ContactUp2.Location = New System.Drawing.Point(104, 7)
+        Me.ContactUp2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactUp2.Name = "ContactUp2"
-        Me.ContactUp2.Size = New System.Drawing.Size(27, 23)
+        Me.ContactUp2.Size = New System.Drawing.Size(36, 28)
         Me.ContactUp2.TabIndex = 8
         Me.ContactUp2.Text = "^"
         Me.ContactUp2.UseVisualStyleBackColor = True
@@ -828,9 +885,10 @@ Partial Class WatchForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(70, 116)
+        Me.Label8.Location = New System.Drawing.Point(93, 143)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 20)
+        Me.Label8.Size = New System.Drawing.Size(48, 25)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Dad"
         '
@@ -841,16 +899,18 @@ Partial Class WatchForm
         Me.MessagePanel.Controls.Add(Me.MessageLeft)
         Me.MessagePanel.Controls.Add(Me.MessageRight)
         Me.MessagePanel.Controls.Add(Me.MessageLabel)
-        Me.MessagePanel.Location = New System.Drawing.Point(585, 12)
+        Me.MessagePanel.Location = New System.Drawing.Point(780, 15)
+        Me.MessagePanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessagePanel.Name = "MessagePanel"
-        Me.MessagePanel.Size = New System.Drawing.Size(185, 163)
+        Me.MessagePanel.Size = New System.Drawing.Size(247, 201)
         Me.MessagePanel.TabIndex = 14
         '
         'MessageDown
         '
-        Me.MessageDown.Location = New System.Drawing.Point(78, 137)
+        Me.MessageDown.Location = New System.Drawing.Point(104, 169)
+        Me.MessageDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessageDown.Name = "MessageDown"
-        Me.MessageDown.Size = New System.Drawing.Size(27, 23)
+        Me.MessageDown.Size = New System.Drawing.Size(36, 28)
         Me.MessageDown.TabIndex = 5
         Me.MessageDown.Text = "\/"
         Me.MessageDown.UseVisualStyleBackColor = True
@@ -858,27 +918,30 @@ Partial Class WatchForm
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox6.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox6.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 4
         Me.PictureBox6.TabStop = False
         '
         'MessageLeft
         '
-        Me.MessageLeft.Location = New System.Drawing.Point(3, 73)
+        Me.MessageLeft.Location = New System.Drawing.Point(4, 90)
+        Me.MessageLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessageLeft.Name = "MessageLeft"
-        Me.MessageLeft.Size = New System.Drawing.Size(24, 23)
+        Me.MessageLeft.Size = New System.Drawing.Size(32, 28)
         Me.MessageLeft.TabIndex = 3
         Me.MessageLeft.Text = "<"
         Me.MessageLeft.UseVisualStyleBackColor = True
         '
         'MessageRight
         '
-        Me.MessageRight.Location = New System.Drawing.Point(158, 73)
+        Me.MessageRight.Location = New System.Drawing.Point(211, 90)
+        Me.MessageRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessageRight.Name = "MessageRight"
-        Me.MessageRight.Size = New System.Drawing.Size(24, 23)
+        Me.MessageRight.Size = New System.Drawing.Size(32, 28)
         Me.MessageRight.TabIndex = 2
         Me.MessageRight.Text = ">"
         Me.MessageRight.UseVisualStyleBackColor = True
@@ -887,9 +950,10 @@ Partial Class WatchForm
         '
         Me.MessageLabel.AutoSize = True
         Me.MessageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessageLabel.Location = New System.Drawing.Point(53, 115)
+        Me.MessageLabel.Location = New System.Drawing.Point(71, 142)
+        Me.MessageLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MessageLabel.Name = "MessageLabel"
-        Me.MessageLabel.Size = New System.Drawing.Size(82, 20)
+        Me.MessageLabel.Size = New System.Drawing.Size(103, 25)
         Me.MessageLabel.TabIndex = 0
         Me.MessageLabel.Text = "Messages"
         '
@@ -899,17 +963,19 @@ Partial Class WatchForm
         Me.MessagePanel1.Controls.Add(Me.MessagesBox)
         Me.MessagePanel1.Controls.Add(Me.Label6)
         Me.MessagePanel1.Controls.Add(Me.MessageUp)
-        Me.MessagePanel1.Location = New System.Drawing.Point(585, 181)
+        Me.MessagePanel1.Location = New System.Drawing.Point(780, 223)
+        Me.MessagePanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessagePanel1.Name = "MessagePanel1"
-        Me.MessagePanel1.Size = New System.Drawing.Size(185, 163)
+        Me.MessagePanel1.Size = New System.Drawing.Size(247, 201)
         Me.MessagePanel1.TabIndex = 15
         '
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(130, 15)
+        Me.PictureBox9.Location = New System.Drawing.Point(173, 18)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(44, 38)
+        Me.PictureBox9.Size = New System.Drawing.Size(59, 47)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 18
         Me.PictureBox9.TabStop = False
@@ -917,10 +983,11 @@ Partial Class WatchForm
         'MessagesBox
         '
         Me.MessagesBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessagesBox.Location = New System.Drawing.Point(17, 59)
+        Me.MessagesBox.Location = New System.Drawing.Point(23, 73)
+        Me.MessagesBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessagesBox.Name = "MessagesBox"
         Me.MessagesBox.ReadOnly = True
-        Me.MessagesBox.Size = New System.Drawing.Size(152, 84)
+        Me.MessagesBox.Size = New System.Drawing.Size(201, 102)
         Me.MessagesBox.TabIndex = 10
         Me.MessagesBox.Text = ""
         '
@@ -928,17 +995,19 @@ Partial Class WatchForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 32)
+        Me.Label6.Location = New System.Drawing.Point(4, 39)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 20)
+        Me.Label6.Size = New System.Drawing.Size(153, 25)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "New Messages:"
         '
         'MessageUp
         '
-        Me.MessageUp.Location = New System.Drawing.Point(79, 3)
+        Me.MessageUp.Location = New System.Drawing.Point(105, 4)
+        Me.MessageUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MessageUp.Name = "MessageUp"
-        Me.MessageUp.Size = New System.Drawing.Size(27, 23)
+        Me.MessageUp.Size = New System.Drawing.Size(36, 28)
         Me.MessageUp.TabIndex = 8
         Me.MessageUp.Text = "^"
         Me.MessageUp.UseVisualStyleBackColor = True
@@ -952,27 +1021,29 @@ Partial Class WatchForm
         Me.CallPanel.Controls.Add(Me.CallPicture)
         Me.CallPanel.Controls.Add(Me.CallEndButton)
         Me.CallPanel.Controls.Add(Me.IDLabel)
-        Me.CallPanel.Location = New System.Drawing.Point(203, 519)
+        Me.CallPanel.Location = New System.Drawing.Point(271, 639)
+        Me.CallPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CallPanel.Name = "CallPanel"
-        Me.CallPanel.Size = New System.Drawing.Size(185, 163)
+        Me.CallPanel.Size = New System.Drawing.Size(247, 201)
         Me.CallPanel.TabIndex = 16
         '
         'CallPicture
         '
         Me.CallPicture.Image = CType(resources.GetObject("CallPicture.Image"), System.Drawing.Image)
-        Me.CallPicture.Location = New System.Drawing.Point(33, 34)
-        Me.CallPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallPicture.Location = New System.Drawing.Point(44, 42)
+        Me.CallPicture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CallPicture.Name = "CallPicture"
-        Me.CallPicture.Size = New System.Drawing.Size(114, 98)
+        Me.CallPicture.Size = New System.Drawing.Size(152, 121)
         Me.CallPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.CallPicture.TabIndex = 17
         Me.CallPicture.TabStop = False
         '
         'CallEndButton
         '
-        Me.CallEndButton.Location = New System.Drawing.Point(78, 6)
+        Me.CallEndButton.Location = New System.Drawing.Point(104, 7)
+        Me.CallEndButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CallEndButton.Name = "CallEndButton"
-        Me.CallEndButton.Size = New System.Drawing.Size(27, 23)
+        Me.CallEndButton.Size = New System.Drawing.Size(36, 28)
         Me.CallEndButton.TabIndex = 8
         Me.CallEndButton.Text = "^"
         Me.CallEndButton.UseVisualStyleBackColor = True
@@ -981,9 +1052,10 @@ Partial Class WatchForm
         '
         Me.IDLabel.AutoSize = True
         Me.IDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDLabel.Location = New System.Drawing.Point(69, 135)
+        Me.IDLabel.Location = New System.Drawing.Point(92, 166)
+        Me.IDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.IDLabel.Name = "IDLabel"
-        Me.IDLabel.Size = New System.Drawing.Size(37, 20)
+        Me.IDLabel.Size = New System.Drawing.Size(46, 25)
         Me.IDLabel.TabIndex = 0
         Me.IDLabel.Text = "CID"
         '
@@ -992,27 +1064,29 @@ Partial Class WatchForm
         Me.RingPanel.Controls.Add(Me.PictureBox8)
         Me.RingPanel.Controls.Add(Me.RingPanelButtonUp)
         Me.RingPanel.Controls.Add(Me.Label3)
-        Me.RingPanel.Location = New System.Drawing.Point(203, 688)
+        Me.RingPanel.Location = New System.Drawing.Point(271, 847)
+        Me.RingPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RingPanel.Name = "RingPanel"
-        Me.RingPanel.Size = New System.Drawing.Size(185, 163)
+        Me.RingPanel.Size = New System.Drawing.Size(247, 201)
         Me.RingPanel.TabIndex = 17
         '
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(33, 34)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox8.Location = New System.Drawing.Point(44, 42)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(114, 98)
+        Me.PictureBox8.Size = New System.Drawing.Size(152, 121)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 17
         Me.PictureBox8.TabStop = False
         '
         'RingPanelButtonUp
         '
-        Me.RingPanelButtonUp.Location = New System.Drawing.Point(78, 6)
+        Me.RingPanelButtonUp.Location = New System.Drawing.Point(104, 7)
+        Me.RingPanelButtonUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RingPanelButtonUp.Name = "RingPanelButtonUp"
-        Me.RingPanelButtonUp.Size = New System.Drawing.Size(27, 23)
+        Me.RingPanelButtonUp.Size = New System.Drawing.Size(36, 28)
         Me.RingPanelButtonUp.TabIndex = 8
         Me.RingPanelButtonUp.Text = "^"
         Me.RingPanelButtonUp.UseVisualStyleBackColor = True
@@ -1021,45 +1095,50 @@ Partial Class WatchForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(63, 134)
+        Me.Label3.Location = New System.Drawing.Point(84, 165)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 20)
+        Me.Label3.Size = New System.Drawing.Size(77, 25)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Ringing"
         '
         'HomeButton
         '
-        Me.HomeButton.Location = New System.Drawing.Point(120, 262)
+        Me.HomeButton.Location = New System.Drawing.Point(160, 322)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(75, 23)
+        Me.HomeButton.Size = New System.Drawing.Size(100, 28)
         Me.HomeButton.TabIndex = 18
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = True
         '
         'VolumeUP
         '
-        Me.VolumeUP.Location = New System.Drawing.Point(13, 262)
+        Me.VolumeUP.Location = New System.Drawing.Point(17, 322)
+        Me.VolumeUP.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VolumeUP.Name = "VolumeUP"
-        Me.VolumeUP.Size = New System.Drawing.Size(75, 23)
+        Me.VolumeUP.Size = New System.Drawing.Size(100, 28)
         Me.VolumeUP.TabIndex = 19
         Me.VolumeUP.Text = "Volume Up"
         Me.VolumeUP.UseVisualStyleBackColor = True
         '
         'VolumeDown
         '
-        Me.VolumeDown.Location = New System.Drawing.Point(13, 291)
+        Me.VolumeDown.Location = New System.Drawing.Point(17, 358)
+        Me.VolumeDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VolumeDown.Name = "VolumeDown"
-        Me.VolumeDown.Size = New System.Drawing.Size(75, 40)
+        Me.VolumeDown.Size = New System.Drawing.Size(100, 49)
         Me.VolumeDown.TabIndex = 20
         Me.VolumeDown.Text = "Volume Down"
         Me.VolumeDown.UseVisualStyleBackColor = True
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(15, 215)
+        Me.RichTextBox1.Location = New System.Drawing.Point(20, 265)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(182, 47)
+        Me.RichTextBox1.Size = New System.Drawing.Size(241, 57)
         Me.RichTextBox1.TabIndex = 21
         Me.RichTextBox1.Text = "(Buttons below are to be implemented on Physical version of Watch)"
         '
@@ -1068,27 +1147,29 @@ Partial Class WatchForm
         Me.HelpPanel.Controls.Add(Me.PictureBox12)
         Me.HelpPanel.Controls.Add(Me.Button2)
         Me.HelpPanel.Controls.Add(Me.Label4)
-        Me.HelpPanel.Location = New System.Drawing.Point(15, 519)
+        Me.HelpPanel.Location = New System.Drawing.Point(20, 639)
+        Me.HelpPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HelpPanel.Name = "HelpPanel"
-        Me.HelpPanel.Size = New System.Drawing.Size(185, 163)
+        Me.HelpPanel.Size = New System.Drawing.Size(247, 201)
         Me.HelpPanel.TabIndex = 22
         '
         'PictureBox12
         '
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(43, 34)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox12.Location = New System.Drawing.Point(57, 42)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(102, 98)
+        Me.PictureBox12.Size = New System.Drawing.Size(136, 121)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 17
         Me.PictureBox12.TabStop = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(78, 6)
+        Me.Button2.Location = New System.Drawing.Point(104, 7)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(27, 23)
+        Me.Button2.Size = New System.Drawing.Size(36, 28)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "^"
         Me.Button2.UseVisualStyleBackColor = True
@@ -1097,9 +1178,10 @@ Partial Class WatchForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(29, 135)
+        Me.Label4.Location = New System.Drawing.Point(39, 166)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 20)
+        Me.Label4.Size = New System.Drawing.Size(166, 25)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "TAP FOR HELP!!"
         '
@@ -1108,27 +1190,29 @@ Partial Class WatchForm
         Me.HelpPanel1.Controls.Add(Me.PictureBox13)
         Me.HelpPanel1.Controls.Add(Me.Button4)
         Me.HelpPanel1.Controls.Add(Me.Label7)
-        Me.HelpPanel1.Location = New System.Drawing.Point(15, 685)
+        Me.HelpPanel1.Location = New System.Drawing.Point(20, 843)
+        Me.HelpPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HelpPanel1.Name = "HelpPanel1"
-        Me.HelpPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.HelpPanel1.Size = New System.Drawing.Size(247, 201)
         Me.HelpPanel1.TabIndex = 23
         '
         'PictureBox13
         '
         Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(14, 37)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox13.Location = New System.Drawing.Point(19, 46)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(159, 95)
+        Me.PictureBox13.Size = New System.Drawing.Size(212, 117)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 17
         Me.PictureBox13.TabStop = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(78, 6)
+        Me.Button4.Location = New System.Drawing.Point(104, 7)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(27, 23)
+        Me.Button4.Size = New System.Drawing.Size(36, 28)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "^"
         Me.Button4.UseVisualStyleBackColor = True
@@ -1137,9 +1221,10 @@ Partial Class WatchForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(10, 134)
+        Me.Label7.Location = New System.Drawing.Point(13, 165)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(163, 20)
+        Me.Label7.Size = New System.Drawing.Size(207, 25)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "HELP ON THE WAY!!"
         '
@@ -1150,26 +1235,29 @@ Partial Class WatchForm
         Me.GamesPanel1.Controls.Add(Me.Label11)
         Me.GamesPanel1.Controls.Add(Me.PictureBox14)
         Me.GamesPanel1.Controls.Add(Me.Label9)
-        Me.GamesPanel1.Location = New System.Drawing.Point(967, 184)
+        Me.GamesPanel1.Location = New System.Drawing.Point(1289, 226)
+        Me.GamesPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesPanel1.Name = "GamesPanel1"
-        Me.GamesPanel1.Size = New System.Drawing.Size(185, 163)
+        Me.GamesPanel1.Size = New System.Drawing.Size(247, 201)
         Me.GamesPanel1.TabIndex = 24
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(61, 137)
+        Me.Label10.Location = New System.Drawing.Point(81, 169)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 20)
+        Me.Label10.Size = New System.Drawing.Size(102, 25)
         Me.Label10.TabIndex = 10
         Me.Label10.Text = "Buy Them"
         '
         'GamesUp
         '
-        Me.GamesUp.Location = New System.Drawing.Point(78, 3)
+        Me.GamesUp.Location = New System.Drawing.Point(104, 4)
+        Me.GamesUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GamesUp.Name = "GamesUp"
-        Me.GamesUp.Size = New System.Drawing.Size(27, 23)
+        Me.GamesUp.Size = New System.Drawing.Size(36, 28)
         Me.GamesUp.TabIndex = 9
         Me.GamesUp.Text = "^"
         Me.GamesUp.UseVisualStyleBackColor = True
@@ -1178,18 +1266,20 @@ Partial Class WatchForm
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(26, 116)
+        Me.Label11.Location = New System.Drawing.Point(35, 143)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(151, 20)
+        Me.Label11.Size = New System.Drawing.Size(188, 25)
         Me.Label11.TabIndex = 7
         Me.Label11.Text = "Ask Your Parent To "
         '
         'PictureBox14
         '
         Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(49, 24)
+        Me.PictureBox14.Location = New System.Drawing.Point(65, 30)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(92, 69)
+        Me.PictureBox14.Size = New System.Drawing.Size(123, 85)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 4
         Me.PictureBox14.TabStop = False
@@ -1198,9 +1288,10 @@ Partial Class WatchForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(45, 96)
+        Me.Label9.Location = New System.Drawing.Point(60, 118)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(124, 20)
+        Me.Label9.Size = New System.Drawing.Size(155, 25)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "No Games YET!"
         '
@@ -1212,18 +1303,19 @@ Partial Class WatchForm
         Me.CallOptionPanel.Controls.Add(Me.VoiceMessagePicture)
         Me.CallOptionPanel.Controls.Add(Me.OptionPanelUpButton)
         Me.CallOptionPanel.Controls.Add(Me.OptionLabel)
-        Me.CallOptionPanel.Location = New System.Drawing.Point(397, 688)
+        Me.CallOptionPanel.Location = New System.Drawing.Point(529, 847)
+        Me.CallOptionPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CallOptionPanel.Name = "CallOptionPanel"
-        Me.CallOptionPanel.Size = New System.Drawing.Size(185, 163)
+        Me.CallOptionPanel.Size = New System.Drawing.Size(247, 201)
         Me.CallOptionPanel.TabIndex = 25
         '
         'CallMom
         '
         Me.CallMom.Image = CType(resources.GetObject("CallMom.Image"), System.Drawing.Image)
-        Me.CallMom.Location = New System.Drawing.Point(71, 99)
-        Me.CallMom.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallMom.Location = New System.Drawing.Point(95, 122)
+        Me.CallMom.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CallMom.Name = "CallMom"
-        Me.CallMom.Size = New System.Drawing.Size(43, 42)
+        Me.CallMom.Size = New System.Drawing.Size(57, 52)
         Me.CallMom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.CallMom.TabIndex = 20
         Me.CallMom.TabStop = False
@@ -1231,10 +1323,10 @@ Partial Class WatchForm
         'HangUpPicture
         '
         Me.HangUpPicture.Image = CType(resources.GetObject("HangUpPicture.Image"), System.Drawing.Image)
-        Me.HangUpPicture.Location = New System.Drawing.Point(125, 54)
-        Me.HangUpPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture.Location = New System.Drawing.Point(167, 66)
+        Me.HangUpPicture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.HangUpPicture.Name = "HangUpPicture"
-        Me.HangUpPicture.Size = New System.Drawing.Size(43, 42)
+        Me.HangUpPicture.Size = New System.Drawing.Size(57, 52)
         Me.HangUpPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.HangUpPicture.TabIndex = 19
         Me.HangUpPicture.TabStop = False
@@ -1242,10 +1334,10 @@ Partial Class WatchForm
         'CallDad
         '
         Me.CallDad.Image = CType(resources.GetObject("CallDad.Image"), System.Drawing.Image)
-        Me.CallDad.Location = New System.Drawing.Point(71, 54)
-        Me.CallDad.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallDad.Location = New System.Drawing.Point(95, 66)
+        Me.CallDad.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CallDad.Name = "CallDad"
-        Me.CallDad.Size = New System.Drawing.Size(43, 42)
+        Me.CallDad.Size = New System.Drawing.Size(57, 52)
         Me.CallDad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.CallDad.TabIndex = 18
         Me.CallDad.TabStop = False
@@ -1253,19 +1345,20 @@ Partial Class WatchForm
         'VoiceMessagePicture
         '
         Me.VoiceMessagePicture.Image = CType(resources.GetObject("VoiceMessagePicture.Image"), System.Drawing.Image)
-        Me.VoiceMessagePicture.Location = New System.Drawing.Point(16, 54)
-        Me.VoiceMessagePicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.VoiceMessagePicture.Location = New System.Drawing.Point(21, 66)
+        Me.VoiceMessagePicture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.VoiceMessagePicture.Name = "VoiceMessagePicture"
-        Me.VoiceMessagePicture.Size = New System.Drawing.Size(43, 42)
+        Me.VoiceMessagePicture.Size = New System.Drawing.Size(57, 52)
         Me.VoiceMessagePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.VoiceMessagePicture.TabIndex = 17
         Me.VoiceMessagePicture.TabStop = False
         '
         'OptionPanelUpButton
         '
-        Me.OptionPanelUpButton.Location = New System.Drawing.Point(78, 6)
+        Me.OptionPanelUpButton.Location = New System.Drawing.Point(104, 7)
+        Me.OptionPanelUpButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.OptionPanelUpButton.Name = "OptionPanelUpButton"
-        Me.OptionPanelUpButton.Size = New System.Drawing.Size(27, 23)
+        Me.OptionPanelUpButton.Size = New System.Drawing.Size(36, 28)
         Me.OptionPanelUpButton.TabIndex = 8
         Me.OptionPanelUpButton.Text = "^"
         Me.OptionPanelUpButton.UseVisualStyleBackColor = True
@@ -1274,9 +1367,10 @@ Partial Class WatchForm
         '
         Me.OptionLabel.AutoSize = True
         Me.OptionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OptionLabel.Location = New System.Drawing.Point(37, 32)
+        Me.OptionLabel.Location = New System.Drawing.Point(49, 39)
+        Me.OptionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.OptionLabel.Name = "OptionLabel"
-        Me.OptionLabel.Size = New System.Drawing.Size(112, 20)
+        Me.OptionLabel.Size = New System.Drawing.Size(138, 25)
         Me.OptionLabel.TabIndex = 0
         Me.OptionLabel.Text = "Mom Hung Up"
         '
@@ -1286,18 +1380,19 @@ Partial Class WatchForm
         Me.VoiceMailPanel.Controls.Add(Me.PictureBox19)
         Me.VoiceMailPanel.Controls.Add(Me.VoiceMailPanelUpButton)
         Me.VoiceMailPanel.Controls.Add(Me.VoiceMailLabel)
-        Me.VoiceMailPanel.Location = New System.Drawing.Point(588, 688)
+        Me.VoiceMailPanel.Location = New System.Drawing.Point(784, 847)
+        Me.VoiceMailPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VoiceMailPanel.Name = "VoiceMailPanel"
-        Me.VoiceMailPanel.Size = New System.Drawing.Size(185, 163)
+        Me.VoiceMailPanel.Size = New System.Drawing.Size(247, 201)
         Me.VoiceMailPanel.TabIndex = 26
         '
         'HangUpPicture2
         '
         Me.HangUpPicture2.Image = CType(resources.GetObject("HangUpPicture2.Image"), System.Drawing.Image)
-        Me.HangUpPicture2.Location = New System.Drawing.Point(125, 77)
-        Me.HangUpPicture2.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture2.Location = New System.Drawing.Point(167, 95)
+        Me.HangUpPicture2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.HangUpPicture2.Name = "HangUpPicture2"
-        Me.HangUpPicture2.Size = New System.Drawing.Size(43, 42)
+        Me.HangUpPicture2.Size = New System.Drawing.Size(57, 52)
         Me.HangUpPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.HangUpPicture2.TabIndex = 19
         Me.HangUpPicture2.TabStop = False
@@ -1305,19 +1400,20 @@ Partial Class WatchForm
         'PictureBox19
         '
         Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
-        Me.PictureBox19.Location = New System.Drawing.Point(16, 54)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox19.Location = New System.Drawing.Point(21, 66)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(103, 96)
+        Me.PictureBox19.Size = New System.Drawing.Size(137, 118)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox19.TabIndex = 17
         Me.PictureBox19.TabStop = False
         '
         'VoiceMailPanelUpButton
         '
-        Me.VoiceMailPanelUpButton.Location = New System.Drawing.Point(78, 6)
+        Me.VoiceMailPanelUpButton.Location = New System.Drawing.Point(104, 7)
+        Me.VoiceMailPanelUpButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VoiceMailPanelUpButton.Name = "VoiceMailPanelUpButton"
-        Me.VoiceMailPanelUpButton.Size = New System.Drawing.Size(27, 23)
+        Me.VoiceMailPanelUpButton.Size = New System.Drawing.Size(36, 28)
         Me.VoiceMailPanelUpButton.TabIndex = 8
         Me.VoiceMailPanelUpButton.Text = "^"
         Me.VoiceMailPanelUpButton.UseVisualStyleBackColor = True
@@ -1326,9 +1422,10 @@ Partial Class WatchForm
         '
         Me.VoiceMailLabel.AutoSize = True
         Me.VoiceMailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VoiceMailLabel.Location = New System.Drawing.Point(5, 32)
+        Me.VoiceMailLabel.Location = New System.Drawing.Point(7, 39)
+        Me.VoiceMailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.VoiceMailLabel.Name = "VoiceMailLabel"
-        Me.VoiceMailLabel.Size = New System.Drawing.Size(178, 20)
+        Me.VoiceMailLabel.Size = New System.Drawing.Size(223, 25)
         Me.VoiceMailLabel.TabIndex = 0
         Me.VoiceMailLabel.Text = "Leave a Voice Message"
         '
@@ -1339,16 +1436,18 @@ Partial Class WatchForm
         Me.MapPanel.Controls.Add(Me.MapLeft)
         Me.MapPanel.Controls.Add(Me.MapRight)
         Me.MapPanel.Controls.Add(Me.MapLabel)
-        Me.MapPanel.Location = New System.Drawing.Point(1349, 9)
+        Me.MapPanel.Location = New System.Drawing.Point(1799, 11)
+        Me.MapPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MapPanel.Name = "MapPanel"
-        Me.MapPanel.Size = New System.Drawing.Size(185, 163)
+        Me.MapPanel.Size = New System.Drawing.Size(247, 201)
         Me.MapPanel.TabIndex = 27
         '
         'MapButtonDown
         '
-        Me.MapButtonDown.Location = New System.Drawing.Point(78, 137)
+        Me.MapButtonDown.Location = New System.Drawing.Point(104, 169)
+        Me.MapButtonDown.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MapButtonDown.Name = "MapButtonDown"
-        Me.MapButtonDown.Size = New System.Drawing.Size(27, 23)
+        Me.MapButtonDown.Size = New System.Drawing.Size(36, 28)
         Me.MapButtonDown.TabIndex = 5
         Me.MapButtonDown.Text = "\/"
         Me.MapButtonDown.UseVisualStyleBackColor = True
@@ -1356,27 +1455,30 @@ Partial Class WatchForm
         'PictureBox11
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(33, 9)
+        Me.PictureBox11.Location = New System.Drawing.Point(44, 11)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox11.Size = New System.Drawing.Size(159, 123)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 4
         Me.PictureBox11.TabStop = False
         '
         'MapLeft
         '
-        Me.MapLeft.Location = New System.Drawing.Point(3, 73)
+        Me.MapLeft.Location = New System.Drawing.Point(4, 90)
+        Me.MapLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MapLeft.Name = "MapLeft"
-        Me.MapLeft.Size = New System.Drawing.Size(24, 23)
+        Me.MapLeft.Size = New System.Drawing.Size(32, 28)
         Me.MapLeft.TabIndex = 3
         Me.MapLeft.Text = "<"
         Me.MapLeft.UseVisualStyleBackColor = True
         '
         'MapRight
         '
-        Me.MapRight.Location = New System.Drawing.Point(158, 73)
+        Me.MapRight.Location = New System.Drawing.Point(211, 90)
+        Me.MapRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MapRight.Name = "MapRight"
-        Me.MapRight.Size = New System.Drawing.Size(24, 23)
+        Me.MapRight.Size = New System.Drawing.Size(32, 28)
         Me.MapRight.TabIndex = 2
         Me.MapRight.Text = ">"
         Me.MapRight.UseVisualStyleBackColor = True
@@ -1385,17 +1487,18 @@ Partial Class WatchForm
         '
         Me.MapLabel.AutoSize = True
         Me.MapLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MapLabel.Location = New System.Drawing.Point(71, 115)
+        Me.MapLabel.Location = New System.Drawing.Point(95, 142)
+        Me.MapLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MapLabel.Name = "MapLabel"
-        Me.MapLabel.Size = New System.Drawing.Size(40, 20)
+        Me.MapLabel.Size = New System.Drawing.Size(51, 25)
         Me.MapLabel.TabIndex = 0
         Me.MapLabel.Text = "Map"
         '
         'WatchForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1540, 845)
+        Me.ClientSize = New System.Drawing.Size(1924, 1040)
         Me.Controls.Add(Me.MapPanel)
         Me.Controls.Add(Me.VoiceMailPanel)
         Me.Controls.Add(Me.CallOptionPanel)
@@ -1421,6 +1524,7 @@ Partial Class WatchForm
         Me.Controls.Add(Me.PaymentPanel)
         Me.Controls.Add(Me.ContactPanel)
         Me.Controls.Add(Me.ClockPanel)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "WatchForm"
         Me.Text = "WatchForm"
         Me.ClockPanel.ResumeLayout(False)

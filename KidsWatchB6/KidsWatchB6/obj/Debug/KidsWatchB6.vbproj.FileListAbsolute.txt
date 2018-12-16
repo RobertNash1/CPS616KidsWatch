@@ -37,3 +37,16 @@ C:\Users\JSit\Source\Repos\RobertNash1\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\o
 C:\Users\JSit\Source\Repos\RobertNash1\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.exe
 C:\Users\JSit\Source\Repos\RobertNash1\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.xml
 C:\Users\JSit\Source\Repos\RobertNash1\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.pdb
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.exe.config
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.exe
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.pdb
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\bin\Debug\KidsWatchB6.xml
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbprojAssemblyReference.cache
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.PhoneApp.resources
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.WatchForm.resources
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.Resources.resources
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbproj.GenerateResource.cache
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.vbproj.CoreCompileInputs.cache
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.exe
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.xml
+C:\Users\1nash\Desktop\CPS616KidsWatch\KidsWatchB6\KidsWatchB6\obj\Debug\KidsWatchB6.pdb

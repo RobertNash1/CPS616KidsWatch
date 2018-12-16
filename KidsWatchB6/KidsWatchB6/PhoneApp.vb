@@ -88,7 +88,7 @@
         AppPanel.Visible = False
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs)
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
@@ -230,4 +230,6 @@
         AddVerification.Text = "You have added " & Format(allowance, "0.00") & " dollars!"
         CurrBalanceLabel.Text = WatchForm.getBalance
     End Sub
+
+
 End Class
