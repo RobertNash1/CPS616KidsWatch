@@ -20,6 +20,9 @@
         myPanels.Add(GamesPanel)
         myPanels.Add(GamesPanel1)
         myPanels.Add(MusicPanel)
+        myPanels.Add(MusicPanel1)
+        myPanels.Add(MusicPanel2)
+        myPanels.Add(MusicPanel3)
         myPanels.Add(MessagePanel)
         myPanels.Add(MessagePanel1)
         myPanels.Add(CallPanel)
@@ -29,7 +32,7 @@
         myPanels.Add(CallOptionPanel)
         myPanels.Add(VoiceMailPanel)
         myPanels.Add(MapPanel)
-        For index As Integer = 0 To 20
+        For index As Integer = 0 To 23
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -74,6 +77,9 @@
         SchedulePanel1.Visible = False
         GamesPanel.Visible = False
         MusicPanel.Visible = False
+        MusicPanel1.Visible = False
+        MusicPanel2.Visible = False
+        MusicPanel3.Visible = False
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
         CallPanel.Visible = False
@@ -334,6 +340,8 @@
         End If
 
         ClockPanel.Visible = True
+        CallOptionPanel.Visible = False
+        VoiceMailPanel.Visible = False
         ContactPanel.Visible = False
         ContactPanel1.Visible = False
         ContactPanel2.Visible = False
@@ -344,6 +352,9 @@
         SchedulePanel1.Visible = False
         GamesPanel.Visible = False
         MusicPanel.Visible = False
+        MusicPanel1.Visible = False
+        MusicPanel2.Visible = False
+        MusicPanel3.Visible = False
         MessagePanel.Visible = False
         MessagePanel1.Visible = False
         CallPanel.Visible = False
@@ -351,6 +362,7 @@
         HelpPanel.Visible = False
         HelpPanel1.Visible = False
         GamesPanel1.Visible = False
+        MapPanel.Visible = False
     End Sub
 
     Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
@@ -396,5 +408,60 @@
         PhoneApp.SetVoiceMail()
     End Sub
 
+    Private Sub MusicDown_Click(sender As Object, e As EventArgs) Handles MusicDown.Click
+        MusicPanel.Visible = False
+        MusicPanel1.Visible = True
+    End Sub
 
+    Private Sub MusicDown1_Click(sender As Object, e As EventArgs) Handles MusicDown1.Click
+        MusicPanel1.Visible = False
+        MusicPanel2.Visible = True
+    End Sub
+
+    Private Sub MusicUp1_Click(sender As Object, e As EventArgs) Handles MusicUp1.Click
+        MusicPanel1.Visible = False
+        MusicPanel.Visible = True
+    End Sub
+
+    Private Sub MusicUp2_Click(sender As Object, e As EventArgs) Handles MusicUp2.Click
+        MusicPanel2.Visible = False
+        MusicPanel1.Visible = True
+    End Sub
+
+    Private Sub MusicDown2_Click(sender As Object, e As EventArgs) Handles MusicDown2.Click
+        MusicPanel2.Visible = False
+        MusicPanel3.Visible = True
+    End Sub
+
+    Private Sub MusicUp3_Click(sender As Object, e As EventArgs) Handles MusicUp3.Click
+        MusicPanel3.Visible = False
+        MusicPanel2.Visible = True
+    End Sub
+
+    Private Sub Song1_Click(sender As Object, e As EventArgs) Handles Song1.Click
+        My.Computer.Audio.Stop()
+        My.Computer.Audio.Play(My.Resources.DesiJourney, AudioPlayMode.Background)
+    End Sub
+
+    Private Sub Song2_Click(sender As Object, e As EventArgs) Handles Song2.Click
+        My.Computer.Audio.Stop()
+        My.Computer.Audio.Play(My.Resources.Shake, AudioPlayMode.Background)
+    End Sub
+
+    Private Sub Song3_Click(sender As Object, e As EventArgs) Handles Song3.Click
+        My.Computer.Audio.Stop()
+        My.Computer.Audio.Play(My.Resources.UpbeatFunk, AudioPlayMode.Background)
+    End Sub
+
+    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
+        My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
+        My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
+        My.Computer.Audio.Stop()
+    End Sub
 End Class

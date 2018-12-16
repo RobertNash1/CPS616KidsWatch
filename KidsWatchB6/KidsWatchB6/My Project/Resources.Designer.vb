@@ -59,5 +59,41 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property DesiJourney() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("DesiJourney", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property phone02() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("phone02", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Shake() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Shake", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property UpbeatFunk() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("UpbeatFunk", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

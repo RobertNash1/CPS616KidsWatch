@@ -155,8 +155,18 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\DesiJourney.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShakeYourBootay.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpbeatFunk.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
