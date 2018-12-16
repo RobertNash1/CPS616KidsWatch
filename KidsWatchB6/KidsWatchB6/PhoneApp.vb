@@ -16,7 +16,8 @@
         myPanels.Add(CallPanel)
         myPanels.Add(CallPanel1)
         myPanels.Add(SOSPanel)
-        For index As Integer = 0 To 9
+        myPanels.Add(VoiceMailPanel)
+        For index As Integer = 0 To 10
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -27,9 +28,10 @@
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
-        TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
-        TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel7.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel8.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel10.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel11.Text = TimeOfDay.ToString("hh:mm tt")
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
@@ -83,13 +85,18 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs)
+        TimeLabel.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel2.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel3.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel4.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel5.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel6.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel7.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel8.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
-        TimeLabel22.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel10.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel11.Text = TimeOfDay.ToString("hh:mm tt")
+
     End Sub
 
     Private Sub KidMoney_Click(sender As Object, e As EventArgs) Handles KidMoney.Click
@@ -159,26 +166,35 @@
     End Sub
 
     Private Sub ClearAll_Click(sender As Object, e As EventArgs) Handles ClearAll.Click
-
         ExistingS.Text = ""
         countSchedule.Text = "None Existing"
         WatchForm.ScheduleBox.Text = ExistingS.Text
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Public Sub SetVoiceMail()
+        VoiceMailPicture.Visible = True
+    End Sub
+
+    Public Sub SetPhoneLabel()
+        Dim CallID = WatchForm.getCallID
+        ParentLabel.Text = "***" & CallID & " Phone"
+    End Sub
+
+    Private Sub RejectCall_Click(sender As Object, e As EventArgs) Handles RejectCall.Click
         CallPanel1.Visible = False
         Dim CallID = WatchForm.getCallID
 
         If CallID = "Mom" Then
             WatchForm.RingPanel.Visible = False
-            WatchForm.ContactPanel1.Visible = True
+            WatchForm.CallOptionPanel.Visible = True
         ElseIf CallID = "Dad" Then
             WatchForm.RingPanel.Visible = False
-            WatchForm.ContactPanel2.Visible = True
+            WatchForm.CallOptionPanel.Visible = True
         End If
+        WatchForm.setHangup()
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles AcceptCall.Click
         CallPanel1.Visible = False
         CallPanel.Visible = True
         WatchForm.RingPanel.Visible = False
@@ -189,5 +205,13 @@
         SOSPanel.Visible = False
     End Sub
 
+    Private Sub VoiceMailPicture_Click(sender As Object, e As EventArgs) Handles VoiceMailPicture.Click
+        VoiceMailPicture.Visible = False
+        VoiceMailPanel.Visible = True
+    End Sub
 
+    Private Sub CallEndPicture2_Click(sender As Object, e As EventArgs) Handles CallEndPicture2.Click
+        VoiceMailPanel.Visible = False
+        AppPanel.Visible = True
+    End Sub
 End Class

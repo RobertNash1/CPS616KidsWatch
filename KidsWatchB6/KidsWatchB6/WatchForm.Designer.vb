@@ -25,6 +25,8 @@ Partial Class WatchForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WatchForm))
         Me.ClockPanel = New System.Windows.Forms.Panel()
+        Me.NewScheduleItem = New System.Windows.Forms.PictureBox()
+        Me.NewMessageItem = New System.Windows.Forms.PictureBox()
         Me.HomePicture = New System.Windows.Forms.PictureBox()
         Me.LeftButton = New System.Windows.Forms.Button()
         Me.RightButton = New System.Windows.Forms.Button()
@@ -104,7 +106,7 @@ Partial Class WatchForm
         Me.IDLabel = New System.Windows.Forms.Label()
         Me.RingPanel = New System.Windows.Forms.Panel()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.RingPanelButtonUp = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.VolumeUP = New System.Windows.Forms.Button()
@@ -124,9 +126,21 @@ Partial Class WatchForm
         Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.NewMessageItem = New System.Windows.Forms.PictureBox()
-        Me.NewScheduleItem = New System.Windows.Forms.PictureBox()
+        Me.CallOptionPanel = New System.Windows.Forms.Panel()
+        Me.CallMom = New System.Windows.Forms.PictureBox()
+        Me.HangUpPicture = New System.Windows.Forms.PictureBox()
+        Me.CallDad = New System.Windows.Forms.PictureBox()
+        Me.VoiceMessagePicture = New System.Windows.Forms.PictureBox()
+        Me.OptionPanelUpButton = New System.Windows.Forms.Button()
+        Me.OptionLabel = New System.Windows.Forms.Label()
+        Me.VoiceMailPanel = New System.Windows.Forms.Panel()
+        Me.HangUpPicture2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.VoiceMailPanelUpButton = New System.Windows.Forms.Button()
+        Me.VoiceMailLabel = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
+        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HomePicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContactPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -162,8 +176,14 @@ Partial Class WatchForm
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GamesPanel1.SuspendLayout()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CallOptionPanel.SuspendLayout()
+        CType(Me.CallMom, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HangUpPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CallDad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VoiceMessagePicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.VoiceMailPanel.SuspendLayout()
+        CType(Me.HangUpPicture2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -179,6 +199,28 @@ Partial Class WatchForm
         Me.ClockPanel.Name = "ClockPanel"
         Me.ClockPanel.Size = New System.Drawing.Size(185, 163)
         Me.ClockPanel.TabIndex = 0
+        '
+        'NewScheduleItem
+        '
+        Me.NewScheduleItem.Image = CType(resources.GetObject("NewScheduleItem.Image"), System.Drawing.Image)
+        Me.NewScheduleItem.Location = New System.Drawing.Point(116, 92)
+        Me.NewScheduleItem.Name = "NewScheduleItem"
+        Me.NewScheduleItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewScheduleItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.NewScheduleItem.TabIndex = 20
+        Me.NewScheduleItem.TabStop = False
+        Me.NewScheduleItem.Visible = False
+        '
+        'NewMessageItem
+        '
+        Me.NewMessageItem.Image = CType(resources.GetObject("NewMessageItem.Image"), System.Drawing.Image)
+        Me.NewMessageItem.Location = New System.Drawing.Point(116, 51)
+        Me.NewMessageItem.Name = "NewMessageItem"
+        Me.NewMessageItem.Size = New System.Drawing.Size(33, 35)
+        Me.NewMessageItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.NewMessageItem.TabIndex = 19
+        Me.NewMessageItem.TabStop = False
+        Me.NewMessageItem.Visible = False
         '
         'HomePicture
         '
@@ -940,7 +982,7 @@ Partial Class WatchForm
         'RingPanel
         '
         Me.RingPanel.Controls.Add(Me.PictureBox8)
-        Me.RingPanel.Controls.Add(Me.Button1)
+        Me.RingPanel.Controls.Add(Me.RingPanelButtonUp)
         Me.RingPanel.Controls.Add(Me.Label3)
         Me.RingPanel.Location = New System.Drawing.Point(203, 688)
         Me.RingPanel.Name = "RingPanel"
@@ -958,14 +1000,14 @@ Partial Class WatchForm
         Me.PictureBox8.TabIndex = 17
         Me.PictureBox8.TabStop = False
         '
-        'Button1
+        'RingPanelButtonUp
         '
-        Me.Button1.Location = New System.Drawing.Point(78, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(27, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "^"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.RingPanelButtonUp.Location = New System.Drawing.Point(78, 6)
+        Me.RingPanelButtonUp.Name = "RingPanelButtonUp"
+        Me.RingPanelButtonUp.Size = New System.Drawing.Size(27, 23)
+        Me.RingPanelButtonUp.TabIndex = 8
+        Me.RingPanelButtonUp.Text = "^"
+        Me.RingPanelButtonUp.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -1154,33 +1196,141 @@ Partial Class WatchForm
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "No Games YET!"
         '
-        'NewMessageItem
+        'CallOptionPanel
         '
-        Me.NewMessageItem.Image = CType(resources.GetObject("NewMessageItem.Image"), System.Drawing.Image)
-        Me.NewMessageItem.Location = New System.Drawing.Point(116, 51)
-        Me.NewMessageItem.Name = "NewMessageItem"
-        Me.NewMessageItem.Size = New System.Drawing.Size(33, 35)
-        Me.NewMessageItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.NewMessageItem.TabIndex = 19
-        Me.NewMessageItem.TabStop = False
-        Me.NewMessageItem.Visible = False
+        Me.CallOptionPanel.Controls.Add(Me.CallMom)
+        Me.CallOptionPanel.Controls.Add(Me.HangUpPicture)
+        Me.CallOptionPanel.Controls.Add(Me.CallDad)
+        Me.CallOptionPanel.Controls.Add(Me.VoiceMessagePicture)
+        Me.CallOptionPanel.Controls.Add(Me.OptionPanelUpButton)
+        Me.CallOptionPanel.Controls.Add(Me.OptionLabel)
+        Me.CallOptionPanel.Location = New System.Drawing.Point(397, 688)
+        Me.CallOptionPanel.Name = "CallOptionPanel"
+        Me.CallOptionPanel.Size = New System.Drawing.Size(185, 163)
+        Me.CallOptionPanel.TabIndex = 25
         '
-        'NewScheduleItem
+        'CallMom
         '
-        Me.NewScheduleItem.Image = CType(resources.GetObject("NewScheduleItem.Image"), System.Drawing.Image)
-        Me.NewScheduleItem.Location = New System.Drawing.Point(116, 92)
-        Me.NewScheduleItem.Name = "NewScheduleItem"
-        Me.NewScheduleItem.Size = New System.Drawing.Size(33, 35)
-        Me.NewScheduleItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.NewScheduleItem.TabIndex = 20
-        Me.NewScheduleItem.TabStop = False
-        Me.NewScheduleItem.Visible = False
+        Me.CallMom.Image = CType(resources.GetObject("CallMom.Image"), System.Drawing.Image)
+        Me.CallMom.Location = New System.Drawing.Point(71, 99)
+        Me.CallMom.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallMom.Name = "CallMom"
+        Me.CallMom.Size = New System.Drawing.Size(43, 42)
+        Me.CallMom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CallMom.TabIndex = 20
+        Me.CallMom.TabStop = False
+        '
+        'HangUpPicture
+        '
+        Me.HangUpPicture.Image = CType(resources.GetObject("HangUpPicture.Image"), System.Drawing.Image)
+        Me.HangUpPicture.Location = New System.Drawing.Point(125, 54)
+        Me.HangUpPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture.Name = "HangUpPicture"
+        Me.HangUpPicture.Size = New System.Drawing.Size(43, 42)
+        Me.HangUpPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.HangUpPicture.TabIndex = 19
+        Me.HangUpPicture.TabStop = False
+        '
+        'CallDad
+        '
+        Me.CallDad.Image = CType(resources.GetObject("CallDad.Image"), System.Drawing.Image)
+        Me.CallDad.Location = New System.Drawing.Point(71, 54)
+        Me.CallDad.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallDad.Name = "CallDad"
+        Me.CallDad.Size = New System.Drawing.Size(43, 42)
+        Me.CallDad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CallDad.TabIndex = 18
+        Me.CallDad.TabStop = False
+        '
+        'VoiceMessagePicture
+        '
+        Me.VoiceMessagePicture.Image = CType(resources.GetObject("VoiceMessagePicture.Image"), System.Drawing.Image)
+        Me.VoiceMessagePicture.Location = New System.Drawing.Point(16, 54)
+        Me.VoiceMessagePicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.VoiceMessagePicture.Name = "VoiceMessagePicture"
+        Me.VoiceMessagePicture.Size = New System.Drawing.Size(43, 42)
+        Me.VoiceMessagePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.VoiceMessagePicture.TabIndex = 17
+        Me.VoiceMessagePicture.TabStop = False
+        '
+        'OptionPanelUpButton
+        '
+        Me.OptionPanelUpButton.Location = New System.Drawing.Point(78, 6)
+        Me.OptionPanelUpButton.Name = "OptionPanelUpButton"
+        Me.OptionPanelUpButton.Size = New System.Drawing.Size(27, 23)
+        Me.OptionPanelUpButton.TabIndex = 8
+        Me.OptionPanelUpButton.Text = "^"
+        Me.OptionPanelUpButton.UseVisualStyleBackColor = True
+        '
+        'OptionLabel
+        '
+        Me.OptionLabel.AutoSize = True
+        Me.OptionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OptionLabel.Location = New System.Drawing.Point(37, 32)
+        Me.OptionLabel.Name = "OptionLabel"
+        Me.OptionLabel.Size = New System.Drawing.Size(112, 20)
+        Me.OptionLabel.TabIndex = 0
+        Me.OptionLabel.Text = "Mom Hung Up"
+        '
+        'VoiceMailPanel
+        '
+        Me.VoiceMailPanel.Controls.Add(Me.HangUpPicture2)
+        Me.VoiceMailPanel.Controls.Add(Me.PictureBox19)
+        Me.VoiceMailPanel.Controls.Add(Me.VoiceMailPanelUpButton)
+        Me.VoiceMailPanel.Controls.Add(Me.VoiceMailLabel)
+        Me.VoiceMailPanel.Location = New System.Drawing.Point(588, 688)
+        Me.VoiceMailPanel.Name = "VoiceMailPanel"
+        Me.VoiceMailPanel.Size = New System.Drawing.Size(185, 163)
+        Me.VoiceMailPanel.TabIndex = 26
+        '
+        'HangUpPicture2
+        '
+        Me.HangUpPicture2.Image = CType(resources.GetObject("HangUpPicture2.Image"), System.Drawing.Image)
+        Me.HangUpPicture2.Location = New System.Drawing.Point(125, 77)
+        Me.HangUpPicture2.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture2.Name = "HangUpPicture2"
+        Me.HangUpPicture2.Size = New System.Drawing.Size(43, 42)
+        Me.HangUpPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.HangUpPicture2.TabIndex = 19
+        Me.HangUpPicture2.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
+        Me.PictureBox19.Location = New System.Drawing.Point(16, 54)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(103, 96)
+        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox19.TabIndex = 17
+        Me.PictureBox19.TabStop = False
+        '
+        'VoiceMailPanelUpButton
+        '
+        Me.VoiceMailPanelUpButton.Location = New System.Drawing.Point(78, 6)
+        Me.VoiceMailPanelUpButton.Name = "VoiceMailPanelUpButton"
+        Me.VoiceMailPanelUpButton.Size = New System.Drawing.Size(27, 23)
+        Me.VoiceMailPanelUpButton.TabIndex = 8
+        Me.VoiceMailPanelUpButton.Text = "^"
+        Me.VoiceMailPanelUpButton.UseVisualStyleBackColor = True
+        '
+        'VoiceMailLabel
+        '
+        Me.VoiceMailLabel.AutoSize = True
+        Me.VoiceMailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoiceMailLabel.Location = New System.Drawing.Point(5, 32)
+        Me.VoiceMailLabel.Name = "VoiceMailLabel"
+        Me.VoiceMailLabel.Size = New System.Drawing.Size(178, 20)
+        Me.VoiceMailLabel.TabIndex = 0
+        Me.VoiceMailLabel.Text = "Leave a Voice Message"
         '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1349, 845)
+        Me.ClientSize = New System.Drawing.Size(1484, 845)
+        Me.Controls.Add(Me.VoiceMailPanel)
+        Me.Controls.Add(Me.CallOptionPanel)
         Me.Controls.Add(Me.GamesPanel1)
         Me.Controls.Add(Me.HelpPanel1)
         Me.Controls.Add(Me.HelpPanel)
@@ -1207,6 +1357,8 @@ Partial Class WatchForm
         Me.Text = "WatchForm"
         Me.ClockPanel.ResumeLayout(False)
         Me.ClockPanel.PerformLayout()
+        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HomePicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContactPanel.ResumeLayout(False)
         Me.ContactPanel.PerformLayout()
@@ -1258,8 +1410,16 @@ Partial Class WatchForm
         Me.GamesPanel1.ResumeLayout(False)
         Me.GamesPanel1.PerformLayout()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CallOptionPanel.ResumeLayout(False)
+        Me.CallOptionPanel.PerformLayout()
+        CType(Me.CallMom, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HangUpPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CallDad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VoiceMessagePicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.VoiceMailPanel.ResumeLayout(False)
+        Me.VoiceMailPanel.PerformLayout()
+        CType(Me.HangUpPicture2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1340,7 +1500,7 @@ Partial Class WatchForm
     Friend WithEvents IDLabel As Label
     Friend WithEvents RingPanel As Panel
     Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents RingPanelButtonUp As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents HomePicture As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
@@ -1366,4 +1526,16 @@ Partial Class WatchForm
     Friend WithEvents Label11 As Label
     Friend WithEvents NewScheduleItem As PictureBox
     Friend WithEvents NewMessageItem As PictureBox
+    Friend WithEvents CallOptionPanel As Panel
+    Friend WithEvents VoiceMessagePicture As PictureBox
+    Friend WithEvents OptionPanelUpButton As Button
+    Friend WithEvents OptionLabel As Label
+    Friend WithEvents HangUpPicture As PictureBox
+    Friend WithEvents CallDad As PictureBox
+    Friend WithEvents CallMom As PictureBox
+    Friend WithEvents VoiceMailPanel As Panel
+    Friend WithEvents HangUpPicture2 As PictureBox
+    Friend WithEvents VoiceMailPanelUpButton As Button
+    Friend WithEvents VoiceMailLabel As Label
+    Friend WithEvents PictureBox19 As PictureBox
 End Class

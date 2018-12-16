@@ -26,7 +26,9 @@
         myPanels.Add(RingPanel)
         myPanels.Add(HelpPanel)
         myPanels.Add(HelpPanel1)
-        For index As Integer = 0 To 17
+        myPanels.Add(CallOptionPanel)
+        myPanels.Add(VoiceMailPanel)
+        For index As Integer = 0 To 19
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -59,6 +61,8 @@
         PhoneApp.Show()
         DrawPanels()
         'Make all other panels not visible
+        CallOptionPanel.Visible = False
+        VoiceMailPanel.Visible = False
         ContactPanel.Visible = False
         ContactPanel1.Visible = False
         ContactPanel2.Visible = False
@@ -237,6 +241,10 @@
         Return Message
     End Function
 
+    Public Sub setHangup()
+        OptionLabel.Text = CallID & " Hung Up"
+    End Sub
+
     Public Sub setMessage(msg As String)
         Message = msg
         MessagesBox.Text = Message
@@ -255,20 +263,22 @@
     Private Sub TapToPay_Click(sender As Object, e As EventArgs) Handles TapToPay.Click
         PaymentPanel2.Visible = False
         PaymentPanel1.Visible = True
-        Balance = Balance - 8.63
+        Balance = Balance - 8
         BalanceLabel.Text = Balance
     End Sub
 
-    Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click, MomCallButton.Click
+    Private Sub MomPicture_Click(sender As Object, e As EventArgs) Handles MomPicture.Click, MomCallButton.Click, CallMom.Click
         CallID = "Mom"
+        PhoneApp.SetPhoneLabel()
         IDLabel.Text = CallID
         RingPanel.Visible = True
         ContactPanel1.Visible = False
         PhoneApp.CallPanel1.Visible = True
     End Sub
 
-    Private Sub DadPicture_Click(sender As Object, e As EventArgs) Handles DadPicture.Click, DadCallButton.Click
+    Private Sub DadPicture_Click(sender As Object, e As EventArgs) Handles DadPicture.Click, DadCallButton.Click, CallDad.Click
         CallID = "Dad"
+        PhoneApp.SetPhoneLabel()
         IDLabel.Text = CallID
         RingPanel.Visible = True
         ContactPanel2.Visible = False
@@ -291,7 +301,7 @@
         Return CallID
     End Function
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub RingPanelButtonUp_Click(sender As Object, e As EventArgs) Handles RingPanelButtonUp.Click
         If CallID = "Mom" Then
             RingPanel.Visible = False
             ContactPanel1.Visible = True
@@ -363,9 +373,15 @@
         GamesPanel1.Visible = False
     End Sub
 
-    Private Sub VolumeUP_Click(sender As Object, e As EventArgs) Handles VolumeUP.Click
-        ReDrawHomePicture(False)
+    Private Sub HangUpPicture_Click(sender As Object, e As EventArgs) Handles HangUpPicture.Click, HangUpPicture2.Click, OptionPanelUpButton.Click, VoiceMailPanelUpButton.Click
+        CallOptionPanel.Visible = False
+        VoiceMailPanel.Visible = False
+        ContactPanel.Visible = True
     End Sub
 
+    Private Sub VoiceMessagePicture_Click(sender As Object, e As EventArgs) Handles VoiceMessagePicture.Click
+        VoiceMailPanel.Visible = True
+        CallOptionPanel.Visible = False
 
+    End Sub
 End Class

@@ -33,6 +33,7 @@ Partial Class PhoneApp
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel2 = New System.Windows.Forms.Label()
         Me.AppPanel = New System.Windows.Forms.Panel()
+        Me.VoiceMailPicture = New System.Windows.Forms.PictureBox()
         Me.KidSchedule = New System.Windows.Forms.PictureBox()
         Me.KidMessage = New System.Windows.Forms.PictureBox()
         Me.KidMoney = New System.Windows.Forms.PictureBox()
@@ -78,7 +79,7 @@ Partial Class PhoneApp
         Me.Label17 = New System.Windows.Forms.Label()
         Me.AddMoney = New System.Windows.Forms.Button()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TimeLabel22 = New System.Windows.Forms.Label()
+        Me.TimeLabel7 = New System.Windows.Forms.Label()
         Me.CallPanel = New System.Windows.Forms.Panel()
         Me.CallEndPicture = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -92,8 +93,9 @@ Partial Class PhoneApp
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TimeLabel9 = New System.Windows.Forms.Label()
         Me.CallPanel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.ParentLabel = New System.Windows.Forms.Label()
+        Me.AcceptCall = New System.Windows.Forms.PictureBox()
+        Me.RejectCall = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel8 = New System.Windows.Forms.Label()
@@ -103,10 +105,16 @@ Partial Class PhoneApp
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.TimeLabel11 = New System.Windows.Forms.Label()
+        Me.VoiceMailPanel = New System.Windows.Forms.Panel()
+        Me.CallEndPicture2 = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.TimeLabel10 = New System.Windows.Forms.Label()
         Me.ClockPanel.SuspendLayout()
         Me.HomePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AppPanel.SuspendLayout()
+        CType(Me.VoiceMailPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KidSchedule, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KidMessage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KidMoney, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,11 +130,14 @@ Partial Class PhoneApp
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SchedulePanel1.SuspendLayout()
         Me.CallPanel1.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AcceptCall, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RejectCall, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SOSPanel.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.VoiceMailPanel.SuspendLayout()
+        CType(Me.CallEndPicture2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -208,6 +219,7 @@ Partial Class PhoneApp
         '
         'AppPanel
         '
+        Me.AppPanel.Controls.Add(Me.VoiceMailPicture)
         Me.AppPanel.Controls.Add(Me.KidSchedule)
         Me.AppPanel.Controls.Add(Me.KidMessage)
         Me.AppPanel.Controls.Add(Me.KidMoney)
@@ -229,6 +241,17 @@ Partial Class PhoneApp
         Me.AppPanel.Name = "AppPanel"
         Me.AppPanel.Size = New System.Drawing.Size(238, 344)
         Me.AppPanel.TabIndex = 3
+        '
+        'VoiceMailPicture
+        '
+        Me.VoiceMailPicture.Image = CType(resources.GetObject("VoiceMailPicture.Image"), System.Drawing.Image)
+        Me.VoiceMailPicture.Location = New System.Drawing.Point(117, 94)
+        Me.VoiceMailPicture.Name = "VoiceMailPicture"
+        Me.VoiceMailPicture.Size = New System.Drawing.Size(36, 37)
+        Me.VoiceMailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.VoiceMailPicture.TabIndex = 29
+        Me.VoiceMailPicture.TabStop = False
+        Me.VoiceMailPicture.Visible = False
         '
         'KidSchedule
         '
@@ -598,7 +621,7 @@ Partial Class PhoneApp
         Me.AddMoneyPanel.Controls.Add(Me.Label17)
         Me.AddMoneyPanel.Controls.Add(Me.AddMoney)
         Me.AddMoneyPanel.Controls.Add(Me.Label19)
-        Me.AddMoneyPanel.Controls.Add(Me.TimeLabel22)
+        Me.AddMoneyPanel.Controls.Add(Me.TimeLabel7)
         Me.AddMoneyPanel.Location = New System.Drawing.Point(498, 362)
         Me.AddMoneyPanel.Name = "AddMoneyPanel"
         Me.AddMoneyPanel.Size = New System.Drawing.Size(238, 344)
@@ -667,15 +690,15 @@ Partial Class PhoneApp
         Me.Label19.TabIndex = 21
         Me.Label19.Text = "Current Balance:"
         '
-        'TimeLabel22
+        'TimeLabel7
         '
-        Me.TimeLabel22.AutoSize = True
-        Me.TimeLabel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimeLabel22.Location = New System.Drawing.Point(157, 9)
-        Me.TimeLabel22.Name = "TimeLabel22"
-        Me.TimeLabel22.Size = New System.Drawing.Size(71, 18)
-        Me.TimeLabel22.TabIndex = 0
-        Me.TimeLabel22.Text = "12:59 PM"
+        Me.TimeLabel7.AutoSize = True
+        Me.TimeLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel7.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel7.Name = "TimeLabel7"
+        Me.TimeLabel7.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel7.TabIndex = 0
+        Me.TimeLabel7.Text = "12:59 PM"
         '
         'CallPanel
         '
@@ -792,8 +815,9 @@ Partial Class PhoneApp
         '
         'CallPanel1
         '
-        Me.CallPanel1.Controls.Add(Me.PictureBox5)
-        Me.CallPanel1.Controls.Add(Me.PictureBox3)
+        Me.CallPanel1.Controls.Add(Me.ParentLabel)
+        Me.CallPanel1.Controls.Add(Me.AcceptCall)
+        Me.CallPanel1.Controls.Add(Me.RejectCall)
         Me.CallPanel1.Controls.Add(Me.Label3)
         Me.CallPanel1.Controls.Add(Me.PictureBox4)
         Me.CallPanel1.Controls.Add(Me.TimeLabel8)
@@ -802,27 +826,36 @@ Partial Class PhoneApp
         Me.CallPanel1.Size = New System.Drawing.Size(238, 344)
         Me.CallPanel1.TabIndex = 33
         '
-        'PictureBox5
+        'ParentLabel
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(18, 281)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(63, 55)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 4
-        Me.PictureBox5.TabStop = False
+        Me.ParentLabel.AutoSize = True
+        Me.ParentLabel.Location = New System.Drawing.Point(19, 25)
+        Me.ParentLabel.Name = "ParentLabel"
+        Me.ParentLabel.Size = New System.Drawing.Size(76, 13)
+        Me.ParentLabel.TabIndex = 5
+        Me.ParentLabel.Text = "***Mom Phone"
         '
-        'PictureBox3
+        'AcceptCall
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(153, 281)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(63, 55)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 3
-        Me.PictureBox3.TabStop = False
+        Me.AcceptCall.Image = CType(resources.GetObject("AcceptCall.Image"), System.Drawing.Image)
+        Me.AcceptCall.Location = New System.Drawing.Point(18, 281)
+        Me.AcceptCall.Margin = New System.Windows.Forms.Padding(2)
+        Me.AcceptCall.Name = "AcceptCall"
+        Me.AcceptCall.Size = New System.Drawing.Size(63, 55)
+        Me.AcceptCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AcceptCall.TabIndex = 4
+        Me.AcceptCall.TabStop = False
+        '
+        'RejectCall
+        '
+        Me.RejectCall.Image = CType(resources.GetObject("RejectCall.Image"), System.Drawing.Image)
+        Me.RejectCall.Location = New System.Drawing.Point(153, 281)
+        Me.RejectCall.Margin = New System.Windows.Forms.Padding(2)
+        Me.RejectCall.Name = "RejectCall"
+        Me.RejectCall.Size = New System.Drawing.Size(63, 55)
+        Me.RejectCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.RejectCall.TabIndex = 3
+        Me.RejectCall.TabStop = False
         '
         'Label3
         '
@@ -914,11 +947,63 @@ Partial Class PhoneApp
         Me.TimeLabel11.TabIndex = 0
         Me.TimeLabel11.Text = "12:59 PM"
         '
+        'VoiceMailPanel
+        '
+        Me.VoiceMailPanel.Controls.Add(Me.CallEndPicture2)
+        Me.VoiceMailPanel.Controls.Add(Me.Label9)
+        Me.VoiceMailPanel.Controls.Add(Me.PictureBox5)
+        Me.VoiceMailPanel.Controls.Add(Me.TimeLabel10)
+        Me.VoiceMailPanel.Location = New System.Drawing.Point(1236, 11)
+        Me.VoiceMailPanel.Name = "VoiceMailPanel"
+        Me.VoiceMailPanel.Size = New System.Drawing.Size(238, 344)
+        Me.VoiceMailPanel.TabIndex = 35
+        '
+        'CallEndPicture2
+        '
+        Me.CallEndPicture2.Image = CType(resources.GetObject("CallEndPicture2.Image"), System.Drawing.Image)
+        Me.CallEndPicture2.Location = New System.Drawing.Point(80, 275)
+        Me.CallEndPicture2.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallEndPicture2.Name = "CallEndPicture2"
+        Me.CallEndPicture2.Size = New System.Drawing.Size(63, 55)
+        Me.CallEndPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CallEndPicture2.TabIndex = 3
+        Me.CallEndPicture2.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(87, 260)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(56, 13)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "Voice Mail"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(18, 49)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(198, 207)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 1
+        Me.PictureBox5.TabStop = False
+        '
+        'TimeLabel10
+        '
+        Me.TimeLabel10.AutoSize = True
+        Me.TimeLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimeLabel10.Location = New System.Drawing.Point(157, 9)
+        Me.TimeLabel10.Name = "TimeLabel10"
+        Me.TimeLabel10.Size = New System.Drawing.Size(71, 18)
+        Me.TimeLabel10.TabIndex = 0
+        Me.TimeLabel10.Text = "12:59 PM"
+        '
         'PhoneApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1254, 697)
+        Me.ClientSize = New System.Drawing.Size(1484, 697)
+        Me.Controls.Add(Me.VoiceMailPanel)
         Me.Controls.Add(Me.SOSPanel)
         Me.Controls.Add(Me.CallPanel1)
         Me.Controls.Add(Me.SchedulePanel1)
@@ -939,6 +1024,7 @@ Partial Class PhoneApp
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AppPanel.ResumeLayout(False)
         Me.AppPanel.PerformLayout()
+        CType(Me.VoiceMailPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KidSchedule, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KidMessage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KidMoney, System.ComponentModel.ISupportInitialize).EndInit()
@@ -960,12 +1046,16 @@ Partial Class PhoneApp
         Me.SchedulePanel1.PerformLayout()
         Me.CallPanel1.ResumeLayout(False)
         Me.CallPanel1.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AcceptCall, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RejectCall, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SOSPanel.ResumeLayout(False)
         Me.SOSPanel.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.VoiceMailPanel.ResumeLayout(False)
+        Me.VoiceMailPanel.PerformLayout()
+        CType(Me.CallEndPicture2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1011,7 +1101,7 @@ Partial Class PhoneApp
     Friend WithEvents Label17 As Label
     Friend WithEvents AddMoney As Button
     Friend WithEvents Label19 As Label
-    Friend WithEvents TimeLabel22 As Label
+    Friend WithEvents TimeLabel7 As Label
     Friend WithEvents CurrBalanceLabel As Label
     Friend WithEvents AmountBox As TextBox
     Friend WithEvents AddVerification As Label
@@ -1037,8 +1127,8 @@ Partial Class PhoneApp
     Friend WithEvents TimeLabel9 As Label
     Friend WithEvents ClearAll As Button
     Friend WithEvents CallPanel1 As Panel
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents AcceptCall As PictureBox
+    Friend WithEvents RejectCall As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents TimeLabel8 As Label
@@ -1049,4 +1139,11 @@ Partial Class PhoneApp
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents TimeLabel11 As Label
     Friend WithEvents ClearMSG As Button
+    Friend WithEvents ParentLabel As Label
+    Friend WithEvents VoiceMailPicture As PictureBox
+    Friend WithEvents VoiceMailPanel As Panel
+    Friend WithEvents CallEndPicture2 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents TimeLabel10 As Label
 End Class
