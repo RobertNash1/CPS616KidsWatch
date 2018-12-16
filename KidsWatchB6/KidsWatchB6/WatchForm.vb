@@ -382,6 +382,6 @@
     Private Sub VoiceMessagePicture_Click(sender As Object, e As EventArgs) Handles VoiceMessagePicture.Click
         VoiceMailPanel.Visible = True
         CallOptionPanel.Visible = False
-
+        PhoneApp.SetVoiceMail()
     End Sub
 End Class

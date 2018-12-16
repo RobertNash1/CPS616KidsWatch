@@ -48,6 +48,7 @@
         CallPanel.Visible = False
         CallPanel1.Visible = False
         SOSPanel.Visible = False
+        VoiceMailPanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
