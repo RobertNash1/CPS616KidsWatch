@@ -155,7 +155,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Watch.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DesiJourney.wav" />
   </ItemGroup>

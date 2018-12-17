@@ -6,8 +6,8 @@
     Dim Schedule As String
     Dim CallID As String
     Public Sub DrawPanels()
-        Panelocation.X = 15
-        Panelocation.Y = 15
+        Panelocation.X = 31
+        Panelocation.Y = 30
         myPanels.Add(ClockPanel)
         myPanels.Add(ContactPanel)
         myPanels.Add(ContactPanel1)
@@ -476,5 +476,9 @@
     Private Sub HereButtonUp_Click(sender As Object, e As EventArgs) Handles HereButtonUp.Click
         MapPanel.Visible = True
         LocationPanel.Visible = False
+    End Sub
+
+    Private Sub VolumeDown_Click(sender As Object, e As EventArgs) Handles VolumeDown.Click
+
     End Sub
 End Class

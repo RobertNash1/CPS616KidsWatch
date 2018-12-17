@@ -121,13 +121,16 @@
   <data name="DesiJourney" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DesiJourney.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="phone02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone02.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UpbeatFunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpbeatFunk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShakeYourBootay.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UpbeatFunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UpbeatFunk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="phone02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone02.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Watch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Watch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
