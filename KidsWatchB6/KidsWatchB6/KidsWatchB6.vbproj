@@ -170,5 +170,8 @@
   <ItemGroup>
     <None Include="Resources\UpbeatFunk.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Phone.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

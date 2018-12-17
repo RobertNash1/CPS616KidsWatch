@@ -5,8 +5,8 @@
     Dim counter As Integer
     Dim allowance As Double
     Public Sub DrawPanels()
-        Panelocation.X = 15
-        Panelocation.Y = 15
+        Panelocation.X = 13
+        Panelocation.Y = 20
         myPanels.Add(ClockPanel)
         myPanels.Add(AddMoneyPanel)
         myPanels.Add(HomePanel)
@@ -243,5 +243,9 @@
     Private Sub BackButtonMap_Click(sender As Object, e As EventArgs) Handles BackButtonMap.Click
         MapPanel.Visible = False
         AppPanel.Visible = True
+    End Sub
+
+    Private Sub ClockPanel_Paint(sender As Object, e As PaintEventArgs) Handles ClockPanel.Paint
+
     End Sub
 End Class
