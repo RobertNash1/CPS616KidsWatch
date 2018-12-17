@@ -18,7 +18,8 @@
         myPanels.Add(CallPanel1)
         myPanels.Add(SOSPanel)
         myPanels.Add(VoiceMailPanel)
-        For index As Integer = 0 To 10
+        myPanels.Add(MapPanel)
+        For index As Integer = 0 To 11
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -34,6 +35,7 @@
         TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel10.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel11.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel12.Text = TimeOfDay.ToString("hh:mm tt")
         Timer1.Start()
         DateLabel.Text = Date.Now().ToString("D")
         AddVerification.Text = ""
@@ -52,6 +54,7 @@
         CallPanel1.Visible = False
         SOSPanel.Visible = False
         VoiceMailPanel.Visible = False
+        MapPanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -100,6 +103,7 @@
         TimeLabel9.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel10.Text = TimeOfDay.ToString("hh:mm tt")
         TimeLabel11.Text = TimeOfDay.ToString("hh:mm tt")
+        TimeLabel12.Text = TimeOfDay.ToString("hh:mm tt")
 
     End Sub
 
@@ -231,5 +235,13 @@
         CurrBalanceLabel.Text = WatchForm.getBalance
     End Sub
 
+    Private Sub MapPicture_Click(sender As Object, e As EventArgs) Handles MapPicture.Click
+        MapPanel.Visible = True
+        AppPanel.Visible = False
+    End Sub
 
+    Private Sub BackButtonMap_Click(sender As Object, e As EventArgs) Handles BackButtonMap.Click
+        MapPanel.Visible = False
+        AppPanel.Visible = True
+    End Sub
 End Class

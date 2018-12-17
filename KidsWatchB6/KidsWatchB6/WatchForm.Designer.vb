@@ -1636,7 +1636,7 @@ Partial Class WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1540, 687)
+        Me.ClientSize = New System.Drawing.Size(202, 179)
         Me.Controls.Add(Me.LocationPanel)
         Me.Controls.Add(Me.MusicPanel3)
         Me.Controls.Add(Me.MusicPanel2)
