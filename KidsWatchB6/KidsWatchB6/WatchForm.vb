@@ -32,7 +32,8 @@
         myPanels.Add(CallOptionPanel)
         myPanels.Add(VoiceMailPanel)
         myPanels.Add(MapPanel)
-        For index As Integer = 0 To 23
+        myPanels.Add(LocationPanel)
+        For index As Integer = 0 To 24
             myPanels(index).Location = Panelocation
         Next
     End Sub
@@ -88,6 +89,7 @@
         HelpPanel1.Visible = False
         GamesPanel1.Visible = False
         MapPanel.Visible = False
+        LocationPanel.Visible = False
     End Sub
 
     Private Sub RightButton_Click(sender As Object, e As EventArgs) Handles RightButton.Click
@@ -363,6 +365,7 @@
         HelpPanel1.Visible = False
         GamesPanel1.Visible = False
         MapPanel.Visible = False
+        LocationPanel.Visible = False
     End Sub
 
     Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
@@ -463,5 +466,15 @@
 
     Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
         My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub MapButtonDown_Click(sender As Object, e As EventArgs) Handles MapButtonDown.Click
+        MapPanel.Visible = False
+        LocationPanel.Visible = True
+    End Sub
+
+    Private Sub HereButtonUp_Click(sender As Object, e As EventArgs) Handles HereButtonUp.Click
+        MapPanel.Visible = True
+        LocationPanel.Visible = False
     End Sub
 End Class

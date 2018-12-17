@@ -161,6 +161,10 @@ Partial Class WatchForm
         Me.MusicUp3 = New System.Windows.Forms.Button()
         Me.Song3 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.LocationPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.HereButtonUp = New System.Windows.Forms.Button()
         Me.ClockPanel.SuspendLayout()
         CType(Me.NewScheduleItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewMessageItem, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -218,6 +222,8 @@ Partial Class WatchForm
         Me.MusicPanel3.SuspendLayout()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Song3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LocationPanel.SuspendLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClockPanel
@@ -616,7 +622,7 @@ Partial Class WatchForm
         '
         Me.MomPicture.Image = CType(resources.GetObject("MomPicture.Image"), System.Drawing.Image)
         Me.MomPicture.Location = New System.Drawing.Point(33, 35)
-        Me.MomPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.MomPicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MomPicture.Name = "MomPicture"
         Me.MomPicture.Size = New System.Drawing.Size(114, 72)
         Me.MomPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -733,7 +739,7 @@ Partial Class WatchForm
         '
         Me.TapToPay.Image = CType(resources.GetObject("TapToPay.Image"), System.Drawing.Image)
         Me.TapToPay.Location = New System.Drawing.Point(24, 34)
-        Me.TapToPay.Margin = New System.Windows.Forms.Padding(2)
+        Me.TapToPay.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TapToPay.Name = "TapToPay"
         Me.TapToPay.Size = New System.Drawing.Size(136, 119)
         Me.TapToPay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -774,7 +780,7 @@ Partial Class WatchForm
         '
         Me.ScheduleBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ScheduleBox.Location = New System.Drawing.Point(14, 58)
-        Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.ScheduleBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ScheduleBox.Name = "ScheduleBox"
         Me.ScheduleBox.ReadOnly = True
         Me.ScheduleBox.Size = New System.Drawing.Size(153, 85)
@@ -825,7 +831,7 @@ Partial Class WatchForm
         '
         Me.DadPicture.Image = CType(resources.GetObject("DadPicture.Image"), System.Drawing.Image)
         Me.DadPicture.Location = New System.Drawing.Point(33, 34)
-        Me.DadPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.DadPicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DadPicture.Name = "DadPicture"
         Me.DadPicture.Size = New System.Drawing.Size(114, 72)
         Me.DadPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -987,7 +993,7 @@ Partial Class WatchForm
         '
         Me.CallPicture.Image = CType(resources.GetObject("CallPicture.Image"), System.Drawing.Image)
         Me.CallPicture.Location = New System.Drawing.Point(33, 34)
-        Me.CallPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallPicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CallPicture.Name = "CallPicture"
         Me.CallPicture.Size = New System.Drawing.Size(114, 98)
         Me.CallPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1027,7 +1033,7 @@ Partial Class WatchForm
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
         Me.PictureBox8.Location = New System.Drawing.Point(33, 34)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(114, 98)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1103,7 +1109,7 @@ Partial Class WatchForm
         '
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
         Me.PictureBox12.Location = New System.Drawing.Point(43, 34)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(102, 98)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1143,7 +1149,7 @@ Partial Class WatchForm
         '
         Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
         Me.PictureBox13.Location = New System.Drawing.Point(14, 37)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(159, 95)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1247,7 +1253,7 @@ Partial Class WatchForm
         '
         Me.CallMom.Image = CType(resources.GetObject("CallMom.Image"), System.Drawing.Image)
         Me.CallMom.Location = New System.Drawing.Point(71, 99)
-        Me.CallMom.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallMom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CallMom.Name = "CallMom"
         Me.CallMom.Size = New System.Drawing.Size(43, 42)
         Me.CallMom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1258,7 +1264,7 @@ Partial Class WatchForm
         '
         Me.HangUpPicture.Image = CType(resources.GetObject("HangUpPicture.Image"), System.Drawing.Image)
         Me.HangUpPicture.Location = New System.Drawing.Point(125, 54)
-        Me.HangUpPicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HangUpPicture.Name = "HangUpPicture"
         Me.HangUpPicture.Size = New System.Drawing.Size(43, 42)
         Me.HangUpPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1269,7 +1275,7 @@ Partial Class WatchForm
         '
         Me.CallDad.Image = CType(resources.GetObject("CallDad.Image"), System.Drawing.Image)
         Me.CallDad.Location = New System.Drawing.Point(71, 54)
-        Me.CallDad.Margin = New System.Windows.Forms.Padding(2)
+        Me.CallDad.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CallDad.Name = "CallDad"
         Me.CallDad.Size = New System.Drawing.Size(43, 42)
         Me.CallDad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1280,7 +1286,7 @@ Partial Class WatchForm
         '
         Me.VoiceMessagePicture.Image = CType(resources.GetObject("VoiceMessagePicture.Image"), System.Drawing.Image)
         Me.VoiceMessagePicture.Location = New System.Drawing.Point(16, 54)
-        Me.VoiceMessagePicture.Margin = New System.Windows.Forms.Padding(2)
+        Me.VoiceMessagePicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.VoiceMessagePicture.Name = "VoiceMessagePicture"
         Me.VoiceMessagePicture.Size = New System.Drawing.Size(43, 42)
         Me.VoiceMessagePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1321,7 +1327,7 @@ Partial Class WatchForm
         '
         Me.HangUpPicture2.Image = CType(resources.GetObject("HangUpPicture2.Image"), System.Drawing.Image)
         Me.HangUpPicture2.Location = New System.Drawing.Point(125, 77)
-        Me.HangUpPicture2.Margin = New System.Windows.Forms.Padding(2)
+        Me.HangUpPicture2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HangUpPicture2.Name = "HangUpPicture2"
         Me.HangUpPicture2.Size = New System.Drawing.Size(43, 42)
         Me.HangUpPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1332,7 +1338,7 @@ Partial Class WatchForm
         '
         Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
         Me.PictureBox19.Location = New System.Drawing.Point(16, 54)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox19.Name = "PictureBox19"
         Me.PictureBox19.Size = New System.Drawing.Size(103, 96)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1587,11 +1593,51 @@ Partial Class WatchForm
         Me.Label13.TabIndex = 0
         Me.Label13.Text = "Tap To Play: UpbeatFunk"
         '
+        'LocationPanel
+        '
+        Me.LocationPanel.Controls.Add(Me.HereButtonUp)
+        Me.LocationPanel.Controls.Add(Me.PictureBox15)
+        Me.LocationPanel.Controls.Add(Me.Label15)
+        Me.LocationPanel.Location = New System.Drawing.Point(1349, 181)
+        Me.LocationPanel.Name = "LocationPanel"
+        Me.LocationPanel.Size = New System.Drawing.Size(185, 163)
+        Me.LocationPanel.TabIndex = 31
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
+        Me.PictureBox15.Location = New System.Drawing.Point(33, 28)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(119, 100)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox15.TabIndex = 4
+        Me.PictureBox15.TabStop = False
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(39, 134)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(106, 20)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "You Are Here"
+        '
+        'HereButtonUp
+        '
+        Me.HereButtonUp.Location = New System.Drawing.Point(78, 3)
+        Me.HereButtonUp.Name = "HereButtonUp"
+        Me.HereButtonUp.Size = New System.Drawing.Size(27, 23)
+        Me.HereButtonUp.TabIndex = 10
+        Me.HereButtonUp.Text = "^"
+        Me.HereButtonUp.UseVisualStyleBackColor = True
+        '
         'WatchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1443, 845)
+        Me.ClientSize = New System.Drawing.Size(1540, 687)
+        Me.Controls.Add(Me.LocationPanel)
         Me.Controls.Add(Me.MusicPanel3)
         Me.Controls.Add(Me.MusicPanel2)
         Me.Controls.Add(Me.MusicPanel1)
@@ -1702,6 +1748,9 @@ Partial Class WatchForm
         Me.MusicPanel3.PerformLayout()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Song3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.LocationPanel.ResumeLayout(False)
+        Me.LocationPanel.PerformLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1843,4 +1892,8 @@ Partial Class WatchForm
     Friend WithEvents MusicUp3 As Button
     Friend WithEvents Song3 As PictureBox
     Friend WithEvents Label13 As Label
+    Friend WithEvents LocationPanel As Panel
+    Friend WithEvents HereButtonUp As Button
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents Label15 As Label
 End Class
